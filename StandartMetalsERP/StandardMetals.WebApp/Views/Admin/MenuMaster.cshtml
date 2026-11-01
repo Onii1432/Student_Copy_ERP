@@ -1,0 +1,121 @@
+﻿@model StandardMetals.MODEL.MenuMasterModel
+@{
+    ViewBag.Title = "MenuMaster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section HeadScripts{
+<script src="~/JS/Admin/MenuMaster.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //alert('its working');
+        });
+
+
+    </script>
+}
+
+
+<section id="ItemSearch">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Search</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+                <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <div class="col-md-4">
+                    <strong>Menu Name</strong>
+                    @*<asp:DropDownList ID="drpSearchMenu" runat="server" CssClass="form-control select2" AutoPostBack="true">
+                        </asp:DropDownList>*@
+                    @Html.DropDownListFor(m => m.MenuId, Enumerable.Empty<SelectListItem>(), "--Select--", new { @class = "form-control " })
+                </div>
+                <div class="col-md-4">
+                    <br />
+                    <input type="button" id="btnSearch" value="Search" class="btn btn-primary" />
+                    @*<asp:Button runat="server" ID="btnSearch" Text="Search" CssClass="btn btn-sm- btn-primary" />*@
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+    
+</section>
+
+<section id="ItemInfo">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Menu Information</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+                <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+
+
+                <table class="table-condensed table-hover table-responsive" width="100%">
+                    <tbody>
+
+                        <tr>
+                            <th class="15">Menu Name </th>
+                            <td width="35%">
+                                @Html.EditorFor(m => m.MenuName, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                @*<asp:TextBox ID="txtMenuName" runat="server" CssClass="form-control input-sm"></asp:TextBox>*@
+                            </td>
+
+                            <th style="width: 15%">IsActive </th>
+                            <th style="width: 35%">
+                                @*<asp:CheckBox ID="chkIsActive" Checked="true" runat="server" Text="IsActive"
+                                    AutoPostBack="False" />*@
+                                @Html.CheckBoxFor(m => m.IsActive)
+
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+</section>
+
+
+<section id="ItemActionMenu">
+    <div class="col-lg-12 col-md-12">
+
+        <div class="box box-info">
+            <div class="box-header with-border">
+                @*<%--<h4 class="box-title">Action Menu</h4>--%>*@
+            </div>
+            <div class="box-body">
+                <center>
+                    <input type="button" id="btnNew" value="New Item" class="btn btn-info" />
+                    @*<asp:Button ID="btnNewMenu" runat="server" CssClass="btn btn-success"
+                        Text="New Item" onclick="btnNewMenu_Click" />*@
+                    <input type="button" id="btnSaveMenu" value="Save" class="btn btn-success" />
+                    @*<asp:Button ID="btnSaveMenu" runat="server" CssClass="btn btn-primary" Text="Save"
+                        onclick="btnSaveMenu_Click" />*@
+                    <input type="button" id="btnCancelMenu" value="Cancel" class="btn btn-danger" />
+                    @*<asp:Button ID="btnCancelMenu" runat="server" CssClass="btn btn-danger"
+                        Text="Cancel" onclick="btnCancelMenu_Click" />*@
+                </center>
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,157 @@
+﻿@model StandardMetals.MODEL.LoginUserMasterModel
+@{
+    ViewBag.Title = "LoginUserMaster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<section id="ItemSearch">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Search</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+                <!-- /.box-tools -->
+            </div>
+
+            <!-- /.box-header -->
+
+            <div class="box-body">
+                <div class="col-md-4">
+                    <strong>
+                        @*<asp:Label ID="lblSearchRole" runat="server" Text="Search Role"></asp:Label>*@
+                        @Html.LabelFor(m => m.RoleId)
+                    </strong>
+                        @Html.DropDownListFor(m => m.RoleId, Enumerable.Empty<SelectListItem>(), "--Select--", new { @class = "form-control " })
+                        @Html.ValidationMessageFor(m => m.RoleId, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="col-md-4">
+                       <input type="submit" id="btnSearch" value="Search" class="btn btn-primary" />
+                   
+                </div>
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+</section>
+
+
+<section id="ItemInfo">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">
+                    @*<asp:Label ID="lblRoleDetail" runat="server" Text="Role Detail"></asp:Label>*@
+                    Role Detail
+
+                </h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+                <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <table class="table-condensed table-hover table-responsive" width="100%">
+                    <tbody>
+                        <tr>
+                            <th width="15%">
+                                @Html.LabelFor(m => m.UserName)
+                                @*<asp:Label ID="lblLoginuserName" runat="server" Text="Login User Name"></asp:Label>*@
+                            </th>
+                            <td width="35%">
+                                @*<asp:TextBox ID="txtLoginUserName" runat="server" CssClass="form-control input-sm">
+                                </asp:TextBox>*@
+                                @Html.EditorFor(m=> m.UserName, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                            </td>
+                            <th width="15%">
+                                @*<asp:Label ID="lblRoleName" runat="server" Text="Role Name"></asp:Label>*@
+                                @Html.LabelFor(m => m.RoleName)
+                            </th>
+                            <td width="35%">
+                                @Html.DropDownListFor(m => m.RoleName, Enumerable.Empty<SelectListItem>(), "--Select--", new { @class = "form-control " })
+                                @Html.ValidationMessageFor(m => m.RoleName, "", new { @class = "text-danger" })
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th width="15%">
+                                @*<asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>*@
+                                @Html.LabelFor(m => m.Password)
+                            </th>
+                            <td width="35%">
+                                @*<asp:TextBox ID="txtPassword" runat="server" CssClass="form-control input-sm"></asp:TextBox>*@
+                                @Html.EditorFor(m => m.Password, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                @Html.ValidationMessageFor(m =>m.Password,"", new { @class = "text-danger" })
+                            </td>
+                            <th width="15%">
+                                @*<asp:Label ID="Label1" runat="server" Text="ConfirmPassword"></asp:Label>*@
+                                @Html.LabelFor(m => m.ConfirmPassword)
+                            </th>
+                            <td width="35%">
+                                @*<asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="form-control input-sm"></asp:TextBox>*@
+                                @Html.EditorFor(m => m.ConfirmPassword, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                @Html.ValidationMessageFor(m => m.ConfirmPassword,"", new { @class = "text-danger" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <th width="15%">
+                                @*<asp:Label ID="lblEmployeeName" runat="server" Text="Employee Name"></asp:Label>*@
+                                @Html.LabelFor(m => m.EmployeeId)
+
+                            </th>
+                            <td width="35%">
+                                @*<asp:DropDownList ID="drpEmployeeName" runat="server"
+                                  CssClass="form-control select2">
+                                  </asp:DropDownList*@
+                                @Html.DropDownListFor(m => m.EmployeeId, Enumerable.Empty<SelectListItem>(), "--Select--", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.EmployeeId, "", new { @class = "text-danger" })
+
+                            </td>
+                            <th width="15%">
+                                @*<asp:Label ID="lblIsActive" runat="server" Text="IsActive"></asp:Label>*@
+                                @Html.LabelFor(m => m.IsActive)
+                            
+                            </th>
+                            <td width="35%">
+                                @*<asp:CheckBox ID="chkIsActive" Checked="true" runat="server" Text="" />*@
+                                @Html.CheckBoxFor(m => m.IsActive)
+                            </td>
+                            <th width="15%"></th>
+                            <td width="35%"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <br />
+
+                <br />
+
+                <br />
+
+                <div class="row">
+                    <center>
+
+                        <input type="submit" value="New" class="btn btn-success" />
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                        <input type="submit" value="Update" class="btn btn-warning" />
+                        <input type="submit" value="Cancel" class="btn btn-danger" />
+
+                    </center>
+                </div>
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+</section>

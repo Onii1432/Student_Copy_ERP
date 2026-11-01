@@ -1,0 +1,281 @@
+Log Date = 14-10-2026 15:50:40
+Step= AccountController-Login(GET) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:41
+Step= Login(GET) - Login Page Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:41
+Step= AccountController-Login(GET) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:49
+Step= AccountController-Login(POST) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:49
+Step= Login(POST) - Login API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:51
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:51
+Step= LoginDetails - Login Validation Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:51
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:51
+Step= Login(POST) - Login API Response Received
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:51
+Step= Login(POST) - Login Successful
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:51
+Step= Login(POST) - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:51
+Step= Login(POST) - Menu And SubMenu Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:51
+Step= Login(POST) - Token Generated
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:51
+Step= Login(POST) - Redirecting To Default Dashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:51
+Step= AccountController-Login(POST) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= ItemList17Dec_Dal Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= CustomerMasterMVCApril2026DAL Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= SupplierMasterMVCApril2026DAL Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= GetSupplierWiseItemDashboard - Stored Procedure : SP_GetSupplierWiseItemDashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= GetSupplierWiseItemDashboard - Supplier Wise Item Data Loaded : 29
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= GetSupplierWiseItemDashboard - Total Supplier Count : 778
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= GetSupplierWiseItemDashboard - Total Item Count : 4443
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= GetSupplierWiseItemDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= DefaultDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:50:52
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 14-10-2026 15:50:53
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:52:04
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:52:04
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:52:04
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:52:04
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:52:04
+Step= MasterCtrl-UploadItemMasterExcelApr26 GET - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:52:04
+Step= MasterCtrl-UploadItemMasterExcelApr26 GET - End
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 14-10-2026 15:52:04
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:52:22
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:52:22
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:52:22
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:52:22
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 14-10-2026 15:52:24
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:53:25
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:53:25
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:53:25
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:53:25
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 14-10-2026 15:53:26
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:53:37
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:53:37
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:53:37
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:53:37
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:55:11
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:55:11
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:55:11
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:55:11
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 14-10-2026 15:55:11
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= AccountController-SignOut - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= SignOut - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= SignOut - Logout API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= LoginDetailCtrl-LogoutUser Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= LogoutUser - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= LogoutUser - Logout Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= LoginDetailCtrl-LogoutUser Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= SignOut - Logout API Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= SignOut - Session Cleared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= AccountController-SignOut - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= AccountController-Login(GET) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= Login(GET) - Login Page Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 14-10-2026 15:57:17
+Step= AccountController-Login(GET) - Start-End
+---------------------------------------xxxxxxxx------------------------------------

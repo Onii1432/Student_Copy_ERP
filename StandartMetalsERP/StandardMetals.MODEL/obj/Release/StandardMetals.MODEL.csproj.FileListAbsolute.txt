@@ -1,0 +1,9 @@
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\bin\Release\StandardMetals.MODEL.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\bin\Release\StandardMetals.MODEL.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\bin\Release\StandardMetals.CommonLibrary.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\bin\Release\StandardMetals.CommonLibrary.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\obj\Release\StandardMetals.MODEL.csprojAssemblyReference.cache
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\obj\Release\StandardMetals.MODEL.csproj.CoreCompileInputs.cache
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\obj\Release\StandardMetals.MODEL.csproj.CopyComplete
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\obj\Release\StandardMetals.MODEL.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\obj\Release\StandardMetals.MODEL.pdb

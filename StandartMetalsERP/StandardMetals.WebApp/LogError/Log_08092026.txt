@@ -1,0 +1,405 @@
+Log Date = 08-09-2026 12:53:00
+Step= Inside ItemMaster_Modal_AprBtch CustomValidationClass - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 12:53:00
+Step= Inside If - Value not Null : Laptop
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 12:53:00
+Step= Current Item Id : 0
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 12:53:00
+Step= Executing CheckDuplicateItemName SP for ItemName : Laptop
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 12:53:01
+Step= Duplicate Item Count : 100
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 12:53:01
+Step= Duplicate Record Found : Laptop
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 12:53:01
+Step= Inside ItemMaster_Modal_AprBtch CustomValidationClass - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:57:21
+Step= MasterCtrl-ItemList17Dec Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:57:21
+Step= MasterCtrl-ItemList17Dec Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= MasterCtrl-EditItemApril2026 Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= EditItemApril2026 - Item Id : 30697
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= EditItemApril2026 - Item Details Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= EditItemApril2026 - Supplier Details Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= EditItemApril2026 - Customer Details Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= MasterCtrl-Item-LoadDropDowns Action- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= LoadDropDowns - Manufacturers Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= LoadDropDowns - Categories Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= LoadDropDowns - Colours Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= LoadDropDowns - Units Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= MasterCtrl-Item-LoadDropDowns Action- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= EditItemApril2026 - DropDowns Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= EditItemApril2026 - SubCategories Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:24
+Step= MasterCtrl-EditItemApril2026 Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:26
+Step= MasterCtrl-GetSupplierCodes Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:26
+Step= GetSupplierCodes - Supplier Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:26
+Step= GetSupplierCodes - Supplier Codes Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:26
+Step= MasterCtrl-GetSupplierCodes Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:27
+Step= MasterCtrl-GetCustomerNames Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:27
+Step= GetCustomerNames - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:27
+Step= GetCustomerNames - Customer Names Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:27
+Step= MasterCtrl-GetCustomerNames Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:27
+Step= MasterCtrl-GetCustomerCodes Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:27
+Step= GetCustomerCodes - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:27
+Step= GetCustomerCodes - Customer Codes Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:27
+Step= MasterCtrl-GetCustomerCodes Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:28
+Step= MasterCtrl-GetSupplierNames Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:28
+Step= GetSupplierNames - Supplier Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:28
+Step= GetSupplierNames - Supplier Names Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:28
+Step= MasterCtrl-GetSupplierNames Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= Inside ItemMaster_Modal_AprBtch CustomValidationClass - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= Inside If - Value not Null : dfddg
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= Current Item Id : 30697
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= Executing CheckDuplicateItemName SP for ItemName : dfddg
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= Duplicate Item Count : 0
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= No Duplicate Item Found : dfddg
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= Inside ItemMaster_Modal_AprBtch CustomValidationClass - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= MasterCtrl-EditItemApril2026 Action(httppost)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= EditItemApril2026 - Item Id : 30697
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= EditItemApril2026 - ModelState IsValid
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= EditItemApril2026 - Item Update Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:32
+Step= MasterCtrl-EditItemApril2026 Action(httppost)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:34
+Step= MasterCtrl-ItemList17Dec Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 14:59:34
+Step= MasterCtrl-ItemList17Dec Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= MasterCtrl-EditItemApril2026 Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= EditItemApril2026 - Item Id : 30697
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= EditItemApril2026 - Item Details Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= EditItemApril2026 - Supplier Details Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= EditItemApril2026 - Customer Details Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= MasterCtrl-Item-LoadDropDowns Action- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= LoadDropDowns - Manufacturers Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= LoadDropDowns - Categories Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= LoadDropDowns - Colours Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= LoadDropDowns - Units Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= MasterCtrl-Item-LoadDropDowns Action- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= EditItemApril2026 - DropDowns Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= EditItemApril2026 - SubCategories Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= MasterCtrl-EditItemApril2026 Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= MasterCtrl-GetSupplierCodes Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= GetSupplierCodes - Supplier Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= GetSupplierCodes - Supplier Codes Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:47
+Step= MasterCtrl-GetSupplierCodes Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:48
+Step= MasterCtrl-GetSupplierNames Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:48
+Step= GetSupplierNames - Supplier Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:48
+Step= GetSupplierNames - Supplier Names Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:48
+Step= MasterCtrl-GetSupplierNames Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:48
+Step= MasterCtrl-GetCustomerNames Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:48
+Step= GetCustomerNames - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:48
+Step= GetCustomerNames - Customer Names Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:48
+Step= MasterCtrl-GetCustomerNames Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:49
+Step= MasterCtrl-GetCustomerCodes Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:49
+Step= GetCustomerCodes - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:49
+Step= GetCustomerCodes - Customer Codes Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:49
+Step= MasterCtrl-GetCustomerCodes Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= Inside ItemMaster_Modal_AprBtch CustomValidationClass - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= Inside If - Value not Null : Laptop
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= Current Item Id : 30697
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= Executing CheckDuplicateItemName SP for ItemName : Laptop
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= Duplicate Item Count : 100
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= Duplicate Record Found : Laptop
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= Inside ItemMaster_Modal_AprBtch CustomValidationClass - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= MasterCtrl-EditItemApril2026 Action(httppost)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= EditItemApril2026 - Item Id : 30697
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= EditItemApril2026 - ModelState IsValid False
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= EditItemApril2026 - ItemName Validation Error : Duplicate Item Name is not allowed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:01:55
+Step= MasterCtrl-EditItemApril2026 Action(httppost)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= Inside ItemMaster_Modal_AprBtch CustomValidationClass - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= Inside If - Value not Null : fhgull
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= Current Item Id : 30697
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= Executing CheckDuplicateItemName SP for ItemName : fhgull
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= Duplicate Item Count : 0
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= No Duplicate Item Found : fhgull
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= Inside ItemMaster_Modal_AprBtch CustomValidationClass - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= MasterCtrl-EditItemApril2026 Action(httppost)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= EditItemApril2026 - Item Id : 30697
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= EditItemApril2026 - ModelState IsValid
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= EditItemApril2026 - Item Update Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:31
+Step= MasterCtrl-EditItemApril2026 Action(httppost)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:32
+Step= MasterCtrl-ItemList17Dec Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:02:32
+Step= MasterCtrl-ItemList17Dec Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:35
+Step= MasterCtrl-AddNewItemApril2026 Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:35
+Step= MasterCtrl-Item-LoadDropDowns Action- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:35
+Step= LoadDropDowns - Manufacturers Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:35
+Step= LoadDropDowns - Categories Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:35
+Step= LoadDropDowns - Colours Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:35
+Step= LoadDropDowns - Units Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:35
+Step= MasterCtrl-Item-LoadDropDowns Action- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:35
+Step= AddNewItemApril2026 - DropDowns Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:35
+Step= AddNewItemApril2026 - SubCategories Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:35
+Step= MasterCtrl-AddNewItemApril2026 Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:41
+Step= MasterCtrl-GetSupplierCodes Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:41
+Step= GetSupplierCodes - Supplier Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:41
+Step= GetSupplierCodes - Supplier Codes Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:41
+Step= MasterCtrl-GetSupplierCodes Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:41
+Step= MasterCtrl-GetSupplierNames Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:41
+Step= GetSupplierNames - Supplier Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:41
+Step= GetSupplierNames - Supplier Names Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:41
+Step= MasterCtrl-GetSupplierNames Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:42
+Step= MasterCtrl-GetCustomerCodes Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:42
+Step= GetCustomerCodes - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:42
+Step= GetCustomerCodes - Customer Codes Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:42
+Step= MasterCtrl-GetCustomerCodes Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:42
+Step= MasterCtrl-GetCustomerNames Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:42
+Step= GetCustomerNames - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:42
+Step= GetCustomerNames - Customer Names Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 08-09-2026 15:14:42
+Step= MasterCtrl-GetCustomerNames Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------

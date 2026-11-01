@@ -1,0 +1,312 @@
+﻿@model IEnumerable<StandardMetals.MODEL.ItemMasterMVCModal>
+
+@{
+    ViewBag.Title = "ItemList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; margin-top:35px;">
+    <div>
+        <button type="button" class="btn btn-primary BTNCreate"><i class="bi bi-plus-lg"></i> Add New Item </button>
+        <button type="button" id="btnExport" class="btn btn-primary" onclick="exportTableToExcel()"><i class="bi bi-download"></i> Export Excel </button>
+        <button type="button" id="btnPrint" class="btn btn-info" onclick="printWindow()"><i class="bi bi-printer"></i> Print Table</button>
+    </div>
+
+    <div>
+        <label style="margin-right:5px; font-weight:bold;">Search:</label>
+        <input type="text" id="searchBox" class="form-control" style="display:inline-block; width:220px;" placeholder="Search..." />
+    </div>
+
+</div>
+    
+
+
+
+<div class="modal fade" id="myModal" role="dialog"></div>
+<section id="Test">
+    <div>
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Items List</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+                <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+
+            <div class="box-body">
+                <div style="overflow-x:auto; overflow-y:auto;  width:100%; max-height:500px;">
+                    <table class="table table-bordered table-striped table-hover text-center" id="t">
+                        <thead class="thead-dark" style="background-color:#b3d7e6;">
+                            <tr class="info">
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ItemCode)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ItemName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Material)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.HSNCODE)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.GSTRate)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PurchaseCost)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SellingPrice)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CategoryName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SubCategoryName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ManufacturerName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ColourName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.UnitName)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="itemBody">
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ItemCode)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ItemName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Material)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.HSNCODE)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.GSTRate)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PurchaseCost)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SellingPrice)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CategoryName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SubCategoryName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ManufacturerName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ColourName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UnitName)
+                                    </td>
+                                    <td>
+
+                                        <button class="btn btn-success BtnEdit" data-id="@item.ID">Edit</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div id="pg" style="text-align:center; margin-top:10px;"></div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+    // script for search-box
+    $("#searchBox").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#t tr").filter(function (index) {
+            if (index === 0) return;
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+        r = [...t.rows].slice(1).filter(row => row.style.display !== "none");
+        c = 1;
+        show();
+    });
+
+
+
+
+    function exportTableToExcel() {
+
+        var table = document.getElementById("t");
+        var cloneTable = table.cloneNode(true);
+
+        // Remove Action column only
+        for (let i = 0; i < cloneTable.rows.length; i++) {
+
+            let lastIndex = cloneTable.rows[i].cells.length - 1;
+
+            cloneTable.rows[i].deleteCell(lastIndex);
+
+            // Show all rows while exporting
+            cloneTable.rows[i].style.display = "";
+        }
+
+        // Excel format HTML
+        var html = `
+        <html xmlns:o="urn:schemas-microsoft-com:office:office"
+              xmlns:x="urn:schemas-microsoft-com:office:excel"
+              xmlns="http://www.w3.org/TR/REC-html40">
+
+        <head>
+            <meta charset="UTF-8">
+        </head>
+
+        <body>
+            ${cloneTable.outerHTML}
+        </body>
+        </html>`;
+
+        // Create Blob
+        var blob = new Blob([html], {
+            type: "application/vnd.ms-excel"
+        });
+
+        // Download file
+        var link = document.createElement("a");
+
+        link.href = URL.createObjectURL(blob);
+
+        link.download = "ItemList.xls";
+
+        document.body.appendChild(link);
+
+        link.click();
+
+        document.body.removeChild(link);
+    }
+
+    function printWindow() {
+        window.print();
+    }
+
+
+    $(document).ready(function () {
+        $(".BTNCreate").click(function () {
+
+            console.log("In create button function")
+
+            $.get('@Url.Action("AddNewItem", "Master")', function (data) {
+
+                $("#myModal").html(data);
+                $("#myModal").modal("show");
+
+                // Reinitialize after load
+                setTimeout(function () {
+                    t = document.getElementById("t");
+                    r = [...t.rows].slice(1);
+                    c = 1;
+                    show();
+                }, 200);
+            });
+        });
+
+        $(document).on("click", ".BtnEdit", function () {
+            var id = $(this).data("id");
+            console.log("ID of item = " + id);
+
+            $.get('@Url.Action("EditItemDetails", "Master")', { id: id }, function (data) {
+
+                $("#myModal").html(data);
+                $("#myModal").modal("show");
+            });
+
+            console.log("Edit() function complete");
+        });
+    });
+
+    // Pagination script
+    let t = document.getElementById("t");
+    let r = [...t.rows].slice(1);
+    let n = 8;
+    let c = 1;
+    let p;
+    let pg = document.getElementById("pg");
+    function show() {
+        p = Math.ceil(r.length / n);
+        r.forEach((e, i) =>
+            e.style.display = (i >= (c - 1) * n && i < c * n) ? "" : "none"
+        );
+        pg.innerHTML = "";
+        pg.innerHTML += `<button class="btn btn-secondary"
+            onclick="if(c>1){c--;show()}">Prev</button> `;
+
+        let start = Math.max(1, c - 2);
+        let end = Math.min(p, c + 2);
+
+        if (start > 1) {
+            pg.innerHTML += `<button class="btn btn-primary"
+                onclick="c=1;show()">1</button> `;
+            if (start > 2) pg.innerHTML += `... `;
+        }
+
+        for (let i = start; i <= end; i++) {
+            pg.innerHTML += `<button class="btn btn-primary ${i === c ? 'btn-dark' : ''}"
+                onclick="c=${i};show()">${i}</button> `;
+        }
+
+        if (end < p) {
+            if (end < p - 1) pg.innerHTML += `... `;
+            pg.innerHTML += `<button class="btn btn-primary"
+                onclick="c=${p};show()">${p}</button> `;
+        }
+        pg.innerHTML += `<button class="btn btn-secondary"
+            onclick="if(c<p){c++;show()}">Next</button> `;
+    }
+
+    show();
+</script>
+
+
+
+
+
+
+<style>
+    #t {
+        min-width: 100%;
+        table-layout: auto;
+        white-space: nowrap;
+    }
+</style>

@@ -1,0 +1,454 @@
+﻿@model StandardMetals.MODEL.SupplierMasterMVCApril2026Model
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit Supplier</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <style>
+        .row {
+            padding: 10px;
+        }
+
+        .section-box {
+            padding-top: 5px;
+        }
+
+        .modal-body {
+            padding-top: 5px;
+        }
+
+        .form-title {
+            margin-left: 8px;
+            font-size: 24px;
+        }
+
+        .text-danger {
+            color: red !important;
+            display: block;
+            margin-top: 4px;
+        }
+
+        .select2-container {
+            width: 100% !important;
+        }
+
+            .select2-container .select2-selection--single {
+                height: 34px !important;
+                border: 1px solid #ccc !important;
+                border-radius: 0 !important;
+            }
+
+                .select2-container .select2-selection--single .select2-selection__rendered {
+                    line-height: 32px !important;
+                    padding-left: 12px !important;
+                }
+
+                .select2-container .select2-selection--single .select2-selection__arrow {
+                    height: 32px !important;
+                }
+
+        .select2-dropdown, .select2-container--open {
+            z-index: 999999 !important;
+        }
+
+        .select2-results__options {
+            max-height: 220px !important;
+            overflow-y: auto !important;
+        }
+
+        .select2-search--dropdown {
+            display: block !important;
+            visibility: visible !important;
+            padding: 6px !important;
+        }
+
+            .select2-search--dropdown .select2-search__field {
+                display: block !important;
+                visibility: visible !important;
+                width: 100% !important;
+                height: 32px !important;
+                padding: 5px 8px !important;
+                border: 1px solid #ccc !important;
+                outline: none !important;
+                box-sizing: border-box !important;
+            }
+
+        .select2-container.input-validation-error .select2-selection--single {
+            border: 1px solid red !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal-dialog modal-lg custom-modal-sm">
+        <div class="modal-content">
+            <div class="modal-header custom-header" style="display:flex;">
+                <h2>Edit Supplier</h2>
+                <button type="button" class="close" data-dismiss="modal" style="margin-left:auto;">&times;</button>
+            </div>
+            <div class="modal-body" style="padding-bottom:0px">
+                <div class="box box-info">
+                    <div class="box-body">
+                        <div class="formcolor section-box">
+                            @using (Html.BeginForm("UpdateSupplierApril2026", "Master", FormMethod.Post, new { id = "UpdateSupplierId" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.HiddenFor(model => model.Id, new { id = "SupplierId" })
+                                <div class="form-horizontal">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                                    <div class="row">
+                                        <div class="col-md-2">@Html.LabelFor(model => model.SuppCode, "Supplier Code", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.SuppCode, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                            @Html.ValidationMessageFor(model => model.SuppCode, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-2">@Html.LabelFor(model => model.SuppName, "Supplier Name", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.SuppName, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.SuppName, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">@Html.LabelFor(model => model.IsRawMaterial, "Raw Material", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            <div style="padding-top:7px;">
+                                                @Html.CheckBoxFor(model => model.IsRawMaterial, new { id = "IsRawMaterial" })
+                                                <span style="margin-left:5px;">Is Raw Material Supplier</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">@Html.LabelFor(model => model.ContactPerson, "Contact Person", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.ContactPerson, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.ContactPerson, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">@Html.LabelFor(model => model.BranchId, "Branch", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(model => model.BranchId, (IEnumerable<SelectListItem>)ViewBag.BranchList, "--Select Branch--", new { @class = "form-control", id = "EditBranchId" })
+                                            @Html.ValidationMessageFor(model => model.BranchId, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-2">@Html.LabelFor(model => model.Address1, "Address 1", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Address1, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Address1, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">@Html.LabelFor(model => model.Address2, "Address 2", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Address2, new { htmlAttributes = new { @class = "form-control" } })
+                                        </div>
+                                        <div class="col-md-2">@Html.LabelFor(model => model.CountryId, "Country", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(model => model.CountryId, (IEnumerable<SelectListItem>)ViewBag.CountryList, "--Select Country--", new { @class = "form-control", id = "EditCountryId" })
+                                            @Html.ValidationMessageFor(model => model.CountryId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">@Html.LabelFor(model => model.StateId, "State", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(model => model.StateId, (IEnumerable<SelectListItem>)ViewBag.StateList, "--Select State--", new { @class = "form-control", id = "EditStateId" })
+                                            @Html.ValidationMessageFor(model => model.StateId, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-2">@Html.LabelFor(model => model.CityId, "City", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(model => model.CityId, (IEnumerable<SelectListItem>)ViewBag.CityList, "--Select City--", new { @class = "form-control", id = "EditCityId" })
+                                            @Html.ValidationMessageFor(model => model.CityId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">@Html.LabelFor(model => model.PinCode, "Pin Code", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.PinCode, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.PinCode, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-2">@Html.LabelFor(model => model.EmailID, "Email ID", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.EmailID, new { htmlAttributes = new { @class = "form-control" } })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">@Html.LabelFor(model => model.Telephone, "Telephone", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Telephone, new { htmlAttributes = new { @class = "form-control" } })
+                                        </div>
+                                        <div class="col-md-2">@Html.LabelFor(model => model.Mobile, "Mobile", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Mobile, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Mobile, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">@Html.LabelFor(model => model.Fax, "Fax", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Fax, new { htmlAttributes = new { @class = "form-control" } })
+                                        </div>
+                                        <div class="col-md-2">@Html.LabelFor(model => model.Website, "Website", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Website, new { htmlAttributes = new { @class = "form-control" } })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">@Html.LabelFor(model => model.GSTIN, "GSTIN", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.GSTIN, new { htmlAttributes = new { @class = "form-control" } })
+                                        </div>
+                                        <div class="col-md-2">@Html.LabelFor(model => model.Remarks, "Remarks", new { @class = "control-label" })</div>
+                                        <div class="col-md-4">
+                                            @Html.TextAreaFor(model => model.Remarks, new { @class = "form-control", rows = "3" })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <input type="submit" id="btnUpdateSupplier" value="Update" class="btn btn-success" />
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var form = $("#UpdateSupplierId");
+            var isUpdating = false;
+            var existingBranchId = '@(Model.BranchId.HasValue ? Model.BranchId.Value.ToString() : "")';
+            var existingCountryId = '@(Model.CountryId.HasValue ? Model.CountryId.Value.ToString() : "")';
+            var existingStateId = '@(Model.StateId.HasValue ? Model.StateId.Value.ToString() : "")';
+            var existingCityId = '@(Model.CityId.HasValue ? Model.CityId.Value.ToString() : "")';
+
+            if ($.validator && $.validator.unobtrusive) {
+                $.validator.unobtrusive.parse(form);
+            }
+
+            function configureValidation() {
+                var validator = form.data("validator");
+                if (validator) {
+                    validator.settings.ignore = ":hidden:not(.select2-hidden-accessible)";
+                }
+            }
+
+            configureValidation();
+
+            var modalParent = $(".modal:visible").last();
+
+            if (!modalParent.length) {
+                modalParent = $(".modal-dialog").closest(".modal");
+            }
+
+            if (!modalParent.length) {
+                modalParent = $(document.body);
+            }
+
+            $("#EditBranchId").select2({ placeholder: "Select Branch", allowClear: true, width: "100%", minimumResultsForSearch: 0, dropdownParent: modalParent });
+            $("#EditCountryId").select2({ placeholder: "Select Country", allowClear: true, width: "100%", minimumResultsForSearch: 0, dropdownParent: modalParent });
+            $("#EditStateId").select2({ placeholder: "Select State", allowClear: true, width: "100%", minimumResultsForSearch: 0, dropdownParent: modalParent });
+            $("#EditCityId").select2({ placeholder: "Select City", allowClear: true, width: "100%", minimumResultsForSearch: 0, dropdownParent: modalParent });
+
+            $("#EditStateId").prop("disabled", true).trigger("change.select2");
+            $("#EditCityId").prop("disabled", true).trigger("change.select2");
+
+            if (existingBranchId) {
+                $("#EditBranchId").val(existingBranchId).trigger("change.select2");
+            }
+
+            function loadStates(countryId, selectedStateId, callback) {
+                var stateDropdown = $("#EditStateId");
+                var cityDropdown = $("#EditCityId");
+
+                stateDropdown.empty().append($("<option></option>").val("").text("--Select State--")).val("").trigger("change.select2");
+                cityDropdown.empty().append($("<option></option>").val("").text("--Select City--")).val("").trigger("change.select2");
+                cityDropdown.prop("disabled", true).trigger("change.select2");
+
+                if (!countryId || countryId === "0") {
+                    stateDropdown.prop("disabled", true).trigger("change.select2");
+                    if (callback) callback(false);
+                    return;
+                }
+
+                $.ajax({
+                    url: '@Url.Action("GetStates", "Master")',
+                    type: "GET",
+                    data: { countryId: countryId },
+                    dataType: "json",
+                    success: function (result) {
+                        $.each(result, function (index, item) {
+                            stateDropdown.append($("<option></option>").val(item.Value).text(item.Text));
+                        });
+
+                        stateDropdown.prop("disabled", false).trigger("change.select2");
+
+                        var stateExists = selectedStateId && stateDropdown.find("option[value='" + selectedStateId + "']").length > 0;
+
+                        if (stateExists) {
+                            stateDropdown.val(String(selectedStateId)).trigger("change.select2");
+                        }
+
+                        if (callback) callback(stateExists);
+                    },
+                    error: function () {
+                        stateDropdown.prop("disabled", true).trigger("change.select2");
+                        alert("Error while loading State.");
+                        if (callback) callback(false);
+                    }
+                });
+            }
+
+            function loadCities(stateId, selectedCityId, callback) {
+                var cityDropdown = $("#EditCityId");
+
+                cityDropdown.empty().append($("<option></option>").val("").text("--Select City--")).val("").trigger("change.select2");
+
+                if (!stateId || stateId === "0") {
+                    cityDropdown.prop("disabled", true).trigger("change.select2");
+                    if (callback) callback(false);
+                    return;
+                }
+
+                $.ajax({
+                    url: '@Url.Action("GetCities", "Master")',
+                    type: "GET",
+                    data: { stateId: stateId },
+                    dataType: "json",
+                    success: function (result) {
+                        $.each(result, function (index, item) {
+                            cityDropdown.append($("<option></option>").val(item.Value).text(item.Text));
+                        });
+
+                        cityDropdown.prop("disabled", false).trigger("change.select2");
+
+                        var cityExists = selectedCityId && cityDropdown.find("option[value='" + selectedCityId + "']").length > 0;
+
+                        if (cityExists) {
+                            cityDropdown.val(String(selectedCityId)).trigger("change.select2");
+                        }
+
+                        if (callback) callback(cityExists);
+                    },
+                    error: function () {
+                        cityDropdown.prop("disabled", true).trigger("change.select2");
+                        alert("Error while loading City.");
+                        if (callback) callback(false);
+                    }
+                });
+            }
+
+            $(document).off("change.editSupplier", "#EditCountryId").on("change.editSupplier", "#EditCountryId", function () {
+                var countryId = $(this).val();
+                loadStates(countryId, null, null);
+                $(this).valid();
+            });
+
+            $(document).off("change.editSupplier", "#EditStateId").on("change.editSupplier", "#EditStateId", function () {
+                var stateId = $(this).val();
+                loadCities(stateId, null, null);
+                $(this).valid();
+            });
+
+            $("#EditBranchId, #EditCountryId, #EditStateId, #EditCityId").on("change", function () {
+                $(this).valid();
+            });
+
+            if (existingCountryId) {
+                $("#EditCountryId").val(existingCountryId).trigger("change.select2");
+
+                loadStates(existingCountryId, existingStateId, function (stateExists) {
+                    if (stateExists && existingStateId) {
+                        loadCities(existingStateId, existingCityId, null);
+                    }
+                });
+            }
+
+            $(document).off("submit.editSupplier", "#UpdateSupplierId").on("submit.editSupplier", "#UpdateSupplierId", function (e) {
+                e.preventDefault();
+
+                if (isUpdating) {
+                    return;
+                }
+
+                form = $(this);
+
+                if ($.validator && $.validator.unobtrusive) {
+                    $.validator.unobtrusive.parse(form);
+                }
+
+                configureValidation();
+
+                if (!form.valid()) {
+                    return;
+                }
+
+                if (!$("#EditBranchId").val()) {
+                    $("#EditBranchId").valid();
+                    return;
+                }
+
+                if (!$("#EditCountryId").val()) {
+                    $("#EditCountryId").valid();
+                    return;
+                }
+
+                if (!$("#EditStateId").val()) {
+                    $("#EditStateId").valid();
+                    return;
+                }
+
+                if (!$("#EditCityId").val()) {
+                    $("#EditCityId").valid();
+                    return;
+                }
+
+                isUpdating = true;
+
+                $("#btnUpdateSupplier").prop("disabled", true).val("Updating...");
+
+                $.ajax({
+                    url: form.attr("action"),
+                    type: "POST",
+                    data: form.serialize(),
+                    success: function (result) {
+                        if (result && result.Status === true) {
+                            alert(result.Message || "Supplier Updated Successfully.");
+                            location.reload();
+                            return;
+                        }
+
+                        isUpdating = false;
+                        $("#btnUpdateSupplier").prop("disabled", false).val("Update");
+
+                        if (typeof result === "string") {
+                            $("#SupplierModal").html(result);
+                            return;
+                        }
+
+                        alert(result && result.Message ? result.Message : "Unable to update Supplier.");
+                    },
+                    error: function (xhr, status, error) {
+                        isUpdating = false;
+                        $("#btnUpdateSupplier").prop("disabled", false).val("Update");
+                        alert("Error while updating Supplier.\n\n" + error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

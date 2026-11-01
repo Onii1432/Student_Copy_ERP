@@ -1,0 +1,342 @@
+﻿@using System.Collections;
+@using System.Collections.Generic;
+@using System.Data;
+@using System.Configuration;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM | Home</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+
+        var API_URL = '@ConfigurationManager.AppSettings["APIURL"]';
+        var Token = '@Session["Token"]';
+        var BranchName = '@Session["Branch"]'
+    </script>
+
+
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    @*<form runat="server" id="mainForm">*@
+
+        <div class="wrapper">
+
+            <!-- Main Header -->
+            <header runat="server" class="main-header">
+                <div id="Div1" runat="server">
+
+                </div>
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>SM</b></span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><b>Standard Metals</b></span>
+                </a>
+
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                    <!-- Navbar Right Menu -->
+                    <div class="navbar-custom-menu" style="background-color:transparent">
+                        <ul class="nav navbar-nav">
+
+                            <!-- User Account Menu -->
+                            <li class="dropdown user user-menu">
+                                <!-- Menu Toggle Button -->
+
+
+                                <strong>
+                                    Language:
+                                    <asp:DropDownList ID="ddlLanguages" runat="server" AutoPostBack="true">
+                                        <asp:ListItem Text="English" Value="en-US" />
+                                        <asp:ListItem Text="French" Value="fr" />
+                                        <asp:ListItem Text="Marathi" Value="mr-IN" />
+                                        <asp:ListItem Text="Hindi" Value="hi-IN" />
+                                    </asp:DropDownList>
+                                </strong>
+
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <!-- The user image in the navbar-->
+                                    <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                    <strong><span class="hidden-xs"> User Name:  @Session["Username"] </span></strong>
+
+                                    <strong><span class="hidden-xs" style="padding-left:5px">Branch Name: @Session["Branch"] </span></strong>
+                                    <br />
+
+                                    <strong> <span class="hidden-xs"> LogIn Date: @DateTime.Now </span></strong>
+
+                                </a>
+                                @Html.ActionLink("Sign Out", "SignOut", "Account")
+                                <!--<ul class="dropdown-menu">-->
+                                <!-- The user image in the menu -->
+                                <!-- Menu Body -->
+                                <!-- Menu Footer-->
+                                <!--<li class="user-footer">
+
+                                        <div class="pull-right">
+
+                                            sign out button -asp ctrl
+                                        </div>
+                                    </li>
+                                </ul>-->
+                            </li>
+                            <!-- Control Sidebar Toggle Button -->
+
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar">
+
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+
+                    <!-- Sidebar Menu -->
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li class="header">Main Navigation</li>
+                        <!-- Optionally, you can add icons to the links -->
+                        <li>
+                            @*<a href="../Masters/Default.aspx">
+                                     <span>Dashboard</span>
+                                        <i class="fa fa-dashboard text-green"></i>
+                                </a>*@
+                            @Html.ActionLink("DashBoard", "DefaultDashboard", "Master", null, new { @class = "fa fa-dashboard text-yellow font-weight-bold" })
+
+                        </li>
+
+
+                        @*below code is for bindin master and sub master menu*@
+                        @{
+                            List<StandardMetals.MODEL.LoginDetailsModel> menuDt = (List<StandardMetals.MODEL.LoginDetailsModel>)Session["MenuSubMenu"];
+                            var masterMenu = menuDt.Select(m => new { m.MenuName, m.MasterMenuId }).Distinct();
+
+                        }
+
+                        @foreach (var data in masterMenu)
+                        {
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="fa fa-circle-o text-aqua"></i><span> @data.MenuName </span>
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                @{
+                                    var submenu = menuDt.Select(m => new { m.SubMenuName, m.MasterMenuId, m.SubMasterMenuId, m.MenuLink }).Distinct().Where(m => m.MasterMenuId == data.MasterMenuId);
+
+                                }
+                                <ul class="treeview-menu">
+                                    @foreach (var subdata in submenu)
+                                    {
+                                        <li>
+                                            <a href="@subdata.MenuLink">
+                                                <i class="fa fa-circle-o"></i>
+                                                @Convert.ToString(subdata.SubMenuName)
+
+                                            </a>
+                                        </li>
+                                    }
+                                </ul>
+
+                            </li>
+
+                        }
+
+
+                    </ul>
+                    @*Aboove code is for bindin master and sub master menu*@
+
+
+
+                    <!--<li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-circle-o text-aqua"></i> <span>Master</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">-->
+                    @*<li><a href="../Masters/ItemMaster.aspx"><i class="fa fa-circle-o"></i>Item Master</a></li>*@
+                    <!--
+                            <li><a href="../Masters/CompanyMaster.aspx"><i class="fa fa-circle-o"></i>Company Master</a></li>
+                            <li><a href="../Masters/MachineMaster.aspx"><i class="fa fa-circle-o"></i>Machine Master</a></li>
+                            <li><a href="../Masters/CustomerMaster.aspx"><i class="fa fa-circle-o"></i>Customer Master</a></li>
+                            <li><a href="../Masters/SupplierMaster.aspx"><i class="fa fa-circle-o"></i>Supplier Master</a></li>
+                            <li><a href="../Masters/MachineVsCheckPointMaster.aspx"><i class="fa fa-circle-o"></i>Machine Vs CheckPoint Master</a></li>
+                            <li><a href="../Masters/EmployeeMaster.aspx"><i class="fa fa-circle-o"></i>Employee Master</a></li>
+                            <li><a href="../Masters/UploadExcelSheet.aspx"><i class="fa fa-circle-o"></i>Upload ExcelSheet</a></li>
+                            <li><a href="../Masters/UploadMaster.aspx"><i class="fa fa-circle-o"></i>Upload Master</a></li>
+                            <li><a href="../Masters/IndentMaster.aspx"><i class="fa fa-circle-o"></i>Indent Master</a></li>
+                            <li><a href="../Masters/JsMaster/ItemMaster_JS.aspx"><i class="fa fa-circle-o"></i>Item Master(JQuery)</a></li>
+                            <li><a href="../Masters/DemoReportForm.aspx"><i class="fa fa-circle-o"></i>Demo Report</a></li>
+                            <li><a href="../Masters/ItemMaster19Sept.aspx"><i class="fa fa-circle-o"></i>ItemMaster19Sept</a></li>
+                            <li><a href="../Masters/ItemMaster16Feb.aspx"><i class="fa fa-circle-o"></i>ItemMaster16Feb</a></li>
+                            <li><a href="../Masters/ItemMaster_27March.aspx"><i class="fa fa-circle-o"></i>ItemMaster27March</a></li>
+                            <li><a href="../Masters/ItemMaster_2April.aspx"><i class="fa fa-circle-o"></i>ItemMaster 2 April</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-circle-o text-aqua"></i> <span>Purchase</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="../Purchase/IndentMaster.aspx"><i class="fa fa-circle-o"></i>Indent Master</a></li>
+                            <li><a href="../Purchase/SupplierPO.aspx"><i class="fa fa-circle-o"></i>Supplier PO</a></li>
+                            <li><a href="../Purchase/TestForm.aspx"><i class="fa fa-circle-o"></i>Test Form</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-map-marker text-aqua"></i> <span>Quotation</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="../Quote.aspx"><i class="fa fa-circle-o"></i>Quotation</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-bank text-aqua"></i> <span>Invoice</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="../TaxInvoice.aspx"><i class="fa fa-circle-o"></i>Tax Invoice</a></li>
+                            <li><a href="../Estimate.aspx"><i class="fa fa-circle-o"></i>Estimate</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-bar-chart text-aqua"></i> <span>Inventory</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="../MaterialInward.aspx"><i class="fa fa-circle-o"></i>Material Inward</a></li>
+                            <li><a href="../ProductionNote.aspx"><i class="fa fa-circle-o"></i>Production Note</a></li>
+                            <li><a href="../StockTransfer.aspx"><i class="fa fa-circle-o"></i>Stock Transfer</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-laptop text-aqua"></i> <span>Report</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="../IOReportsForm.aspx"><i class="fa fa-circle-o"></i>IO Report</a></li>
+
+                        </ul>
+                    </li>-->
+                    <!-- /.sidebar-menu -->
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1></h1>
+                </section>
+
+                <!-- Main content -->
+                <section class="content container-fluid">
+                    @RenderBody()
+
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+            <!-- Main Footer -->
+            <footer class="main-footer">
+                <!-- To the right -->
+                <div class="pull-right hidden-xs">
+                    Developed by NextGen SoftTech, Pune
+                </div>
+                <!-- Default to the left -->
+                <strong>Copyright &copy; 2017 <a href="http://books.standardmetalspune.com" target="_blank">Standard Metals</a>.</strong> All rights reserved.
+            </footer>
+
+
+            <!-- Add the sidebar's background. This div must be placed
+            immediately after the control sidebar -->
+
+        </div>
+        <!-- ./wrapper -->
+        <!-- REQUIRED JS SCRIPTS -->
+        <!-- jQuery 3 -->
+        @*<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+            <!-- Bootstrap 3.3.7 -->
+            <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+            <!-- AdminLTE App -->
+            <script src="dist/js/adminlte.min.js" type="text/javascript"></script>
+
+            <script src="../bower_components/datatables.net/js/jquery.dataTables.min.js" type="text/javascript"></script>
+            <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+
+            <!-- Optionally, you can add Slimscroll and FastClick plugins.
+                 Both of these plugins are recommended to enhance the
+                 user experience. -->
+            <script src="bower_components/select2/dist/js/select2.full.min.js" type="text/javascript"></script>*@
+
+        @*<script type="text/javascript">
+                $(function () {
+                    //Initialize Select2 Elements
+                    $('.select2').select2()
+                })
+            </script>*@
+
+    @*</form>*@
+
+
+
+
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+
+    @Scripts.Render("~/bower_componentsJS")
+    @Scripts.Render("~/bower_components")
+    @Scripts.Render("~/bo")
+
+    @Styles.Render("~/bower_componentsDistCSS")
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" type="text/css" />
+
+    @RenderSection("HeadScripts", required: false)
+</body>
+</html>
+
+
+

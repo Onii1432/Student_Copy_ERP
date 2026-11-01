@@ -1,0 +1,159 @@
+﻿@model StandardMetals.MODEL.SubMenuModel
+@{
+    ViewBag.Title = "SubMenuMaster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section HeadScripts{
+<script src="~/JS/Admin/SubMenuMaster.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //alert('its working');
+        });
+
+        //var BName = '@ViewBag.BranchName';
+
+    </script>
+}
+
+@using (Html.BeginForm())
+{
+    <div class="col-lg-12 col-md-12">
+        <section id="CustomerInfo">
+            <div class="col-lg-12 col-md-12">
+                <div class="box box-info">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">SubMenu Details</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div><!--box-tool -->
+                    </div><!--box-header -->
+
+                    <div class="box-body">
+                        <table class="table-condensed table-hover table-responsive" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th width="20%">Menu Name</th>
+                                    <td width="30%">
+                                        @*<asp:DropDownList ID="drpMenuName" runat="server"
+                 CssClass="form-control select2" AutoPostBack="True">
+                </asp:DropDownList>*@
+                                        @Html.DropDownListFor(m => m.MasterMenuId, Enumerable.Empty<SelectListItem>(), "--Select--", new { @class = "form-control" })
+                                    </td>
+
+
+                                    <th style="width: 15%">SubMenu Name </th>
+                                    <th style="width: 35%">
+                                        @*<asp:TextBox ID="txtSubMenuName" runat="server" CssClass="form-control input-sm"></asp:TextBox>*@
+                                        @Html.EditorFor(m => m.SubMenuName, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                    </th>
+
+                                </tr>
+                                <tr>
+
+                                    <th width="25%">Controller</th>
+                                    <td width="35%">
+                                        @*<asp:TextBox ID="txtSubMenuLink" runat="server" CssClass="form-control input-sm"></asp:TextBox>*@
+                                        @Html.EditorFor(m => m.SubMenuLink, new { htmlAttributes = new { @class = "form-control input-sm" } })
+
+                                    </td>
+                                    <th width="25%">Action</th>
+                                    <td width="35%">
+                                        @Html.EditorFor(m => m.Action, new { htmlAttributes = new { @class = "form-control input-sm" } })
+
+                                        @*<asp:CheckBox ID="chkSubMenuIsActive" Checked="true" runat="server" Text="" />*@
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <th width="25%"></th>
+                                    <td width="35%">
+                                        
+
+                                    </td>
+                                    <th width="25%">IsActive</th>
+                                    <td width="35%">
+                                        @Html.CheckBoxFor(m => m.IsActive, new { htmlAttributes = new { @class = "form-control" } })
+                                        @*<asp:CheckBox ID="chkSubMenuIsActive" Checked="true" runat="server" Text="" />*@
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div><!--box-body-->
+                </div> <!--box info-->
+
+                <div class="box box-info hide">
+                    <div class="box-header with-border">
+                        <h3 class="box-title"> - </h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div><!--box-tool -->
+                    </div><!--box-header -->
+                    <div class="box-body">
+                        <table class="table-condensed table-hover table-responsive" width="100%">
+                            <tr>
+                                <td width="25">
+                                    <asp:RadioButton ID="rdbItem" runat="server" GroupName="Searchemp" AutoPostBack="True" Text="&nbsp;&nbsp;Item"></asp:RadioButton>
+                                </td>
+                                <td width="25">
+                                    <asp:RadioButton ID="rdbMeasuringInstrument" runat="server" GroupName="Searchemp" AutoPostBack="True" Text="&nbsp;&nbsp;Measuring Instrument"></asp:RadioButton>
+                                </td>
+                                <td width="25">
+                                    <asp:RadioButton ID="rdbMachine" runat="server" GroupName="Searchemp" AutoPostBack="True" Text="&nbsp;&nbsp;Machine"></asp:RadioButton>
+                                </td>
+                                <td width="25">
+                                    <asp:RadioButton ID="rdbToolMode" runat="server" GroupName="Searchemp" AutoPostBack="True" Text="&nbsp;&nbsp;Tool/Mode"></asp:RadioButton>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div><!--box-body-->
+                </div> <!--box info-->
+                <!--box info-->
+
+                <div class="row">
+
+                </div>
+
+
+
+                <div class="box box-info">
+                    <!--box-header -->
+                    <!--box-body----%>
+                </div> <!--box info-->
+
+                    <div class="box-body">
+
+                        <div class="row">
+                            <center>
+                                <input type="submit" id="btnNew" value="New Item" class="btn btn-info" />
+                                @*<asp:Button ID="btnNew" runat="server" Text="New" CssClass="btn btn-success" onclick="btnNew_Click"></asp:Button>*@
+                                <input type="submit" id="btnSave" value="Save" class="btn btn-success" />
+                                @*<asp:Button ID="btnSave" runat="server" Text="Save" CssClass="btn btn-primary" onclick="btnSave_Click"></asp:Button>*@
+                                <input type="submit" id="btnCancel" value="Cancel" class="btn btn-danger" />
+                                @*<asp:Button ID="btnCancel" runat="server" Text="Cancel"
+                                CssClass="btn btn-danger" onclick="btnCancel_Click"></asp:Button>*@
+
+
+
+                            </center>
+                        </div>
+                    </div><!--box-body-->
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+}
+
+

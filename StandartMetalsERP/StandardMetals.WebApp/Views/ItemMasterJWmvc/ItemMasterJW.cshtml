@@ -1,0 +1,738 @@
+﻿@model StandardMetals.MODEL.ItemMaster_Modal_AprBtch
+
+@{
+    ViewBag.Title = "ItemMasterJW";
+}
+
+<div class="row">
+
+    <!-- SEARCH SECTION -->
+    <div class="col-md-12">
+        <div class="box box-info">
+
+            <div class="box-header with-border">
+                <h3 class="box-title">Item Search</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="box-body">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Item Code</label>
+                            <select id="ddlSearchItemCode" class="form-control">
+                                <option value="">Select Item Code</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Item Name</label>
+                            <select id="ddlSearchItemName" class="form-control">
+                                <option value="">Select Item Name</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>&nbsp;</label><br />
+                            <button type="button" id="btnSearchItem" class="btn btn-primary">
+                                <i class="fa fa-search"></i> Search
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ITEM INFORMATION -->
+    <div class="col-md-12">
+        <div class="box box-info">
+
+            <div class="box-header with-border">
+                <h3 class="box-title">Item Information</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="box-body">
+
+                @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "frmItemMasterJW" }))
+                {
+                    @Html.HiddenFor(m => m.Id, new { id = "txtItemId" })
+
+                    <!-- ROW 1 -->
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Item Code</label>
+                                @Html.TextBoxFor(m => m.ItemCode, new { id = "txtItemCode", @class = "form-control", @readonly = "readonly" })
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Item Name</label>
+                                @Html.TextBoxFor(m => m.ItemName, new { id = "txtItemName", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.ItemName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ROW 2 -->
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Manufacturer</label>
+                                @Html.DropDownListFor(m => m.ManufactureId, new List<SelectListItem>(), "Select Manufacturer", new { id = "ddlManufacturer", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.ManufactureId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Material</label>
+                                @Html.TextBoxFor(m => m.Material, new { id = "txtMaterial", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Material, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ROW 3 -->
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Item Category</label>
+                                @Html.DropDownListFor(m => m.CategoryId, new List<SelectListItem>(), "Select Item Category", new { id = "ddlCategory", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.CategoryId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Subcategory</label>
+                                @Html.DropDownListFor(m => m.SubCategoryId, new List<SelectListItem>(), "Select Category First", new { id = "ddlSubCategory", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.SubCategoryId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ROW 4 -->
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Color</label>
+                                @Html.DropDownListFor(m => m.ColourId, new List<SelectListItem>(), "Select Color", new { id = "ddlColor", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.ColourId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>UOM</label>
+                                @Html.DropDownListFor(m => m.UnitId, new List<SelectListItem>(), "Select UOM", new { id = "ddlUOM", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.UnitId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ROW 5 -->
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>HSN Code</label>
+                                @Html.TextBoxFor(m => m.HSNCODE, new { id = "txtHSNCode", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.HSNCODE, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Purchase Cost</label>
+                                @Html.TextBoxFor(m => m.PurchaseCost, new { id = "txtPurchaseCost", @class = "form-control", type = "number", step = "0.01" })
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ROW 6 -->
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>GST Rate</label>
+                                @Html.TextBoxFor(m => m.GSTRate, new { id = "txtGSTRate", @class = "form-control", type = "number", step = "0.01" })
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Selling Price</label>
+                                @Html.TextBoxFor(m => m.SellingPrice, new { id = "txtSellingPrice", @class = "form-control", type = "number", step = "0.01" })
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+
+                            <button type="button" id="btnSaveItem" class="btn btn-success">
+                                <i class="fa fa-save"></i> Save
+                            </button>
+
+                            <button type="button" id="btnUpdateItem" class="btn btn-warning">
+                                <i class="fa fa-edit"></i> Update
+                            </button>
+
+                            <button type="button" id="btnClearItem" class="btn btn-default">
+                                <i class="fa fa-refresh"></i> Clear
+                            </button>
+
+                        </div>
+                    </div>
+
+                }
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- SELECT2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
+@section HeadScripts {
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            var apiUrl = "http://localhost:62335/ItemMasterJWApi";
+
+
+            // SELECT2
+
+            $("#ddlSearchItemCode, #ddlSearchItemName, #ddlManufacturer, #ddlCategory, #ddlSubCategory, #ddlColor, #ddlUOM").select2({
+                allowClear: true,
+                width: "100%",
+                minimumResultsForSearch: 0
+            });
+
+
+            // LOAD ITEM CODES
+
+            function LoadItemCodes() {
+
+                $.ajax({
+                    url: apiUrl + "/GetItemCodes",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (result) {
+
+                        $("#ddlSearchItemCode").empty().append('<option value="">Select Item Code</option>');
+
+                        $.each(result, function (index, item) {
+                            $("#ddlSearchItemCode").append($("<option></option>").val(item.Id).text(item.ItemCode));
+                        });
+
+                        $("#ddlSearchItemCode").trigger("change.select2");
+                    },
+                    error: function (xhr) {
+                        console.log(xhr);
+                        alert("Error while loading Item Codes.");
+                    }
+                });
+            }
+
+
+            // LOAD ITEM NAMES
+
+            function LoadItemNames() {
+
+                $.ajax({
+                    url: apiUrl + "/GetItemNames",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (result) {
+
+                        $("#ddlSearchItemName").empty().append('<option value="">Select Item Name</option>');
+
+                        $.each(result, function (index, item) {
+                            $("#ddlSearchItemName").append($("<option></option>").val(item.Id).text(item.ItemName));
+                        });
+
+                        $("#ddlSearchItemName").trigger("change.select2");
+                    },
+                    error: function (xhr) {
+                        console.log(xhr);
+                        alert("Error while loading Item Names.");
+                    }
+                });
+            }
+
+
+            // LOAD MANUFACTURERS
+
+            function LoadManufacturers() {
+
+                $.ajax({
+                    url: apiUrl + "/GetManufacturers",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (result) {
+
+                        $("#ddlManufacturer").empty().append('<option value="">Select Manufacturer</option>');
+
+                        $.each(result, function (index, item) {
+                            $("#ddlManufacturer").append($("<option></option>").val(item.ManufactureId).text(item.ManufactureName));
+                        });
+
+                        $("#ddlManufacturer").trigger("change.select2");
+                    },
+                    error: function (xhr) {
+                        console.log(xhr);
+                        alert("Error while loading Manufacturers.");
+                    }
+                });
+            }
+
+
+            // LOAD CATEGORIES
+
+            function LoadCategories() {
+
+                $.ajax({
+                    url: apiUrl + "/GetCategories",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (result) {
+
+                        $("#ddlCategory").empty().append('<option value="">Select Item Category</option>');
+
+                        $.each(result, function (index, item) {
+                            $("#ddlCategory").append($("<option></option>").val(item.CategoryId).text(item.CategoryName));
+                        });
+
+                        $("#ddlCategory").trigger("change.select2");
+                    },
+                    error: function (xhr) {
+                        console.log(xhr);
+                        alert("Error while loading Categories.");
+                    }
+                });
+            }
+
+
+            // LOAD COLORS
+
+            function LoadColors() {
+
+                $.ajax({
+                    url: apiUrl + "/GetColours",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (result) {
+
+                        $("#ddlColor").empty().append('<option value="">Select Color</option>');
+
+                        $.each(result, function (index, item) {
+                            $("#ddlColor").append($("<option></option>").val(item.ColourId).text(item.ColourName));
+                        });
+
+                        $("#ddlColor").trigger("change.select2");
+                    },
+                    error: function (xhr) {
+                        console.log(xhr);
+                        alert("Error while loading Colors.");
+                    }
+                });
+            }
+
+
+            // LOAD UOM
+
+            function LoadUOM() {
+
+                $.ajax({
+                    url: apiUrl + "/GetUnits",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (result) {
+
+                        $("#ddlUOM").empty().append('<option value="">Select UOM</option>');
+
+                        $.each(result, function (index, item) {
+                            $("#ddlUOM").append($("<option></option>").val(item.UnitId).text(item.UnitName));
+                        });
+
+                        $("#ddlUOM").trigger("change.select2");
+                    },
+                    error: function (xhr) {
+                        console.log(xhr);
+                        alert("Error while loading UOM.");
+                    }
+                });
+            }
+
+
+            // LOAD SUBCATEGORIES
+
+            function LoadSubCategories(categoryId, selectedSubCategoryId) {
+
+                $("#ddlSubCategory").empty().append('<option value="">Select Subcategory</option>');
+                $("#ddlSubCategory").prop("disabled", true).trigger("change.select2");
+
+                if (!categoryId) {
+                    return;
+                }
+
+                $.ajax({
+                    url: apiUrl + "/GetSubCategories/" + categoryId,
+                    type: "GET",
+                    dataType: "json",
+                    success: function (result) {
+
+                        $("#ddlSubCategory").empty().append('<option value="">Select Subcategory</option>');
+
+                        $.each(result, function (index, item) {
+                            $("#ddlSubCategory").append($("<option></option>").val(item.SubCategoryId).text(item.SubCategoryName));
+                        });
+
+                        $("#ddlSubCategory").prop("disabled", false);
+
+                        if (selectedSubCategoryId) {
+                            $("#ddlSubCategory").val(selectedSubCategoryId);
+                        }
+
+                        $("#ddlSubCategory").trigger("change.select2");
+                    },
+                    error: function (xhr) {
+                        console.log(xhr);
+                        alert("Error while loading Subcategories.");
+                    }
+                });
+            }
+
+
+            // ITEM CODE ↔ ITEM NAME
+
+            $("#ddlSearchItemCode").on("change", function () {
+
+                var itemId = $(this).val();
+
+                $("#ddlSearchItemName").val(itemId).trigger("change.select2");
+
+            });
+
+
+            $("#ddlSearchItemName").on("change", function () {
+
+                var itemId = $(this).val();
+
+                $("#ddlSearchItemCode").val(itemId).trigger("change.select2");
+
+            });
+
+
+            // CATEGORY → SUBCATEGORY
+
+            $("#ddlCategory").on("change", function () {
+
+                LoadSubCategories($(this).val(), null);
+
+            });
+
+
+            // SEARCH ITEM
+
+            $("#btnSearchItem").click(function () {
+
+                var itemId = $("#ddlSearchItemCode").val() || $("#ddlSearchItemName").val();
+
+                if (!itemId) {
+                    alert("Please select Item Code or Item Name.");
+                    return;
+                }
+
+                $.ajax({
+                    url: apiUrl + "/GetItemById/" + itemId,
+                    type: "GET",
+                    dataType: "json",
+                    success: function (item) {
+
+                        if (!item) {
+                            alert("Item details not found.");
+                            return;
+                        }
+
+                        $("#txtItemId").val(item.Id);
+                        $("#txtItemCode").val(item.ItemCode);
+                        $("#txtItemName").val(item.ItemName);
+                        $("#txtMaterial").val(item.Material);
+                        $("#txtHSNCode").val(item.HSNCODE);
+                        $("#txtGSTRate").val(item.GSTRate);
+                        $("#txtPurchaseCost").val(item.PurchaseCost);
+                        $("#txtSellingPrice").val(item.SellingPrice);
+
+                        $("#ddlManufacturer").val(item.ManufactureId).trigger("change.select2");
+                        $("#ddlColor").val(item.ColourId).trigger("change.select2");
+                        $("#ddlUOM").val(item.UnitId).trigger("change.select2");
+                        $("#ddlCategory").val(item.CategoryId).trigger("change.select2");
+
+                        LoadSubCategories(item.CategoryId, item.SubCategoryId);
+
+                    },
+                    error: function (xhr) {
+                        console.log(xhr);
+                        alert("Error while getting Item details.");
+                    }
+                });
+
+            });
+
+
+            // SAVE ITEM
+
+            $("#btnSaveItem").click(function () {
+
+                var allRequiredEmpty =
+                    $("#txtItemName").val().trim() == "" &&
+                    $("#txtMaterial").val().trim() == "" &&
+                    $("#txtHSNCode").val().trim() == "" &&
+                    !$("#ddlManufacturer").val() &&
+                    !$("#ddlColour").val() &&
+                    !$("#ddlUOM").val() &&
+                    !$("#ddlCategory").val() &&
+                    !$("#ddlSubCategory").val();
+
+                if (allRequiredEmpty) {
+                    alert("Please fill all required fields.");
+                    return;
+                }
+
+                if (!$("#frmItemMasterJW").valid()) {
+                    return;
+                }
+
+                var purchaseValue = $("#txtPurchaseCost").val().trim();
+                var sellingValue = $("#txtSellingPrice").val().trim();
+
+                if (purchaseValue != "" && sellingValue != "") {
+                    var purchaseCost = parseFloat(purchaseValue);
+                    var sellingPrice = parseFloat(sellingValue);
+
+                    if (purchaseCost >= sellingPrice) {
+                        alert("Purchase Cost must be less than Selling Price.");
+                        return;
+                    }
+                }
+
+                var model = {
+                    ItemName: $("#txtItemName").val(),
+                    ManufactureId: $("#ddlManufacturer").val(),
+                    Material: $("#txtMaterial").val(),
+                    CategoryId: $("#ddlCategory").val(),
+                    SubCategoryId: $("#ddlSubCategory").val(),
+                    ColourId: $("#ddlColor").val(),
+                    UnitId: $("#ddlUOM").val(),
+                    HSNCODE: $("#txtHSNCode").val(),
+                    GSTRate: parseFloat($("#txtGSTRate").val()) || 0,
+                    PurchaseCost: purchaseCost,
+                    SellingPrice: sellingPrice
+                };
+
+                $.ajax({
+                    url: apiUrl + "/CreateItem",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    data: JSON.stringify(model),
+
+                    success: function (result) {
+
+                        if (result == "DUPLICATE_ITEM") {
+                            alert("Item Name already exists.");
+                            return;
+                        }
+
+                        if (!result) {
+                            alert("Item could not be saved.");
+                            return;
+                        }
+
+                        alert("Item saved successfully. Item Code: " + result);
+
+                        $("#btnClearItem").click();
+                        LoadItemCodes();
+                        LoadItemNames();
+
+                    },
+
+                    error: function (xhr) {
+                        console.log(xhr);
+                        alert("Error while saving Item.");
+                    }
+                });
+
+            });
+
+
+
+            // UPDATE ITEM
+
+            $("#btnUpdateItem").click(function () {
+
+                var itemId = $("#txtItemId").val();
+
+                if (!itemId) {
+                    alert("Please search an Item before updating.");
+                    return;
+                }
+
+                if (!$("#frmItemMasterJW").valid()) {
+                    return;
+                }
+
+                var purchaseValue = $("#txtPurchaseCost").val().trim();
+                var sellingValue = $("#txtSellingPrice").val().trim();
+
+                if (purchaseValue != "" && sellingValue != "") {
+                    var purchaseCost = parseFloat(purchaseValue);
+                    var sellingPrice = parseFloat(sellingValue);
+
+                    if (purchaseCost >= sellingPrice) {
+                        alert("Purchase Cost must be less than Selling Price.");
+                        return;
+                    }
+                }
+
+
+                var model = {
+                    ItemName: $("#txtItemName").val(),
+                    ManufactureId: $("#ddlManufacturer").val(),
+                    Material: $("#txtMaterial").val(),
+                    CategoryId: $("#ddlCategory").val(),
+                    SubCategoryId: $("#ddlSubCategory").val(),
+                    ColourId: $("#ddlColor").val(),
+                    UnitId: $("#ddlUOM").val(),
+                    HSNCODE: $("#txtHSNCode").val(),
+                    GSTRate: parseFloat($("#txtGSTRate").val()) || 0,
+                    PurchaseCost: purchaseCost,
+                    SellingPrice: sellingPrice
+                };
+
+                $.ajax({
+                    url: apiUrl + "/UpdateItem/" + itemId,
+                    type: "PUT",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    data: JSON.stringify(model),
+
+                    success: function (result) {
+
+                        if (result == "DUPLICATE_ITEM") {
+                            alert("Item Name already exists.");
+                            return;
+                        }
+
+                        if (!result) {
+                            alert("Item could not be updated.");
+                            return;
+                        }
+
+                        alert("Item updated successfully. Item Code: " + result);
+
+                        $("#btnClearItem").click();
+
+                        LoadItemCodes();
+                        LoadItemNames();
+                    },
+
+                    error: function (xhr) {
+                        console.log(xhr);
+                        alert("Error while updating Item.");
+                    }
+                });
+
+            });
+
+
+
+
+            // CLEAR
+
+            $("#btnClearItem").click(function () {
+
+                $("#frmItemMasterJW")[0].reset();
+
+                $("#ddlSearchItemCode, #ddlSearchItemName, #ddlManufacturer, #ddlColor, #ddlUOM, #ddlCategory")
+                    .val("").trigger("change.select2");
+
+                $("#ddlSubCategory").empty()
+                    .append('<option value="">Select Category First</option>')
+                    .prop("disabled", true)
+                    .trigger("change.select2");
+
+                $("#txtItemCode").val("");
+                $("#txtItemId").val("");
+
+                var validator = $("#frmItemMasterJW").validate();
+                validator.resetForm();
+
+                $("#frmItemMasterJW .input-validation-error").removeClass("input-validation-error");
+
+            });
+
+
+            // INITIAL LOAD
+
+            LoadItemCodes();
+            LoadItemNames();
+            LoadManufacturers();
+            LoadCategories();
+            LoadColors();
+            LoadUOM();
+
+        });
+
+    </script>
+
+}

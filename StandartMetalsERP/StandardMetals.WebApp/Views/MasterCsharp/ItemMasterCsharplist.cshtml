@@ -1,0 +1,252 @@
+﻿@model IEnumerable<StandardMetals.MODEL.ItemMaster_Modal_AprBtch>
+
+@{
+    ViewBag.Title = "ItemMasterCsharplist";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; margin-top:35px;">
+    <div>
+        <button type="button" class="btn btn-primary BTNCreate"><i class="bi bi-plus-lg"></i> Add New Item</button>
+        <button type="button" id="btnExport" class="btn btn-primary" onclick="exportTableToExcel()"><i class="bi bi-download"></i> Export Excel</button>
+        <button type="button" id="btnPrint" class="btn btn-info" onclick="printWindow()"><i class="bi bi-printer"></i> Print Table</button>
+    </div>
+    <div>
+        <label style="margin-right:5px; font-weight:bold;">Search:</label>
+        <input type="text" id="searchBox" class="form-control" style="display:inline-block; width:220px;" placeholder="Search..." />
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog"></div>
+
+<section id="Test">
+    <div>
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Items List</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="box-body">
+                <div style="overflow-x:auto; overflow-y:auto; width:100%; max-height:500px;">
+                    <table class="table table-bordered table-striped table-hover text-center" id="Table">
+                        <thead class="thead-dark" style="background-color:#b3d7e6;">
+                            <tr class="info">
+                                <th>@Html.DisplayNameFor(model => model.ItemCode)</th>
+                                <th>@Html.DisplayNameFor(model => model.ItemName)</th>
+                                <th>@Html.DisplayNameFor(model => model.Material)</th>
+                                <th>@Html.DisplayNameFor(model => model.HSNCODE)</th>
+                                <th>@Html.DisplayNameFor(model => model.GSTRate)</th>
+                                <th>@Html.DisplayNameFor(model => model.PurchaseCost)</th>
+                                <th>@Html.DisplayNameFor(model => model.SellingPrice)</th>
+                                <th>@Html.DisplayNameFor(model => model.CategoryName)</th>
+                                <th>@Html.DisplayNameFor(model => model.SubCategoryName)</th>
+                                <th>@Html.DisplayNameFor(model => model.ManufactureName)</th>
+                                <th>@Html.DisplayNameFor(model => model.ColourName)</th>
+                                <th>@Html.DisplayNameFor(model => model.UnitName)</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="itemBody">
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.ItemCode)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.ItemName)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Material)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.HSNCODE)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.GSTRate)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.PurchaseCost)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.SellingPrice)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.CategoryName)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.SubCategoryName)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.ManufactureName)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.ColourName)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.UnitName)</td>
+                                    <td><button class="btn btn-success BtnEdit" data-id="@item.Id">Edit</button></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="pagination" style="text-align:center; margin-top:10px;"></div>
+
+<style>
+    #Table {
+        min-width: 100%;
+        table-layout: auto;
+        white-space: nowrap;
+    }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#searchBox").on("input", function () {
+            CurrentPage = 1;
+            applyFilterAndPagination();
+        });
+        applyFilterAndPagination();
+    });
+
+    function printWindow() {
+        window.print();
+    }
+
+    function exportTableToExcel() {
+        var Table = document.getElementById("Table");
+        var clone = Table.cloneNode(true);
+        for (var row of clone.rows) {
+            row.deleteCell(row.cells.length - 1);
+            row.style.display = "";
+        }
+        var html = "<html><head>" + "<meta charset='UTF-8'>" + "</head><body>" + clone.outerHTML + "</body></html>";
+        var blob = new Blob([html], { type: "application/vnd.ms-excel" });
+        var link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "ItemList17Dec.xls";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    $(document).ready(function () {
+        $(".BTNCreate").on("click", function () {
+            $.ajax({
+                url: '@Url.Action("AddNewItem17Dec", "MasterCsharp")',
+                type: "GET",
+                cache: false,
+                success: function (response) {
+                    $("#myModal").html(response);
+                    $("#myModal").modal({ backdrop: "static", keyboard: false });
+                    $("#myModal").modal("show");
+                },
+                error: function (errorText) {
+                    alert("Unable to Load Create Form");
+                    console.log(errorText.responseText);
+                }
+            });
+        });
+        ModalCleanUp();
+    });
+
+    $(document).ready(function () {
+        $(".BtnEdit").on("click", function () {
+            var id = $(this).data("id");
+            $.ajax({
+                url: '@Url.Action("EditItem17Dec", "MasterCsharp")',
+                type: "GET",
+                data: { id: id },
+                success: function (response) {
+                    $("#myModal").html(response);
+                    $("#myModal").modal({ backdrop: "static", keyboard: false });
+                    $("#myModal").modal("show");
+                },
+                error: function (errorText) {
+                    alert("Unable to Load Edit Item Form");
+                    console.log(errorText.responseText);
+                }
+            });
+        });
+        ModalCleanUp();
+    });
+
+    function ModalCleanUp() {
+        $("#myModal").on("hidden.bs.modal", function () {
+            $(this).html("");
+        });
+    }
+
+    var PageSize = 8;
+    var CurrentPage = 1;
+    var filteredRows = [];
+
+    function applyFilterAndPagination() {
+        var searchValue = $("#searchBox").val().toLowerCase().trim();
+        var allRows = $("#itemBody tr");
+
+        filteredRows = allRows.filter(function () {
+            var rowText = $(this).text().toLowerCase();
+            return rowText.indexOf(searchValue) !== -1;
+        });
+
+        var totalPages = Math.ceil(filteredRows.length / PageSize);
+
+        if (CurrentPage > totalPages) {
+            CurrentPage = totalPages || 1;
+        }
+
+        allRows.hide();
+
+        var start = (CurrentPage - 1) * PageSize;
+        var end = start + PageSize;
+
+        filteredRows.slice(start, end).show();
+
+        buildPagination(totalPages);
+    }
+
+    function buildPagination(totalPages) {
+        $("#pagination").empty();
+
+        if (totalPages === 0) {
+            return;
+        }
+
+        $("#pagination").append('<button type="button" class="btn btn-secondary prevBtn">Prev</button>');
+
+        var Start = CurrentPage - 2;
+
+        if (Start < 1) {
+            Start = 1;
+        }
+
+        var End = Start + 4;
+
+        if (End > totalPages) {
+            End = totalPages;
+        }
+
+        for (var i = Start; i <= End; i++) {
+            if (i === CurrentPage) {
+                $("#pagination").append('<button type="button" class="btn btn-success pageBtn" data-page="' + i + '">' + i + '</button>');
+            }
+            else {
+                $("#pagination").append('<button type="button" class="btn btn-primary pageBtn" data-page="' + i + '">' + i + '</button>');
+            }
+        }
+
+        $("#pagination").append('<button type="button" class="btn btn-secondary nextBtn">Next</button>');
+    }
+
+    $(document).on("click", ".pageBtn", function () {
+        CurrentPage = parseInt($(this).data("page"));
+        applyFilterAndPagination();
+    });
+
+    $(document).on("click", ".prevBtn", function () {
+        if (CurrentPage > 1) {
+            CurrentPage--;
+            applyFilterAndPagination();
+        }
+    });
+
+    $(document).on("click", ".nextBtn", function () {
+        var totalPages = Math.ceil(filteredRows.length / PageSize);
+        if (CurrentPage < totalPages) {
+            CurrentPage++;
+            applyFilterAndPagination();
+        }
+    });
+</script>

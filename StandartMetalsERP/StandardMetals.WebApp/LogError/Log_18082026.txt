@@ -1,0 +1,219 @@
+Log Date = 18-08-2026 10:17:16
+Step= AccountController - Login page loaded.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:21
+Step= AccountController - Login request started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:21
+Step= AccountController - Login validation successful. Calling Login API.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:23
+Step= AccountController - Login API response received. StatusCode = OK
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:23
+Step= AccountController - Login API response processed successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:24
+Step= AccountController - User login successful. Username = SM
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:31
+Step= MasterController - ItemMaster17Dec - Item List loading started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:31
+Step= ItemMaster DAL - GetAllItemMasterDAL database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:31
+Step= ItemMaster DAL - GetAllItemMasterDAL completed successfully. Record Count = 4394
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:31
+Step= MasterController - ItemMaster17Dec - Item List loaded successfully. Record Count = 4394
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= MasterController - ItemMaster17Dec - Add New Item page loading started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= MasterController - ItemMaster17Dec - Loading Item Master dropdowns.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= ItemMaster DAL - GetManufacturer database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= ItemMaster DAL - GetManufacturer completed successfully. Record Count = 45
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= ItemMaster DAL - GetCategories database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= ItemMaster DAL - GetCategories completed successfully. Record Count = 4
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= ItemMaster DAL - GetColours database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= ItemMaster DAL - GetColours completed successfully. Record Count = 15
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= ItemMaster DAL - GetUnit database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= ItemMaster DAL - GetUnit completed successfully. Record Count = 12
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= MasterController - ItemMaster17Dec - Item Master dropdowns loaded successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:36
+Step= MasterController - ItemMaster17Dec - Add New Item page loaded successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:37
+Step= MasterController - ItemMaster17Dec - Get Supplier Codes started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:37
+Step= SupplierMaster BAL - BindSupplierCode started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:37
+Step= SupplierMaster DAL - BindSupplierCode database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:37
+Step= SupplierMaster DAL - BindSupplierCode completed successfully. Record Count = 775
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:37
+Step= SupplierMaster BAL - BindSupplierCode completed successfully. Record Count = 775
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:37
+Step= MasterController - ItemMaster17Dec - Supplier Codes retrieved successfully. Record Count = 775
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= MasterController - ItemMaster17Dec - Edit Item page loading started. ItemId = 30652
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetItemDetailsByID database operation started. ItemId = 30652
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - Item details retrieved successfully. ItemId = 30652
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetSupplierDetailsByItemId database operation started. ItemId = 30652
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetSupplierDetailsByItemId completed successfully. ItemId = 30652, Record Count = 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= MasterController - ItemMaster17Dec - Existing Supplier mappings loaded. ItemId = 30652, Supplier Count = 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= MasterController - ItemMaster17Dec - Loading Item Master dropdowns.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetManufacturer database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetManufacturer completed successfully. Record Count = 45
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetCategories database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetCategories completed successfully. Record Count = 4
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetColours database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetColours completed successfully. Record Count = 15
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetUnit database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetUnit completed successfully. Record Count = 12
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= MasterController - ItemMaster17Dec - Item Master dropdowns loaded successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetSubCategories database operation started. CategoryId = 1
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= ItemMaster DAL - GetSubCategories completed successfully. CategoryId = 1, Record Count = 1
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= MasterController - ItemMaster17Dec - Edit Item page loaded successfully. ItemId = 30652
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= MasterController - ItemMaster17Dec - Get Supplier Codes started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= SupplierMaster BAL - BindSupplierCode started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:44
+Step= SupplierMaster DAL - BindSupplierCode database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:45
+Step= SupplierMaster DAL - BindSupplierCode completed successfully. Record Count = 775
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:45
+Step= SupplierMaster BAL - BindSupplierCode completed successfully. Record Count = 775
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:17:45
+Step= MasterController - ItemMaster17Dec - Supplier Codes retrieved successfully. Record Count = 775
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:32:51
+Step= AccountController - Login page loaded.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:32:56
+Step= AccountController - Login request started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:32:56
+Step= AccountController - Login validation successful. Calling Login API.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:32:57
+Step= AccountController - Login API response received. StatusCode = OK
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:32:58
+Step= AccountController - Login API response processed successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:32:59
+Step= AccountController - User login successful. Username = SM
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:33:37
+Step= SupplierMaster BAL - BindSupplierCode started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:33:37
+Step= SupplierMaster DAL - BindSupplierCode database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:33:37
+Step= SupplierMaster DAL - BindSupplierCode completed successfully. Record Count = 775
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:33:37
+Step= SupplierMaster BAL - BindSupplierCode completed successfully. Record Count = 775
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:37:05
+Step= SupplierMaster BAL - BindSupplierCode started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:37:05
+Step= SupplierMaster DAL - BindSupplierCode database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:37:06
+Step= SupplierMaster DAL - BindSupplierCode completed successfully. Record Count = 775
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 10:37:06
+Step= SupplierMaster BAL - BindSupplierCode completed successfully. Record Count = 775
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 15:21:49
+Step= AccountController - Login page loaded.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 15:21:57
+Step= AccountController - Login request started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 15:21:57
+Step= AccountController - Login validation successful. Calling Login API.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 15:21:58
+Step= AccountController - Login API response received. StatusCode = OK
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 15:21:58
+Step= AccountController - Login API response processed successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 18-08-2026 15:22:00
+Step= AccountController - User login successful. Username = SM
+---------------------------------------xxxxxxxx------------------------------------

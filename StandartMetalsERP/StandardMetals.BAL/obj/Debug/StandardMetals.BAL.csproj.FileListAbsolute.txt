@@ -1,0 +1,204 @@
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.pdb
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CoreCompileInputs.cache
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.pdb
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.pdb
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.pdb
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csprojAssemblyReference.cache
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CopyComplete
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Cors.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.xml
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.xml
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.xml
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.pdb
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Cors.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.pdb
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.pdb
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.xml
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.xml
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.xml
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.xml
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csprojAssemblyReference.cache
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CoreCompileInputs.cache
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CopyComplete
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Cors.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csprojAssemblyReference.cache
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CoreCompileInputs.cache
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CopyComplete
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Cors.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csprojAssemblyReference.cache
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CoreCompileInputs.cache
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CopyComplete
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Cors.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.xml
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.xml
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.xml
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.xml
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csprojAssemblyReference.cache
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CoreCompileInputs.cache
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CopyComplete
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.pdb
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.dll
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.pdb
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.dll
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.dll
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Cors.dll
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.dll
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.pdb
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.pdb
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.xml
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csprojAssemblyReference.cache
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CoreCompileInputs.cache
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CopyComplete
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.dll
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.pdb
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.pdb
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Cors.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.pdb
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.pdb
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.xml
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.xml
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.xml
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.xml
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csprojAssemblyReference.cache
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CoreCompileInputs.cache
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CopyComplete
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.pdb
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.pdb
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Cors.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.pdb
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.pdb
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.xml
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.xml
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.xml
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.xml
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csprojAssemblyReference.cache
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CoreCompileInputs.cache
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CopyComplete
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.CommonLibrary.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Cors.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.CommonLibrary.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csprojAssemblyReference.cache
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CoreCompileInputs.cache
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CopyComplete
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.BAL.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.CommonLibrary.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Cors.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.CommonLibrary.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.DAL.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\StandardMetals.MODEL.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\Newtonsoft.Json.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Net.Http.Formatting.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\bin\Debug\System.Web.Http.Cors.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csprojAssemblyReference.cache
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CoreCompileInputs.cache
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.csproj.CopyComplete
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.BAL\obj\Debug\StandardMetals.BAL.pdb

@@ -1,0 +1,861 @@
+﻿@model IEnumerable<StandardMetals.MODEL.SupplierMasterMVCApril2026Model>
+
+@{
+    ViewBag.Title = "SupplierListApril2026";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Supplier Master Action Buttons + Search -->
+
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; margin-top:35px;">
+    <div>
+        <button type="button" class="btn btn-primary BTNCreateSupplier">
+            <i class="bi bi-plus-lg"></i> Add New Supplier
+        </button>
+
+        <button type="button"
+                id="btnExportSupplier"
+                class="btn btn-primary"
+                onclick="exportSupplierTableToExcel()">
+            <i class="bi bi-download"></i> Export Excel
+        </button>
+
+        <button type="button"
+                id="btnPrintSupplier"
+                class="btn btn-info"
+                onclick="printSupplierWindow()">
+            <i class="bi bi-printer"></i> Print Table
+        </button>
+    </div>
+
+    <div>
+        <label style="margin-right:5px; font-weight:bold;">Search:</label>
+
+        <input type="text"
+               id="supplierSearchBox"
+               class="form-control"
+               style="display:inline-block; width:220px;"
+               placeholder="Search..." />
+    </div>
+</div>
+
+
+<!-- Supplier Modal -->
+
+<div class="modal fade"
+     id="SupplierModal"
+     role="dialog">
+</div>
+
+
+<!-- Supplier List -->
+
+<section id="SupplierTest">
+
+    <div>
+
+        <div class="box box-info">
+
+            <div class="box-header with-border">
+
+                <h3 class="box-title">Suppliers List</h3>
+
+                <div class="box-tools pull-right">
+
+                    <button type="button"
+                            class="btn btn-box-tool"
+                            data-widget="collapse">
+
+                        <i class="fa fa-minus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="box-body">
+
+                <div style="overflow-x:auto; overflow-y:auto; width:100%; max-height:500px;">
+
+                    <table class="table table-bordered table-striped table-hover text-center"
+                           id="SupplierTable">
+
+                        <thead class="thead-dark"
+                               style="background-color:#b3d7e6;">
+
+                            <tr class="info">
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SuppCode)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.SuppName)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IsRawMaterial)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ContactPerson)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Branch)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Address1)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.City)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.State)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Country)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PinCode)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Mobile)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.EmailID)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.GSTIN)
+                                </th>
+
+                                <th class="actionColumn">
+                                    Action
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="supplierBody">
+
+                            @foreach (var supplier in Model)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.SuppCode)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.SuppName)
+                                    </td>
+
+                                    <td>
+                                        @if (supplier.IsRawMaterial)
+                                        {
+                                            <input type="checkbox"
+                                                   checked
+                                                   disabled />
+                                        }
+                                        else
+                                        {
+                                            <input type="checkbox"
+                                                   disabled />
+                                        }
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.ContactPerson)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.Branch)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.Address1)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.City)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.State)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.Country)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.PinCode)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.Mobile)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.EmailID)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => supplier.GSTIN)
+                                    </td>
+
+                                    <td class="actionColumn">
+
+                                        <button type="button"
+                                                class="btn btn-success BtnEditSupplier"
+                                                data-id="@supplier.Id">
+
+                                            Edit
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+                            }
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Pagination -->
+
+<div id="supplierPagination"
+     style="text-align:center; margin-top:10px;">
+</div>
+
+
+<style>
+
+    #SupplierTable {
+        min-width: 100%;
+        table-layout: auto;
+        white-space: nowrap;
+    }
+
+        #SupplierTable .actionColumn {
+            position: sticky;
+            right: 0;
+            z-index: 2;
+            background: #fff;
+            min-width: 80px;
+            width: 80px;
+        }
+
+        #SupplierTable thead .actionColumn {
+            z-index: 3;
+            background: #b3d7e6;
+        }
+
+    #supplierPagination button {
+        margin: 2px;
+    }
+
+    #supplierPagination .paginationEllipsis {
+        display: inline-block;
+        padding: 6px 10px;
+        margin: 2px;
+    }
+</style>
+
+
+<script type="text/javascript">
+
+    var SupplierPageSize = 8;
+
+    var SupplierCurrentPage = 1;
+
+
+    // Build Supplier Pagination
+
+    function buildSupplierPagination() {
+
+        var searchValue =
+            $("#supplierSearchBox").val().toLowerCase().trim();
+
+        var allRows =
+            $("#supplierBody tr");
+
+        var filteredRows =
+            allRows.filter(function () {
+
+                return $(this)
+                    .text()
+                    .toLowerCase()
+                    .indexOf(searchValue) > -1;
+
+            });
+
+
+        allRows.hide();
+
+        var totalPages =
+            Math.ceil(filteredRows.length / SupplierPageSize);
+
+
+        if (totalPages === 0) {
+
+            $("#supplierPagination").html(
+                '<span style="margin-right:10px;">No records found</span>'
+            );
+
+            return;
+        }
+
+
+        if (SupplierCurrentPage > totalPages)
+            SupplierCurrentPage = totalPages;
+
+
+        if (SupplierCurrentPage < 1)
+            SupplierCurrentPage = 1;
+
+
+        filteredRows
+            .slice(
+                (SupplierCurrentPage - 1) * SupplierPageSize,
+                SupplierCurrentPage * SupplierPageSize
+            )
+            .show();
+
+
+        $("#supplierPagination").empty();
+
+
+        $("#supplierPagination").append(
+            '<button type="button" class="btn btn-primary supplierFirstBtn" ' +
+            (SupplierCurrentPage === 1 ? 'disabled' : '') +
+            '>First</button>'
+        );
+
+
+        $("#supplierPagination").append(
+            '<button type="button" class="btn btn-secondary supplierPrevBtn" ' +
+            (SupplierCurrentPage === 1 ? 'disabled' : '') +
+            '>Prev</button>'
+        );
+
+
+        function addSupplierPageButton(pageNumber) {
+
+            $("#supplierPagination").append(
+                '<button type="button" class="btn ' +
+                (pageNumber === SupplierCurrentPage
+                    ? 'btn-success'
+                    : 'btn-primary') +
+                ' supplierPageBtn" data-page="' +
+                pageNumber +
+                '">' +
+                pageNumber +
+                '</button>'
+            );
+
+        }
+
+
+        function addSupplierEllipsis() {
+
+            $("#supplierPagination").append(
+                '<span class="paginationEllipsis">...</span>'
+            );
+
+        }
+
+
+        if (totalPages <= 7) {
+
+            for (var i = 1; i <= totalPages; i++) {
+
+                addSupplierPageButton(i);
+
+            }
+
+        }
+        else if (SupplierCurrentPage <= 4) {
+
+            for (var i = 1; i <= 5; i++) {
+
+                addSupplierPageButton(i);
+
+            }
+
+            addSupplierEllipsis();
+
+            addSupplierPageButton(totalPages);
+
+        }
+        else if (SupplierCurrentPage >= totalPages - 3) {
+
+            addSupplierPageButton(1);
+
+            addSupplierEllipsis();
+
+            for (
+                var i = totalPages - 4;
+                i <= totalPages;
+                i++
+            ) {
+
+                addSupplierPageButton(i);
+
+            }
+
+        }
+        else {
+
+            addSupplierPageButton(1);
+
+            addSupplierEllipsis();
+
+            addSupplierPageButton(SupplierCurrentPage - 1);
+
+            addSupplierPageButton(SupplierCurrentPage);
+
+            addSupplierPageButton(SupplierCurrentPage + 1);
+
+            addSupplierEllipsis();
+
+            addSupplierPageButton(totalPages);
+
+        }
+
+
+        $("#supplierPagination").append(
+            '<button type="button" class="btn btn-secondary supplierNextBtn" ' +
+            (SupplierCurrentPage === totalPages ? 'disabled' : '') +
+            '>Next</button>'
+        );
+
+
+        $("#supplierPagination").append(
+            '<button type="button" class="btn btn-primary supplierLastBtn" ' +
+            (SupplierCurrentPage === totalPages ? 'disabled' : '') +
+            '>Last</button>'
+        );
+
+    }
+
+
+    // Supplier Search
+
+    $(document).ready(function () {
+
+        $("#supplierSearchBox").on("keyup", function () {
+
+            SupplierCurrentPage = 1;
+
+            buildSupplierPagination();
+
+        });
+
+    });
+
+
+    // Supplier Print
+
+    function printSupplierWindow() {
+
+        window.print();
+
+    }
+
+
+    // Export Supplier To Excel
+
+    function exportSupplierTableToExcel() {
+
+        var Table =
+            document.getElementById("SupplierTable");
+
+        var clone =
+            Table.cloneNode(true);
+
+
+        for (var row of clone.rows) {
+
+            row.deleteCell(row.cells.length - 1);
+
+            row.style.display = "";
+
+        }
+
+
+        var html =
+            "<html><head><meta charset='UTF-8'></head><body>" +
+            clone.outerHTML +
+            "</body></html>";
+
+
+        var blob =
+            new Blob(
+                [html],
+                {
+                    type: "application/vnd.ms-excel"
+                }
+            );
+
+
+        var link =
+            document.createElement("a");
+
+
+        link.href =
+            URL.createObjectURL(blob);
+
+
+        link.download =
+            "SupplierListApril2026.xls";
+
+
+        document.body.appendChild(link);
+
+        link.click();
+
+        document.body.removeChild(link);
+
+    }
+
+
+    // Add New Supplier
+
+    $(document).ready(function () {
+
+        $(".BTNCreateSupplier").on("click", function (e) {
+
+            e.preventDefault();
+
+
+            $.ajax({
+
+                url:
+                    '@Url.Action("AddNewSupplierApril2026", "Master")',
+
+                type: "GET",
+
+                cache: false,
+
+
+                success: function (response) {
+
+                    $("#SupplierModal")
+                        .html(response);
+
+
+                    $("#SupplierModal").modal({
+
+                        backdrop: "static",
+
+                        keyboard: false
+
+                    });
+
+
+                    $("#SupplierModal")
+                        .modal("show");
+
+                },
+
+
+                error: function (errorText) {
+
+                    console.log(
+                        errorText.responseText
+                    );
+
+                    alert(
+                        "Unable to Load Create Supplier Form"
+                    );
+
+                }
+
+            });
+
+        });
+
+
+        SupplierModalCleanUp();
+
+    });
+
+
+    // Edit Supplier
+
+    $(document).ready(function () {
+
+        $(".BtnEditSupplier").on("click", function (e) {
+
+            e.preventDefault();
+
+
+            var id =
+                $(this).data("id");
+
+
+            $.ajax({
+
+                url:
+                    '@Url.Action("EditSupplierApril2026", "Master")',
+
+                type: "GET",
+
+                data: {
+                    id: id
+                },
+
+                cache: false,
+
+
+                success: function (response) {
+
+                    $("#SupplierModal")
+                        .html(response);
+
+
+                    $("#SupplierModal").modal({
+
+                        backdrop: "static",
+
+                        keyboard: false
+
+                    });
+
+
+                    $("#SupplierModal")
+                        .modal("show");
+
+                },
+
+
+                error: function (errorText) {
+
+                    console.log(
+                        errorText.responseText
+                    );
+
+                    alert(
+                        "Unable to Load Edit Supplier Form"
+                    );
+
+                }
+
+            });
+
+        });
+
+
+        SupplierModalCleanUp();
+
+    });
+
+
+    // Supplier Modal Cleanup
+
+    function SupplierModalCleanUp() {
+
+        $("#SupplierModal").on(
+            "hidden.bs.modal",
+            function () {
+
+                $(this).html("");
+
+            }
+        );
+
+    }
+
+
+    // Supplier Page Button Click
+
+    $(document).on(
+        "click",
+        ".supplierPageBtn",
+        function (e) {
+
+            e.preventDefault();
+
+            SupplierCurrentPage =
+                parseInt(
+                    $(this).data("page")
+                );
+
+            buildSupplierPagination();
+
+        }
+    );
+
+
+    // Supplier First Button
+
+    $(document).on(
+        "click",
+        ".supplierFirstBtn",
+        function (e) {
+
+            e.preventDefault();
+
+            SupplierCurrentPage = 1;
+
+            buildSupplierPagination();
+
+        }
+    );
+
+
+    // Supplier Previous Button
+
+    $(document).on(
+        "click",
+        ".supplierPrevBtn",
+        function (e) {
+
+            e.preventDefault();
+
+            if (SupplierCurrentPage > 1) {
+
+                SupplierCurrentPage--;
+
+                buildSupplierPagination();
+
+            }
+
+        }
+    );
+
+
+    // Supplier Next Button
+
+    $(document).on(
+        "click",
+        ".supplierNextBtn",
+        function (e) {
+
+            e.preventDefault();
+
+
+            var searchValue =
+                $("#supplierSearchBox")
+                    .val()
+                    .toLowerCase()
+                    .trim();
+
+
+            var filteredRows =
+                $("#supplierBody tr")
+                    .filter(function () {
+
+                        return $(this)
+                            .text()
+                            .toLowerCase()
+                            .indexOf(searchValue) > -1;
+
+                    });
+
+
+            var TotalPage =
+                Math.ceil(
+                    filteredRows.length /
+                    SupplierPageSize
+                );
+
+
+            if (SupplierCurrentPage < TotalPage) {
+
+                SupplierCurrentPage++;
+
+                buildSupplierPagination();
+
+            }
+
+        }
+    );
+
+
+    // Supplier Last Button
+
+    $(document).on(
+        "click",
+        ".supplierLastBtn",
+        function (e) {
+
+            e.preventDefault();
+
+
+            var searchValue =
+                $("#supplierSearchBox")
+                    .val()
+                    .toLowerCase()
+                    .trim();
+
+
+            var filteredRows =
+                $("#supplierBody tr")
+                    .filter(function () {
+
+                        return $(this)
+                            .text()
+                            .toLowerCase()
+                            .indexOf(searchValue) > -1;
+
+                    });
+
+
+            var TotalPage =
+                Math.ceil(
+                    filteredRows.length /
+                    SupplierPageSize
+                );
+
+
+            if (TotalPage > 0) {
+
+                SupplierCurrentPage =
+                    TotalPage;
+
+                buildSupplierPagination();
+
+            }
+
+        }
+    );
+
+
+    // Initial Supplier Pagination
+
+    $(document).ready(function () {
+
+        buildSupplierPagination();
+
+    });
+
+</script>

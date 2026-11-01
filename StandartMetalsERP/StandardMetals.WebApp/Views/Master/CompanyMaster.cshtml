@@ -1,0 +1,185 @@
+﻿@model StandardMetals.MODEL.CompanyMasterModel
+
+
+@{
+    ViewBag.Title = "CompanyMaster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*<link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />*@
+<link href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/blitzer/jquery-ui.css" rel="stylesheet" />
+
+
+
+@section HeadScripts{
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.13.2.min.js"></script>
+    <script src="~/JS/Master/CompanyMaster.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#SystemDate").datepicker();
+
+        });
+
+
+    </script>
+}
+
+
+
+
+@using (Html.BeginForm())
+{
+
+    <div class="col-lg-12 col-md-12">
+        <section id="CompanyInfo">
+            <div class="col-lg-12 col-md-12">
+                <div class="box box-info">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Company Information</h3>
+
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                        <!-- /.box-tools -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+
+                        <table class="table-condensed table-hover table-responsive" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th width="15%">Date</th>
+                                    <td width="35%">
+
+                                        @Html.EditorFor(c => c.SystemDate, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="15%">Company Name</th>
+                                    <td width="35%">
+                                        @Html.EditorFor(c => c.CmpName, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th width="15%">Address 1</th>
+                                    <td width="35%">
+                                        @Html.EditorFor(c => c.Address1, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                    </td>
+                                    <th width="15%">Address 2</th>
+                                    <td width="35%">
+                                        @Html.EditorFor(c => c.Address2, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th width="15%">Country</th>
+                                    <td width="35%">
+                                        @Html.DropDownListFor(c => c.Country, Enumerable.Empty<SelectListItem>(), "--Select--", new { @class = "form-control input-sm " })
+                                    </td>
+                                    <th width="15%">State</th>
+                                    <td width="35%">
+                                        @Html.DropDownListFor(c => c.State, Enumerable.Empty<SelectListItem>(), "--Select--", new { @class = "form-control input-sm " })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="15%">City</th>
+                                    <td width="35%">
+                                        @Html.DropDownListFor(c => c.City, Enumerable.Empty<SelectListItem>(), "--Select--", new { @class = "form-control input-sm " })
+                                    </td>
+                                    <th width="15%">Pin Code</th>
+                                    <td width="35%">
+                                        @Html.EditorFor(c => c.PinCode, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="15%">Email ID</th>
+
+                                    <td width="35%">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-envelope"></i>
+                                            </div>
+                                            @Html.EditorFor(c => c.EmailID, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                        </div>
+
+                                    </td>
+                                    <th width="15%">Telephone</th>
+                                    <td width="35%">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                            @Html.EditorFor(c => c.Telephone, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="15%">Mobile</th>
+
+                                    <td width="35%">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-mobile"></i>
+                                            </div>
+                                            @Html.EditorFor(c => c.Mobile, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                        </div>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Enter Mobile Number" ControlToValidate="txtCxMobile" ForeColor="RED" ValidationGroup="g1"></asp:RequiredFieldValidator>
+                                    </td>
+                                    <th width="15%">Contact Person</th>
+                                    <td width="35%">
+                                        @Html.EditorFor(c => c.ContactPerson, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <th width="15%">Website</th>
+
+                                    <td width="35%">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-globe"></i>
+                                            </div>
+                                            @Html.EditorFor(c => c.Website, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                        </div>
+                                    </td>
+                                    <th width="15%">GSTIN</th>
+                                    <td width="35%">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-balance-scale"></i>
+                                            </div>
+                                            @Html.EditorFor(c => c.GSTIN, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <center>
+                                <input type="submit" id="btnUpdate" value="Update" class="btn btn-warning" />
+                                <input type="submit" id="btnCancel" value="Cancel" class="btn btn-danger" />
+
+                            </center>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+        </section>
+    </div>
+
+
+}
+
+
+
+
+
+

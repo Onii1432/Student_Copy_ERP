@@ -1,0 +1,183 @@
+﻿
+@{
+    ViewBag.Title = "ItemMasterDemo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ItemMasterDemo</h2>
+
+@section HeadScripts{
+
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+
+}
+
+
+<section id="ItemSearch">
+    <div class="col-lg-12 col-md-12">
+
+        <div class="box box-info">
+
+            <div class="box-header with-border">
+                <h3 class="box-title">Search</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+                <!-- /.box-tools -->
+            </div>
+
+            <!-- /.box-header -->
+
+
+            <div class="box-body">
+                <div class="col-md-4 inline ">
+
+                    <strong>Item Code</strong>
+                    <select id="drpSearchItem" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                        <option value="-1" lang="en">-Select-</option>
+
+                    </select>
+
+
+                </div>
+
+                <div class="col-md-4">
+                    <strong class="align text-center">Item Name</strong>
+                    <select id="drpItemType" class="form-control ddLocationState col-sm-6"><option value="-1">-select-</option> </select>
+                </div>
+                
+
+                <div class="col-md-4">
+
+                    <input id="btnSearchItem" type="button" value="Search" class="btn btn-sm- btn-primary" />
+
+                </div>
+            </div>
+
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+</section>
+
+
+
+
+<section id="ItemInfo">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Item Information</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+                <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+
+            <div class="box-body">
+
+                <table class="table-condensed table-hover table-responsive" width="100%">
+                    <tbody>
+                        <tr>
+                            <th style="width: 15%"></th>
+                            <th style="width: 35%">
+                                @*<asp:CheckBox ID="chkRawMaterial" runat="server" Text="Raw Material" />*@
+
+                            </th>
+                            <th style="width: 15%"></th>
+                            <th style="width: 35%"></th>
+                        </tr>
+                        <tr>
+                            <th width="15%">Item Code</th>
+                            <td width="35%">
+
+                                <input id="txtItemCode" class="form-control input-sm" type="text" />
+                            </td>
+                            <th width="15%">Item Name </th>
+                            <td width="35%">
+
+                                <input id="txtItemName" class="form-control input-sm" type="text" />
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th width="15%">Manufacturer</th>
+                            <td width="35%">
+                                <input id="txtItemManuf" class="form-control input-sm" type="text" />
+                            </td>
+                            <th width="15%">Material</th>
+                            <td width="35%">
+                                <input id="txtItemMaterial" class="form-control input-sm" type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th width="15%">Item Type</th>
+                            <td width="35%">
+
+                                <input id="txtItemType" class="form-control input-sm" type="text" />
+                            </td>
+                            <th width="15%">Item SybType</th>
+                            '
+                            <td width="35%">
+                                <input id="txtItemSubType" class="form-control input-sm" type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th width="15%">Color</th>
+                            <td width="35%">
+                                <input id="txtItemColor" class="form-control input-sm" type="text" />
+                            </td>
+                            <th width="15%">UOM</th>
+                            <td width="35%">
+                                <input id="txtItemUOM" class="form-control input-sm" type="text" />
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th width="15%">HSN Code</th>
+                            <td width="35%">
+                                <input id="txtItemHSN" class="form-control input-sm" type="text" />
+                            </td>
+                            <th width="15%">GST Rate</th>
+                            <td width="35%">
+                                <div class="input-group">
+                                    <input id="txtGSTRate" class="form-control input-sm" type="text" />
+                                    <span class="input-group-addon"><i class="fa fa-percent"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <th width="15%">Purchase Cost</th>
+                            <td width="35%">
+                                <div class="input-group">
+                                    <span class="input-group-addon">&#8377;</span>
+                                    <input id="txtItemPurchaseCost" class="form-control input-sm" type="text" />
+                                    <span class="input-group-addon">.00</span>
+                                </div>
+                            </td>
+                            <th width="15%">Selling Price</th>
+                            <td width="35%">
+                                <div class="input-group">
+                                    <span class="input-group-addon">&#8377;</span>
+                                    <input id="txtItemSellingCost" class="form-control input-sm" type="text" />
+                                    <span class="input-group-addon">.00</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+</section>

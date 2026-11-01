@@ -1,0 +1,268 @@
+﻿
+@model StandardMetals.MODEL.ItemMaster_Modal_AprBtch
+
+<div class="modal-dialog modal-lg custom-modal-sm">
+    <div class="modal-content">
+
+        <!-- Model Header -->
+        <div class="modal-header custom-header" style="display:flex;">
+            <h2>Edit Item</h2>
+            <button type="button" class="close" data-dismiss="modal" style="margin-left:auto;">&times;</button>
+        </div>
+
+        <div class="modal-body" style="padding-bottom:0px">
+            <div class="box box-info">
+                <div class="box-body">
+                    <div class="formcolor section-box">
+
+                        @using (Html.BeginForm("EditItem17Dec", "MasterCsharp", FormMethod.Post, new { id = "EditForm" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.HiddenFor(model => model.Id)
+
+                            <div class="form-horizontal">
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.ItemCode, new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.EditorFor(model => model.ItemCode, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                        @Html.ValidationMessageFor(model => model.ItemCode, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.ItemName, "Name", new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.EditorFor(model => model.ItemName, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.ItemName, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.ManufactureId, "Manufacturer", new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.DropDownListFor(model => model.ManufactureId, new SelectList(ViewBag.Manufacturers, "ManufactureId", "ManufactureName", Model.ManufactureId), "Select", new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.ManufactureId, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.Material, new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.EditorFor(model => model.Material, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Material, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.CategoryId, "Category", new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.DropDownListFor(model => model.CategoryId, new SelectList(ViewBag.Categories, "CategoryId", "CategoryName", Model.CategoryId), "Select", new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.CategoryId, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.SubCategoryId, "SubCategory", new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.DropDownListFor(model => model.SubCategoryId, new SelectList(ViewBag.SubCategories, "SubCategoryId", "SubCategoryName", Model.SubCategoryId), "Select", new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.SubCategoryId, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.ColourId, "Colour", new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.DropDownListFor(model => model.ColourId, new SelectList(ViewBag.ColourList, "ColourId", "ColourName", Model.ColourId), "Select", new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.ColourId, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.UnitId, "Unit", new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.DropDownListFor(model => model.UnitId, new SelectList(ViewBag.UnitList, "UnitId", "UnitName", Model.UnitId), "Select", new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.UnitId, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.HSNCODE, "HSN-Code", new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.EditorFor(model => model.HSNCODE, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.HSNCODE, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.GSTRate, "GST Rate", new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.EditorFor(model => model.GSTRate, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.GSTRate, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.PurchaseCost, new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.EditorFor(model => model.PurchaseCost, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.PurchaseCost, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.SellingPrice, new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.EditorFor(model => model.SellingPrice, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.SellingPrice, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <!-- Model Footer -->
+                                <div class="form-group">
+                                    <div class="modal-footer justify-content-end">
+                                        <input type="submit" value="Update" class="btn btn-success" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        // Enable MVC validation for the Edit form.
+        $("#EditForm").removeData("validator");
+        $("#EditForm").removeData("unobtrusiveValidation");
+        $.validator.unobtrusive.parse("#EditForm");
+
+        // Selling Price must be greater than Purchase Cost.
+        $.validator.addMethod("greaterThan", function (value, element) {
+            var purchaseCost = parseFloat($("#PurchaseCost").val());
+            var sellingPrice = parseFloat(value);
+
+            return value !== "" && !isNaN(purchaseCost) &&
+                !isNaN(sellingPrice) && sellingPrice > purchaseCost;
+        }, "Selling Price must be greater than Purchase Cost");
+
+        $("#SellingPrice").rules("add", {
+            greaterThan: true
+        });
+
+        // Add search functionality to dropdowns.
+        $("#EditForm select").select2({
+            width: "100%",
+            placeholder: "Select",
+            allowClear: true,
+            dropdownParent: $("#myModal .modal-content")
+        });
+
+        // Category -> SubCategory.
+        $("#CategoryId").change(function () {
+            var categoryId = $(this).val();
+            var subCategory = $("#SubCategoryId");
+
+            // Clear old subcategories.
+            subCategory.empty();
+            subCategory.append($("<option></option>").val("").text("Select"));
+
+            if (!categoryId) {
+                subCategory.trigger("change");
+                return;
+            }
+
+            // Get subcategories for the selected category.
+            $.ajax({
+                url: '@Url.Action("GetSubCategoryN", "MasterCsharp")',
+                type: "GET",
+                data: { id: categoryId },
+
+                success: function (data) {
+                    $.each(data, function (i, item) {
+                        subCategory.append(
+                            $("<option></option>")
+                                .val(item.SubCategoryId)
+                                .text(item.SubCategoryName)
+                        );
+                    });
+
+                    subCategory.val("").trigger("change");
+                },
+
+                error: function () {
+                    alert("Unable to load subcategories.");
+                }
+            });
+        });
+
+        // Submit the Edit form through AJAX.
+        $("#EditForm").submit(function (e) {
+            e.preventDefault();
+
+            if (!$(this).valid()) {
+                return false;
+            }
+
+            $.ajax({
+                url: $(this).attr("action"),
+                type: "POST",
+                data: $(this).serialize(),
+
+                success: function (response) {
+                    if (response && response.success === true) {
+                        alert(response.message);
+                        $("#myModal").modal("hide");
+                        location.reload();
+                    }
+                    else if (typeof response === "string") {
+                        // Display the returned partial view when validation fails.
+                        $("#myModal").html(response);
+                    }
+                    else {
+                        alert((response && response.message) || "Update failed.");
+                    }
+                },
+
+                error: function (xhr) {
+                    console.log(xhr.responseText);
+                    alert("Something went wrong while updating the item.");
+                }
+            });
+
+            return false;
+        });
+    });
+</script>
+
+<style>
+    .row {
+        padding: 10px;
+    }
+
+    .section-box {
+        padding-top: 5px;
+    }
+
+    .modal-body {
+        padding-top: 5px;
+    }
+</style>

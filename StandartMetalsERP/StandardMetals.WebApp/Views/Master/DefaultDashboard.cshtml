@@ -1,0 +1,318 @@
+﻿@model StandardMetals.MODEL.DefaultDashboardModel
+
+@{
+    ViewBag.Title = "DefaultDashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .dashboard-section {
+        padding: 8px 5px 15px 5px;
+        margin-top: 5px;
+    }
+
+    .dashboard-box {
+        width: 810px;
+        background: #fff;
+        border: 1px solid #d9e1e5;
+        border-top: 3px solid #00a9d6;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    .dashboard-header {
+        height: 42px;
+        padding: 11px 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .dashboard-title {
+        font-size: 17px;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .dashboard-body {
+        padding: 9px;
+    }
+
+    .dashboard-grid {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .supplier-widget {
+        width: 390px;
+        background: #fff;
+        border: 1px solid #d9e1e5;
+        border-top: 2px solid #12a9d4;
+        border-radius: 3px;
+        padding: 8px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    .customer-details {
+        width: 390px;
+        padding: 8px 10px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #333;
+        border-bottom: 1px solid #e5e5e5;
+        margin-top: 0;
+    }
+
+        .customer-details:before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 15px;
+            background: #08a65a;
+            margin-right: 7px;
+            vertical-align: -2px;
+            border-radius: 2px;
+        }
+
+    .widget-title {
+        font-size: 15px;
+        font-weight: 600;
+        color: #333;
+        padding: 2px 0 7px 0;
+        margin-bottom: 7px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+        .widget-title:before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 15px;
+            background: #12a9d4;
+            margin-right: 7px;
+            vertical-align: -2px;
+            border-radius: 2px;
+        }
+
+    .kpi-row {
+        display: flex;
+        gap: 6px;
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    .kpi-card {
+        flex: 1;
+        height: 52px;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        padding: 4px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+    }
+
+        .kpi-card:after {
+            content: "";
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 50%;
+            right: -15px;
+            top: -17px;
+        }
+
+    .supplier-kpi {
+        background: #12a9d4;
+    }
+
+    .item-kpi {
+        background: #08a65a;
+    }
+
+    .kpi-number {
+        display: block;
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 21px;
+    }
+
+    .kpi-label {
+        display: block;
+        font-size: 8px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .supplier-list {
+        height: 155px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border: 1px solid #ddd;
+    }
+
+        .supplier-list table {
+            width: 100%;
+            margin-bottom: 0;
+            table-layout: fixed;
+        }
+
+        .supplier-list th {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            background: #f4f6f7;
+            color: #444;
+            font-size: 10px;
+            padding: 6px 7px !important;
+            border-bottom: 1px solid #ddd !important;
+        }
+
+            .supplier-list th:first-child {
+                width: 60%;
+                text-align: left;
+            }
+
+            .supplier-list th:last-child {
+                width: 40%;
+                text-align: center;
+            }
+
+        .supplier-list td {
+            font-size: 11px;
+            padding: 5px 7px !important;
+            border-top: 1px solid #eee !important;
+        }
+
+            .supplier-list td:first-child {
+                width: 60%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .supplier-list td:last-child {
+                width: 40%;
+                text-align: center;
+                font-weight: 600;
+                white-space: nowrap;
+            }
+
+        .supplier-list tbody tr:hover {
+            background: #f4fbfd;
+        }
+
+    @@media (max-width: 850px) {
+        .dashboard-box {
+            width: 100%;
+        }
+
+        .dashboard-grid {
+            display: block;
+        }
+
+        .supplier-widget,
+        .customer-details {
+            width: 100%;
+        }
+
+        .customer-details {
+            margin-top: 12px;
+        }
+    }
+</style>
+
+<div class="dashboard-section">
+
+    <div class="dashboard-box">
+
+        <div class="dashboard-header">
+            <span class="dashboard-title">Dashboard</span>
+        </div>
+
+        <div class="dashboard-body">
+
+            <div class="dashboard-grid">
+
+                <!-- Supplier Wise Items -->
+
+                <div class="supplier-widget">
+
+                    <div class="widget-title">
+                        Supplier Wise Items
+                    </div>
+
+                    <div class="kpi-row">
+
+                        <div class="kpi-card supplier-kpi">
+                            <span class="kpi-number">@Model.TotalSupplierCount</span>
+                            <span class="kpi-label">Total Suppliers</span>
+                        </div>
+
+                        <div class="kpi-card item-kpi">
+                            <span class="kpi-number">@Model.TotalItemCount</span>
+                            <span class="kpi-label">Total Items</span>
+                        </div>
+
+                    </div>
+
+                    <div class="supplier-list">
+
+                        <table class="table table-hover table-condensed">
+
+                            <thead>
+                                <tr>
+                                    <th>Supplier Name</th>
+                                    <th>Item Count</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                @if (Model.SupplierWiseItems != null && Model.SupplierWiseItems.Count > 0)
+                                {
+                                    foreach (var item in Model.SupplierWiseItems)
+                                    {
+                                        <tr>
+                                            <td title="@item.SupplierName">
+                                                @item.SupplierName
+                                            </td>
+
+                                            <td>
+                                                @item.ItemCount
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="2" style="text-align:center;">
+                                            No Data Found
+                                        </td>
+                                    </tr>
+                                }
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Customer Wise Details Text Only -->
+
+                <div class="customer-details">
+                    Customer Wise Details
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

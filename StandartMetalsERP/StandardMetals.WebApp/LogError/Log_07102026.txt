@@ -1,0 +1,1602 @@
+Log Date = 07-10-2026 14:44:00
+Step= AccountController-Login(GET) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:44:00
+Step= Login(GET) - Login Page Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:44:00
+Step= AccountController-Login(GET) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:44:34
+Step= AccountController-Login(GET) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:44:35
+Step= Login(GET) - Login Page Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:44:36
+Step= AccountController-Login(GET) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:46:16
+Step= AccountController-Login(GET) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:46:16
+Step= Login(GET) - Login Page Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:46:16
+Step= AccountController-Login(GET) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:46:38
+Step= AccountController-Login(POST) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:46:49
+Step= Login(POST) - Login API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:46:55
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:46:55
+Step= LoginDetails - Login Validation Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:46:55
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= Login(POST) - Login API Response Received
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= Login(POST) - Login Successful
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= Login(POST) - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= Login(POST) - Menu And SubMenu Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= Login(POST) - Token Generated
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= Login(POST) - Redirecting To Default Dashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= AccountController-Login(POST) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= ItemList17Dec_Dal Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= CustomerMasterMVCApril2026DAL Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:47:02
+Step= SupplierMasterMVCApril2026DAL Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:02
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:03
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:03
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:03
+Step= GetSupplierWiseItemDashboard - Stored Procedure : SP_GetSupplierWiseItemDashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:03
+Step= GetSupplierWiseItemDashboard - Supplier Wise Item Data Loaded : 29
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:03
+Step= GetSupplierWiseItemDashboard - Total Supplier Count : 778
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:03
+Step= GetSupplierWiseItemDashboard - Total Item Count : 4441
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:03
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:03
+Step= GetSupplierWiseItemDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:03
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:04
+Step= DefaultDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:05
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:25
+Step= AccountController-Login(POST) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:39
+Step= Login(POST) - Login API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:55
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:55
+Step= LoginDetails - Login Validation Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:55
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:49:59
+Step= Login(POST) - Login API Response Received
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:50:13
+Step= Login(POST) - User Already Logged In
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:50:21
+Step= AccountController-Login(POST) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:50:34
+Step= AccountController-Login(POST) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:50:35
+Step= Login(POST) - Login API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:50:35
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:50:35
+Step= LoginDetails - Login Validation Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:50:35
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:50:35
+Step= Login(POST) - Login API Response Received
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:50:35
+Step= Login(POST) - User Already Logged In
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:50:35
+Step= AccountController-Login(POST) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:23
+Step= AccountController-Login(POST) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= Login(POST) - Login API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= LoginDetails - Login Validation Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= Login(POST) - Login API Response Received
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= Login(POST) - Login Successful
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= Login(POST) - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= Login(POST) - Menu And SubMenu Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= Login(POST) - Token Generated
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= Login(POST) - Redirecting To Default Dashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= AccountController-Login(POST) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:53:24
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= GetSupplierWiseItemDashboard - Stored Procedure : SP_GetSupplierWiseItemDashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= GetSupplierWiseItemDashboard - Supplier Wise Item Data Loaded : 29
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= GetSupplierWiseItemDashboard - Total Supplier Count : 778
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= GetSupplierWiseItemDashboard - Total Item Count : 4441
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= GetSupplierWiseItemDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= DefaultDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:00
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 14:54:00
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:39
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:39
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:39
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 14:54:39
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 14:56:39
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:02:16
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:02:16
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:02:16
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:02:16
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 15:02:21
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 15:02:36
+Error = The controller for path '/.well-known/appspecific/com.chrome.devtools.json' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:02:42
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:02:42
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:02:42
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:02:42
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 15:02:42
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 15:02:42
+Error = The controller for path '/.well-known/appspecific/com.chrome.devtools.json' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:05:39
+Step= AccountController-Login(GET) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:05:39
+Step= Login(GET) - Login Page Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:05:39
+Step= AccountController-Login(GET) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:05:59
+Step= AccountController-Login(POST) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:05:59
+Step= Login(POST) - Login API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:06:00
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:06:00
+Step= LoginDetails - Login Validation Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:06:00
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:06:01
+Step= Login(POST) - Login API Response Received
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:06:01
+Step= Login(POST) - User Already Logged In
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:06:01
+Step= AccountController-Login(POST) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= AccountController-Login(POST) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= Login(POST) - Login API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= LoginDetails - Login Validation Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= Login(POST) - Login API Response Received
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= Login(POST) - Login Successful
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= Login(POST) - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= Login(POST) - Menu And SubMenu Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= Login(POST) - Token Generated
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= Login(POST) - Redirecting To Default Dashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= AccountController-Login(POST) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= ItemList17Dec_Dal Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= CustomerMasterMVCApril2026DAL Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= SupplierMasterMVCApril2026DAL Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= GetSupplierWiseItemDashboard - Stored Procedure : SP_GetSupplierWiseItemDashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= GetSupplierWiseItemDashboard - Supplier Wise Item Data Loaded : 29
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= GetSupplierWiseItemDashboard - Total Supplier Count : 778
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= GetSupplierWiseItemDashboard - Total Item Count : 4441
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= GetSupplierWiseItemDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= DefaultDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:07:40
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 15:07:41
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:08:05
+Step= AdminController-MenuMaster Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:08:05
+Step= MenuMaster - View Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:08:05
+Step= AdminController-MenuMaster Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 15:08:13
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:08:18
+Step= AdminCtrl-BindMasterMenu Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:08:18
+Step= BindMasterMenu - Menu Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:08:18
+Step= AdminCtrl-BindMasterMenu Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:50
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:50
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:50
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:50
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:50
+Step= MasterCtrl-ItemList17Dec Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:50
+Step= ItemMaster17DecBAL-GetAllItemMaster - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:50
+Step= ItemList17Dec_Dal-GetAllItemMasterDAL - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:50
+Step= GetAllItemMasterDAL - Stored Procedure : GetAllItem
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:51
+Step= GetAllItemMasterDAL - Item Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:51
+Step= ItemList17Dec_Dal-GetAllItemMasterDAL - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:51
+Step= GetAllItemMaster - Item List Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:51
+Step= ItemMaster17DecBAL-GetAllItemMaster - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:09:51
+Step= MasterCtrl-ItemList17Dec Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 15:09:55
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= AccountController-SignOut - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= SignOut - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= SignOut - Logout API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= LoginDetailCtrl-LogoutUser Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= LogoutUser - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= LogoutUser - Logout Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= LoginDetailCtrl-LogoutUser Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= SignOut - Logout API Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= SignOut - Session Cleared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= AccountController-SignOut - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= AccountController-Login(GET) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= Login(GET) - Login Page Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:11:36
+Step= AccountController-Login(GET) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:32
+Step= AccountController-Login(GET) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:32
+Step= Login(GET) - Login Page Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:32
+Step= AccountController-Login(GET) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:43
+Step= AccountController-Login(POST) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:43
+Step= Login(POST) - Login API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:43
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:43
+Step= LoginDetails - Login Validation Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:43
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= Login(POST) - Login API Response Received
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= Login(POST) - Login Successful
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= Login(POST) - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= Login(POST) - Menu And SubMenu Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= Login(POST) - Token Generated
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= Login(POST) - Redirecting To Default Dashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= AccountController-Login(POST) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= ItemList17Dec_Dal Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= CustomerMasterMVCApril2026DAL Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= Object Initialized
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= SupplierMasterMVCApril2026DAL Constructor Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= GetSupplierWiseItemDashboard - Stored Procedure : SP_GetSupplierWiseItemDashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= GetSupplierWiseItemDashboard - Supplier Wise Item Data Loaded : 29
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= GetSupplierWiseItemDashboard - Total Supplier Count : 778
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= GetSupplierWiseItemDashboard - Total Item Count : 4441
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= GetSupplierWiseItemDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= DefaultDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:44
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:50
+Step= AccountController-Login(POST) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:50
+Step= Login(POST) - Login API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:50
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:50
+Step= LoginDetails - Login Validation Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:50
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:50
+Step= Login(POST) - Login API Response Received
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:50
+Step= Login(POST) - User Already Logged In
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:24:50
+Step= AccountController-Login(POST) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= AccountController-Login(POST) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= Login(POST) - Login API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= LoginDetails - Login Validation Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= LoginDetailCtrl-LoginDetails Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= Login(POST) - Login API Response Received
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= Login(POST) - Login Successful
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= Login(POST) - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= Login(POST) - Menu And SubMenu Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= Login(POST) - Token Generated
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= Login(POST) - Redirecting To Default Dashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= AccountController-Login(POST) - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= GetSupplierWiseItemDashboard - Stored Procedure : SP_GetSupplierWiseItemDashboard
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= GetSupplierWiseItemDashboard - Supplier Wise Item Data Loaded : 29
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= GetSupplierWiseItemDashboard - Total Supplier Count : 778
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= GetSupplierWiseItemDashboard - Total Item Count : 4441
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= DefaultDashboard_DAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= GetSupplierWiseItemDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= DefaultDashboardBAL-GetSupplierWiseItemDashboard - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= DefaultDashboard - Dashboard Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:04
+Step= MasterCtrl-DefaultDashboard Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 15:25:04
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:09
+Step= AdminController-LoginUserMaster Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:09
+Step= LoginUserMaster - View Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:09
+Step= AdminController-LoginUserMaster Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 15:25:11
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:16
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:16
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:16
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:16
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:16
+Step= MasterCtrl-ItemList17Dec Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:16
+Step= ItemMaster17DecBAL-GetAllItemMaster - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:16
+Step= ItemList17Dec_Dal-GetAllItemMasterDAL - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:16
+Step= GetAllItemMasterDAL - Stored Procedure : GetAllItem
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:17
+Step= GetAllItemMasterDAL - Item Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:17
+Step= ItemList17Dec_Dal-GetAllItemMasterDAL - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:17
+Step= GetAllItemMaster - Item List Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:17
+Step= ItemMaster17DecBAL-GetAllItemMaster - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:17
+Step= MasterCtrl-ItemList17Dec Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 07-10-2026 15:25:23
+Error = The controller for path '/bo' was not found or does not implement IController.
+Stack Trace =    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= MasterCtrl-AddNewItemApril2026 Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= MasterCtrl-Item-LoadDropDowns Action- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemMaster17DecBAL-GetManufacturerDetails - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemList17Dec_Dal-GetManufacturer - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetManufacturer - Stored Procedure : BindManufacturerMaster
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetManufacturer - Manufacturer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemList17Dec_Dal-GetManufacturer - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetManufacturerDetails - Manufacturer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemMaster17DecBAL-GetManufacturerDetails - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= LoadDropDowns - Manufacturers Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemMaster17DecBAL-GetCategoriesDetails - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemList17Dec_Dal-GetCategories - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetCategories - Stored Procedure : BindCategory
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetCategories - Category Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemList17Dec_Dal-GetCategories - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetCategoriesDetails - Category Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemMaster17DecBAL-GetCategoriesDetails - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= LoadDropDowns - Categories Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemMaster17DecBAL-GetAllColours - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemList17Dec_Dal-GetColours - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetColours - Stored Procedure : BindColorMaster
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetColours - Colour Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemList17Dec_Dal-GetColours - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetAllColours - Colour Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemMaster17DecBAL-GetAllColours - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= LoadDropDowns - Colours Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemMaster17DecBAL-GetUnitDetails - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemList17Dec_Dal-GetUnit - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetUnit - Stored Procedure : BindUnit
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetUnit - Unit Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemList17Dec_Dal-GetUnit - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= GetUnitDetails - Unit Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= ItemMaster17DecBAL-GetUnitDetails - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= LoadDropDowns - Units Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= MasterCtrl-Item-LoadDropDowns Action- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= AddNewItemApril2026 - DropDowns Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= AddNewItemApril2026 - SubCategories Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:31
+Step= MasterCtrl-AddNewItemApril2026 Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= MasterCtrl-GetSupplierCodes Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= SupplierMasterApril2026BAL-BindSupplierCode - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= SupplierMasterMVCApril2026DAL-BindSupplierCode - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= BindSupplierCode - Stored Procedure : SP_BindSupplierCodeApril2026
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= BindSupplierCode - Supplier Code Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= SupplierMasterMVCApril2026DAL-BindSupplierCode - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= BindSupplierCode - Supplier Code Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= SupplierMasterApril2026BAL-BindSupplierCode - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= GetSupplierCodes - Supplier Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= GetSupplierCodes - Supplier Codes Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:33
+Step= MasterCtrl-GetSupplierCodes Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-AddNewItemApril2026 Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-Item-LoadDropDowns Action- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemMaster17DecBAL-GetManufacturerDetails - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal-GetManufacturer - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetManufacturer - Stored Procedure : BindManufacturerMaster
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetManufacturer - Manufacturer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal-GetManufacturer - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetManufacturerDetails - Manufacturer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemMaster17DecBAL-GetManufacturerDetails - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= LoadDropDowns - Manufacturers Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemMaster17DecBAL-GetCategoriesDetails - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal-GetCategories - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetCategories - Stored Procedure : BindCategory
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetCategories - Category Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal-GetCategories - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetCategoriesDetails - Category Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemMaster17DecBAL-GetCategoriesDetails - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= LoadDropDowns - Categories Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemMaster17DecBAL-GetAllColours - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal-GetColours - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetColours - Stored Procedure : BindColorMaster
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetColours - Colour Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal-GetColours - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetAllColours - Colour Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemMaster17DecBAL-GetAllColours - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= LoadDropDowns - Colours Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemMaster17DecBAL-GetUnitDetails - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal-GetUnit - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetUnit - Stored Procedure : BindUnit
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetUnit - Unit Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal-GetUnit - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetUnitDetails - Unit Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemMaster17DecBAL-GetUnitDetails - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= LoadDropDowns - Units Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-Item-LoadDropDowns Action- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= AddNewItemApril2026 - DropDowns Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= AddNewItemApril2026 - SubCategories Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-AddNewItemApril2026 Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-GetSupplierCodes Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= SupplierMasterApril2026BAL-BindSupplierCode - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= SupplierMasterMVCApril2026DAL-BindSupplierCode - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindSupplierCode - Stored Procedure : SP_BindSupplierCodeApril2026
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindSupplierCode - Supplier Code Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= SupplierMasterMVCApril2026DAL-BindSupplierCode - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindSupplierCode - Supplier Code Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= SupplierMasterApril2026BAL-BindSupplierCode - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetSupplierCodes - Supplier Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetSupplierCodes - Supplier Codes Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-GetSupplierCodes Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-GetCustomerCodes Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterApril2026BAL-BindCustomer - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL-BindCustomer - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Stored Procedure : BindCustomer
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Customer Data Loaded : 1873
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL-BindCustomer - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterApril2026BAL-BindCustomer - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetCustomerCodes - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetCustomerCodes - Customer Codes Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-GetCustomerCodes Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-GetCustomerCodes Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterApril2026BAL-BindCustomer - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL-BindCustomer - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Stored Procedure : BindCustomer
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Customer Data Loaded : 1873
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL-BindCustomer - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterApril2026BAL-BindCustomer - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetCustomerCodes - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetCustomerCodes - Customer Codes Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-GetCustomerCodes Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-GetCustomerNames Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterApril2026BAL-BindCustomer - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL-BindCustomer - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Stored Procedure : BindCustomer
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Customer Data Loaded : 1873
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL-BindCustomer - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterApril2026BAL-BindCustomer - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetCustomerNames - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetCustomerNames - Customer Names Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-GetCustomerNames Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-GetCustomerNames Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterApril2026BAL-BindCustomer - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL-BindCustomer - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Stored Procedure : BindCustomer
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Customer Data Loaded : 1873
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterMVCApril2026DAL-BindCustomer - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= BindCustomer - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= CustomerMasterApril2026BAL-BindCustomer - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetCustomerNames - Customer Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= GetCustomerNames - Customer Names Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:34
+Step= MasterCtrl-GetCustomerNames Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= MasterCtrl-GetSupplierNames Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= SupplierMasterApril2026BAL-BindSupplierName - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= SupplierMasterMVCApril2026DAL-BindSupplierName - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= BindSupplierName - Stored Procedure : SP_BindSupplierNameApril2026
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= BindSupplierName - Supplier Name Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= SupplierMasterMVCApril2026DAL-BindSupplierName - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= BindSupplierName - Supplier Name Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= SupplierMasterApril2026BAL-BindSupplierName - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= GetSupplierNames - Supplier Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= GetSupplierNames - Supplier Names Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= MasterCtrl-GetSupplierNames Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= ItemList17Dec_Dal GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= CustomerMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= SupplierMasterMVCApril2026DAL GetInstance Static Action
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= MasterCtrl-GetSupplierNames Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= SupplierMasterApril2026BAL-BindSupplierName - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= SupplierMasterMVCApril2026DAL-BindSupplierName - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= BindSupplierName - Stored Procedure : SP_BindSupplierNameApril2026
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= BindSupplierName - Supplier Name Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= SupplierMasterMVCApril2026DAL-BindSupplierName - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= BindSupplierName - Supplier Name Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= SupplierMasterApril2026BAL-BindSupplierName - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= GetSupplierNames - Supplier Data Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= GetSupplierNames - Supplier Names Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:25:35
+Step= MasterCtrl-GetSupplierNames Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= AccountController-SignOut - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= SignOut - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= SignOut - Logout API URL Prepared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= LoginDetailCtrl-LogoutUser Action(httpget)- Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= LogoutUser - Login User Id : 3
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= LogoutUser - Logout Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= LoginDetailCtrl-LogoutUser Action(httpget)- Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= SignOut - Logout API Completed
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= SignOut - Session Cleared
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= AccountController-SignOut - Start-End
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= AccountController-Login(GET) - Start
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= Login(GET) - Login Page Loaded
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 07-10-2026 15:26:30
+Step= AccountController-Login(GET) - Start-End
+---------------------------------------xxxxxxxx------------------------------------

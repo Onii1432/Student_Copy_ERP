@@ -1,0 +1,355 @@
+﻿@model StandardMetals.MODEL.IndentMasterModel
+
+@{
+    ViewBag.Title = "IndentMaster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#ItemName").change(function () {
+            var itemName = $(this).val();
+            if (itemName) {
+                $.ajax({
+                    url: '@Url.Action("GetItemDetails", "Purchase")',
+                    data: { itemName: itemName },
+                    type: 'GET',
+                    success: function (result) {
+                        alert(result)
+                        console.log(result)
+                        alert(result.ItemCode)
+                        // Assuming data contains the fields: ItemCode, Specification, DrawingNo
+                       
+                        //$("#ItemCode").val(result.ItemCode);
+                        var selectedValue = result.ItemCode; // Replace with the actual key from the response
+                        $('#ItemCode').val(selectedValue).change();
+                        $("#Specification").val(result.Specification);
+                        $("#DrawingNo").val(result.DrawingNo);
+                        var selectedValue1 = result.UnitId; // Replace with the actual key from the response
+                        $('#UnitId').val(selectedValue1).change();
+                        //$("#UnitId").val(result.unit);
+                       
+                            
+                    },
+                    error: function (xhr, status, error) {
+                        alert("An error occurred while fetching item details: " + error);
+                    }
+                });
+            } else {
+                // Clear the fields if no item is selected
+                $("#ItemCode").val("");
+                $("#txtSpecification").val("");
+                $("#txtDrawingNo").val("");
+                $("#txtUnit").val("");
+            }
+        });
+
+        $("#AddRow").click(function () {
+            var itemCode = $("#ItemCode").val();
+            var itemName = $("#ItemName option:selected").text();
+            var specification = $("#Specification").val();
+            var drawingNo = $("#DrawingNo").val();
+            var department = $("#DepartmentName option:selected").text();
+            var purpose = $("#Purpose").val();
+            var currentStock = $("#CurrentStock").val();
+            var requiredDate = $("#RequiredDate").val();
+            var orderQuantity = $("#ToOrderQuantity").val();
+            var unit = $("#UnitId option:selected").text();
+
+            var newRow = "<tr>" +
+                "<td>" + itemCode + "</td>" +
+                "<td>" + itemName + "</td>" +
+                "<td>" + specification + "</td>" +
+                "<td>" + drawingNo + "</td>" +
+                "<td>" + department + "</td>" +
+                "<td>" + purpose + "</td>" +
+                "<td>" + currentStock + "</td>" +
+                "<td>" + requiredDate + "</td>" +
+                "<td>" + orderQuantity + "</td>" +
+                "<td>" + unit + "</td>" +
+                "<td><button type='button' class='editButton btn btn-primary'>Edit</button></td>" +
+                "</tr>";
+
+            $("#example tbody").append(newRow);
+
+            // Clear input fields
+            $("#ItemCode").val("");
+            $("#ItemName").val("");
+            $("#Specification").val("");
+            $("#DrawingNo").val("");
+            $("#DepartmentName").val("");
+            $("#Purpose").val("");
+            $("#CurrentStock").val("");
+            $("#RequiredDate").val("");
+            $("#ToOrderQuantity").val("");
+            $("#UnitId").val("");
+        });
+    });
+</script>
+
+
+<section id="ItemSearch">
+    <div class=" col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Search</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="col-md-4">
+                    <strong class="align text-center">Indent Number</strong>
+                    <div class="dropdown">
+                        @Html.DropDownListFor(model => model.IndentNoAutoGen, new SelectList(ViewBag.lst, "IndentId", "IndentNoAutoGen"), "Select", htmlAttributes: new { @class = "form-control" })
+                        @*<select id="drpIndentNumber" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                <option>-Select-</option>
+                            </select>*@
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="ItemInfo">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Item Information</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+                <!-- /.box-tools -->
+            </div>
+            @using (Html.BeginForm(new { @id = "Form" }))
+            {
+                <div class="box-body">
+                    <table class="table-condensed table-hover table-responsive" style="width:100%">
+                        <tbody>
+                            <tr>
+                                <th width="15%"> Indent Number</th>
+                                <td width="35%">
+                                    <input type="text" id="txtIndentNumber" class="form-control input-sm" value="@Model.IndentNoAutoGen" disabled />
+                                </td>
+
+                                <th width="15%"> Indent Date</th>
+                                <td width="35%">
+                                    <input type="text" id="txtIndentDate" class="form-control input-sm" value="@Model.IndentDate.ToString("yyyy-MM-dd")" disabled />
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="15%"> Indent Type</th>
+                                <td width="35%">
+                                    @*<select id="drp IndentType" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                            <option>-Select-</option>
+                                        </select>*@
+                                    @Html.DropDownListFor(model => model.IndentType, new SelectList(ViewBag.lst1, "IndentTypeId", "IndentType"), "Select", htmlAttributes: new { @class = "form-control" })
+                                </td>
+                                <th width="15%">Time</th>
+                                <td width="35%">
+                                    @*<input type="text" id="txtTime" class="form-control input-sm" value="@Model.IndentTime" disabled />*@
+                                    @Html.EditorFor(model => model.IndentTime, "Select", new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            }
+            <!-- /.box-header -->
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+</section>
+
+<section id="ItemInfo">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">ItemDetails</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+                <!-- /.box-tools -->
+            </div>
+            @using (Html.BeginForm(new { @id = "Form" }))
+            {
+                <div class="box-body">
+                    <table class="table-condensed table-hover table-responsive" width="100%">
+                        <tbody>
+                            <tr>
+                                <th style="width: 15%"> ItemName</th>
+                                <th style="width: 35%">
+                                    @Html.DropDownListFor(model => model.ItemName, new SelectList(ViewBag.lst2, "ItemName", "ItemName"), "Select", htmlAttributes: new { @class = "form-control" })
+                                </th>
+                                <th style="width: 15%">Item Code</th>
+                                <th style="width: 35%">
+                                    @Html.DropDownListFor(model => model.ItemCode, new SelectList(ViewBag.lst3, "ItemCode", "ItemCode"), "Select", htmlAttributes: new {  @class = "form-control" })
+                                    @*<input type="text" id="txtItemCode" class="form-control input-sm" />*@
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th style="width: 15%">Specification</th>
+                                <th style="width: 35%">
+                                    @*<input type="text" id="txtSpecification" class="form-control input-sm" value="@Model.Specification" disabled />*@
+                                    @Html.EditorFor(model => model.Specification, "Select", new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+                                </th>
+                                <th style="width: 15%">	Drowing No</th>
+                                <th style="width: 35%">
+                                    @*<input type="text" id="txtDrowingNo" class="form-control input-sm" value="@Model.DrawingNo" disabled />*@
+                                    @Html.EditorFor(model => model.DrawingNo, "Select", new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+                                </th>
+                            </tr>
+                            <tr>
+                                <th width="15%">Department</th>
+                                <td width="35%">
+                                    @Html.DropDownListFor(model => model.DepartmentName, new SelectList(ViewBag.lst4, "DepartmentId", "DepartmentName"), "Select", htmlAttributes: new { @class = "form-control" })
+
+                                </td>
+
+                                <th width="15%">Purpose</th>
+                                <td width="35%">
+                                    @*<input type="text" id="txtPurpose" class="form-control input-sm" />*@
+                                    @Html.EditorFor(model => model.Purpose, "Select", new { htmlAttributes = new { @class = "form-control"} })
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="15%">Current Stock</th>
+                                <td width="35%">
+                                    @*<input type="text" id="txtCurrentStock" class="form-control input-sm" value="0" disabled />*@
+                                    @Html.EditorFor(model => model.CurrentStock, "Select", new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+                                </td>
+                                <th width="15%">Requird Date</th>
+                                <td width="35%">
+                                    @*<input type="text" id="txtRequirdDate" class="form-control input-sm" value="@Model.RequiredDate.ToString("yyyy-MM-dd")" disabled />*@
+                                    @Html.EditorFor(model => model.RequiredDate, "{yyyy-MM-dd}", "Select", new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="15%">Required Quantity</th>
+                                <td width="35%">
+                                    <div class="dropdown">
+                                        @*<input type="text" id="txtRequiredQuantity" class="form-control input-sm" />*@
+                                        @Html.EditorFor(model => model.ToOrderQuantity, "Select", new { htmlAttributes = new { @class = "form-control"} })
+                                    </div>
+                                </td>
+                                <th width="15%">Required Quentity Unit</th>
+                                <td width="35%">
+                                    <div class="dropdown">
+                                        @Html.DropDownListFor(model => model.UnitId, new SelectList(ViewBag.lst5, "UnitId", "UnitName"), "Select", htmlAttributes: new { @class = "form-control" })
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            }
+            <!-- /.box-header -->
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+</section>
+
+<center>
+    <input type="button" id="AddRow" value="ADD" class="btn btn-success" />
+</center>
+
+<br /><br />
+<section id="ItemActionMenu">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+            </div>
+            <div class="box-body">
+                <div class="box box-info">
+                    <div style="width: 100%; height: 200px;  overflow:scroll; clear: both; border: 1px solid #808080;" id="secondDivId">
+                        <table class="table table-striped" border="1" style="background-color:azure" id="example">
+                            <thead>
+                                <tr style="background-color:lightblue">
+                                    <th>Item Code</th>
+                                    <th>Item Name</th>
+                                    <th>Specification</th>
+                                    <th>Drawing No</th>
+                                    <th>Department</th>
+                                    <th>Purpose</th>
+                                    <th>Current Stock</th>
+                                    <th>Required Date</th>
+                                    <th>Order Quantity</th>
+                                    <th>Unit</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-offset-5 col-md-10">
+        <br />
+    </div>
+
+</section>
+
+<section id="ItemActionMenu">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+            </div>
+            <div class="box-body">
+                <table style="width:100%">
+                    <tr>
+                        <th>
+                            Remark
+                        </th>
+                        <td>
+                            <input type="text" id="txtremark" class="form-control input-sm" style="width: 280px; height: 130px;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-offset-5 col-md-10">
+        <br />
+    </div>
+
+</section>
+
+<section id="ItemActionMenu">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+            </div>
+            <div class="box-body">
+                <center>
+                    <input type="submit" value="New Item" class="btn btn-info" />
+                    <input id="btnSaveItem" type="submit" value="Save" class="btn btn-success" />
+                    <input id="btnUpdate" type="submit" value="Update" class="btn btn-warning" />
+                    <input id="btnDelete" type="submit" value="Delete" class="btn btn-danger" />
+                    <input id="btnClear" type="submit" value="Clear" class="btn btn-primary" />
+                    <input id="btnClick" type="submit" value="Report" class="btn btn-dark" />
+                </center>
+            </div>
+        </div>
+    </div>
+</section>
+
+

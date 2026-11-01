@@ -1,0 +1,264 @@
+﻿@model StandardMetals.MODEL.ItemMaster_MODEL_27March
+
+
+@{
+    ViewBag.Title = "ItemMasterGridView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bower_componentsJS")
+
+
+@section HeadScripts {
+
+    <script src="~/JS/Master/ItemMaster_GridViewAjax.js"></script>
+    <link href="~/JS/GridViewCSS.css" rel="stylesheet" />
+}
+
+    <div>
+        <button type="button" id="btnAddItemDemo" data-toggle="modal"  data-target="#myModal" class="btn btn-info text-dark"> Add Item </button>
+        @*<button type="button" id="btnClickMe" onclick="example();">Click Me</button>*@
+    </div>
+
+    <div class="container mt-2 bg-gray" style="height:1200px;width:98%" id="FirstDivId">
+        
+        <div style="width: 100%; height: 500px;  overflow:scroll; clear: both; border: 1px solid #808080;" id="secondDivId">
+            <table id="tblItemMaster" class="table table-bordered table-hover mt-2">
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Item Code</th>
+                        <th>Item Name</th>
+                        <th>Manufacturer Name</th>
+                        <th>Material </th>
+                        <th>Category Id</th>
+                        <th>Sub Catgory Id</th>
+                        <th>Item Color</th>
+                        <th>Itm UOM</th>
+                        <th>HSNCODE </th>
+                        <th>GSTRate </th>
+                        <th>Purchase Cost </th>
+                        <th>Selling Price</th>
+                        <th>Action Link </th>
+
+                    </tr>
+                </thead>
+
+                <tbody></tbody>
+
+
+            </table>
+
+        </div>
+    </div>
+
+
+@*Below is defiend Item Master Form*@
+<section>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="height: 750px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">Item InforMation</h4>
+                </div>
+                <div class="modal-body form-group-sm">
+
+                    <div class="col-lg-12 col-md-12">
+                        <div class="box box-info">
+
+                            @*<div class="box-header with-border">
+
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse" >
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                </div>*@
+
+                            <form>
+                                <div class="box-body">
+
+                                    <table class="table-condensed table-hover table-responsive" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width: 15%">Raw material</th>
+                                                <th style="width: 35%">
+                                                    @*@Html.CheckBoxFor(model => model.RawMaterial, new { @class = "form-check-input" })*@
+
+                                                    <input type="checkbox" class="checkbox center-block" />
+
+                                                </th>
+                                                <th style="width: 15%"></th>
+                                                <th style="width: 35%"></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th width="15%">Item Code</th>
+                                                <td width="35%">
+
+                                                    @*@Html.EditorFor(model => model.ItemCode, new { htmlAttributes = new { @class = "form-control input-sm", @id = "txtItemCode" } })*@
+                                                    <input id="txtItemCode" class="form-control input-sm" type="text" readonly />
+                                                    @Html.ValidationMessageFor(model => model.ItemCode, "", new { @class = "text-danger" })
+                                                </td>
+
+
+                                                <th width="15%">Item Name</th>
+                                                <td width="35%">
+                                                    @*@Html.EditorFor(model => model.ItemName, new { htmlAttributes = new { @class = "form-control input-sm",@id= "txtItemName" } })*@
+                                                    <input id="txtItemName" class="form-control input-sm" type="text" />
+                                                    @Html.ValidationMessageFor(model => model.ItemName, "", new { @class = "text-danger" })
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <th width="15%">Manufacturer</th>
+                                                <td width="35%">
+
+                                                    <div class="dropdown">
+                                                        <select id="drpManufacturer" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                                            <option value="-1" lang="en">-Select-</option>
+                                                        </select>
+                                                        @*@Html.DropDownListFor(model => model.ManufacturerId,null, new { @class = "form-control select2",@id= "drpManufacturer" })*@
+                                                        @*@Html.DropDownListFor(model => model.ManufacturerId, new { htmlAttributes = new { @class = "form-control input-sm", @id = "drpManufacturer" } })*@
+                                                        @Html.ValidationMessageFor(model => model.ManufacturerId, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </td>
+                                                <th width="15%">Material</th>
+                                                <td width="35%">
+                                                    @*@Html.EditorFor(model => model.Material, new { htmlAttributes = new { @class = "form-control input-sm",@id= "txtItemMaterial" } })*@
+                                                    <input id="txtItemMaterial" class="form-control input-sm" type="text" />
+
+                                                    @Html.ValidationMessageFor(model => model.Material, "", new { @class = "text-danger" })
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th width="15%">Item Category</th>
+                                                <td width="35%">
+                                                    <div class="dropdown">
+                                                        <select id="drpCategory" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                                            <option value="-1" lang="en">-Select-</option>
+                                                        </select>
+
+                                                    </div>
+                                                </td>
+
+                                                <th width="15%">Item Subcategory</th>
+                                                <td width="35%">
+                                                    <div class="dropdown">
+                                                        <select id="drpSubCategory" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                                            <option value="-1" lang="en">-Select-</option>
+                                                        </select>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th width="15%">Color</th>
+                                                <td width="35%">
+                                                    <div class="dropdown">
+                                                        <select id="drpColor" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                                            <option value="-1" lang="en">-Select-</option>
+                                                        </select>
+                                                    </div>
+
+
+                                                </td>
+
+                                                <th width="15%">UOM</th>
+                                                <td width="35%">
+                                                    <div class="dropdown">
+                                                        <select id="drpUOM" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                                            <option value="-1" lang="en">-Select-</option>
+                                                        </select>
+
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th width="15%">HSN Code</th>
+                                                <td width="35%">
+                                                    <div>
+                                                        @*@Html.EditorFor(model => model.HSNCODE, new { htmlAttributes = new { @class = "form-control input-sm ",@id= "txtItemHSN" } })*@
+                                                        <input id="txtItemHSN" class="form-control input-sm" type="text" />
+                                                        @Html.ValidationMessageFor(model => model.HSNCODE, "", new { @class = "text-danger" })
+                                                    </div>
+
+                                                </td>
+                                                <th width="15%">GST Rate</th>
+                                                <td width="35%">
+
+                                                    <div>
+                                                        @*@Html.EditorFor(model => model.GSTRate, new { htmlAttributes = new { @class = "form-control input-sm",@id= "txtGSTRate" } })*@
+                                                        <input id="txtGSTRate" class="form-control input-sm" type="text" />
+
+                                                        @Html.ValidationMessageFor(model => model.GSTRate, "", new { @class = "text-danger" })
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <th width="15%">Purchase Cost</th>
+                                                <td width="35%">
+                                                    <div class="input-group">
+
+                                                        <span class="input-group-addon">
+                                                            &#8377;<i class="fa fa-percent"></i>
+                                                        </span>
+                                                        @*@Html.EditorFor(model => model.PurchaseCost, new { htmlAttributes = new { @class = "form-control input-sm",@id= "txtItemPurchaseCost" } })*@
+                                                        <input id="txtItemPurchaseCost" class="form-control input-sm" type="text" />
+                                                        <span class="input-group-addon">.00</span>
+                                                        @Html.ValidationMessageFor(model => model.PurchaseCost, "", new { @class = "text-danger" })
+
+
+                                                    </div>
+                                                </td>
+                                                <th width="15%">Selling Price</th>
+                                                <td width="35%">
+                                                    <div class="input-group">
+
+                                                        <span class="input-group-addon">&#8377;</span>
+                                                        @*@Html.EditorFor(model => model.SellingPrice, new { htmlAttributes = new { @class = "form-control input-sm",@id= "txtItemSellingCost" } })*@
+                                                        <input id="txtItemSellingCost" class="form-control input-sm" type="text" />
+                                                        <span class="input-group-addon">.00</span>
+                                                        @Html.ValidationMessageFor(model => model.SellingPrice, "", new { @class = "text-danger" })
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+
+                                </div>
+                            </form>
+
+
+                            <!-- /.box-header -->
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnSaveItem" class="btn btn-success" onclick="return Add();">Save Item </button>
+                    <button type="button" id="btnUpdateItem" class="btn btn-primary"   onclick="return Update();" style="display:none;">Update Item </button>
+                    <button type="button" id="btnClose" class="btn btn-default" onclick="clearTextBox();" data-dismiss="modal">Close </button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+

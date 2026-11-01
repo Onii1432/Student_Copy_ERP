@@ -1,0 +1,622 @@
+Log Date = 16-08-2026 13:21:53
+Step= AccountController - Login page loaded.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:21:57
+Step= AccountController - Login request started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:21:57
+Step= AccountController - Login validation successful. Calling Login API.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:21:59
+Step= AccountController - Login API response received. StatusCode = OK
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:21:59
+Step= AccountController - Login API response processed successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:01
+Step= AccountController - User login successful. Username = SM
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:12
+Step= CustomerMaster - Loading Customer Master list.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:12
+Step= CustomerMaster BAL - BindCustomer started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:12
+Step= CustomerMaster DAL - BindCustomer database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:13
+Step= CustomerMaster DAL - BindCustomer completed successfully. Record Count = 1866
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:13
+Step= CustomerMaster BAL - BindCustomer completed successfully. Record Count = 1866
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:13
+Step= CustomerMaster BAL - BindState started. CountryId = 0
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:13
+Step= CustomerMaster DAL - BindState database operation started. CountryId = 0
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:14
+Step= CustomerMaster DAL - BindState completed successfully. CountryId = 0, Record Count = 10
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:14
+Step= CustomerMaster BAL - BindState completed successfully. Record Count = 10
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:14
+Step= CustomerMaster BAL - GetAllCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:14
+Step= CustomerMaster DAL - GetAllCustomerMaster database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:14
+Step= CustomerMaster DAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:14
+Step= CustomerMaster BAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:22:14
+Step= CustomerMaster - Customer Master list loaded successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:41
+Step= CustomerMaster - Searching customer by Id: 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:41
+Step= CustomerMaster BAL - GetCustomerMasterById started. CustomerId = 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:41
+Step= CustomerMaster DAL - GetCustomerMasterById database operation started. CustomerId = 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:41
+Step= CustomerMaster DAL - GetCustomerMasterById completed successfully. CustomerId = 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:41
+Step= CustomerMaster BAL - GetCustomerMasterById completed successfully. CustomerId = 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:41
+Step= CustomerMaster - Customer details retrieved successfully for Id: 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:54
+Step= CustomerMaster - Update Customer request started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:54
+Step= CustomerMaster BAL - UpdateCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:54
+Step= CustomerMaster DAL - UpdateCustomerMaster database operation started. CustomerId = 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:54
+Step= CustomerMaster DAL - Customer updated successfully. CustomerId = 2, Result = 1
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:54
+Step= CustomerMaster BAL - UpdateCustomerMaster completed. Result = 1
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:54
+Step= CustomerMaster - Customer updated successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster - Loading Customer Master list.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster BAL - BindCustomer started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster DAL - BindCustomer database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster DAL - BindCustomer completed successfully. Record Count = 1866
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster BAL - BindCustomer completed successfully. Record Count = 1866
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster BAL - BindState started. CountryId = 0
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster DAL - BindState database operation started. CountryId = 0
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster DAL - BindState completed successfully. CountryId = 0, Record Count = 10
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster BAL - BindState completed successfully. Record Count = 10
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster BAL - GetAllCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster DAL - GetAllCustomerMaster database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster DAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster BAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:24:57
+Step= CustomerMaster - Customer Master list loaded successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:25:04
+Step= CustomerMaster - Searching customer by Id: 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:25:04
+Step= CustomerMaster BAL - GetCustomerMasterById started. CustomerId = 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:25:04
+Step= CustomerMaster DAL - GetCustomerMasterById database operation started. CustomerId = 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:25:04
+Step= CustomerMaster DAL - GetCustomerMasterById completed successfully. CustomerId = 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:25:04
+Step= CustomerMaster BAL - GetCustomerMasterById completed successfully. CustomerId = 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:25:04
+Step= CustomerMaster - Customer details retrieved successfully for Id: 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:28:08
+Step= CustomerMaster - Save Customer request started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:28:08
+Step= CustomerMaster BAL - SaveCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:28:08
+Step= CustomerMaster DAL - SaveCustomerMaster database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 16-08-2026 13:28:09
+Error = Invalid Branch Name.
+Stack Trace =    at StandardMetals.DAL.CustomerMasterMVCApril2026DAL.SaveCustomerMaster(CustomerMasterMVCApril2026Model obj) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.DAL\CustomerMasterMVCApril2026DAL.cs:line 245
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 16-08-2026 13:28:09
+Error = Invalid Branch Name.
+Stack Trace =    at StandardMetals.DAL.CustomerMasterMVCApril2026DAL.SaveCustomerMaster(CustomerMasterMVCApril2026Model obj) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.DAL\CustomerMasterMVCApril2026DAL.cs:line 394
+   at StandardMetals.BAL.CustomerMasterMVCApril2026BAL.SaveCustomerMaster(CustomerMasterMVCApril2026Model model) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\CustomerMasterMVCApril2026BAL.cs:line 68
+   at StandardMetals.WebApp.Controllers.MasterController.SaveCustomerApril2026(CustomerMasterMVCApril2026Model obj) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebApp\Controllers\MasterController.cs:line 1242
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:30:24
+Step= CustomerMaster - Searching customer by Id: 15577
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:30:24
+Step= CustomerMaster BAL - GetCustomerMasterById started. CustomerId = 15577
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:30:24
+Step= CustomerMaster DAL - GetCustomerMasterById database operation started. CustomerId = 15577
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:30:24
+Step= CustomerMaster DAL - GetCustomerMasterById completed successfully. CustomerId = 15577
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:30:24
+Step= CustomerMaster BAL - GetCustomerMasterById completed successfully. CustomerId = 15577
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 13:30:24
+Step= CustomerMaster - Customer details retrieved successfully for Id: 15577
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:14:23
+Step= AccountController - Login page loaded.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:14:31
+Step= AccountController - Login request started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:14:31
+Step= AccountController - Login validation successful. Calling Login API.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:14:49
+Step= AccountController - Login API response received. StatusCode = OK
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:14:49
+Step= AccountController - Login API response processed successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:14:54
+Step= AccountController - User login successful. Username = SM
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:22:58
+Step= ItemMaster BAL - GetAllItemMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:22:58
+Step= ItemMaster DAL - GetAllItemMasterDAL database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:22:58
+Step= ItemMaster DAL - GetAllItemMasterDAL completed successfully. Record Count = 4387
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:22:58
+Step= ItemMaster BAL - GetAllItemMaster completed successfully. Record Count = 4387
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:04
+Step= ItemMaster BAL - GetAllItemMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:04
+Step= ItemMaster DAL - GetAllItemMasterDAL database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:04
+Step= ItemMaster DAL - GetAllItemMasterDAL completed successfully. Record Count = 4387
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:04
+Step= ItemMaster BAL - GetAllItemMaster completed successfully. Record Count = 4387
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:40
+Step= ItemMaster BAL - GetAllItemMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:40
+Step= ItemMaster DAL - GetAllItemMasterDAL database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:40
+Step= ItemMaster DAL - GetAllItemMasterDAL completed successfully. Record Count = 4387
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:40
+Step= ItemMaster BAL - GetAllItemMaster completed successfully. Record Count = 4387
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:58
+Step= ItemMaster BAL - GetAllItemMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:58
+Step= ItemMaster DAL - GetAllItemMasterDAL database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:58
+Step= ItemMaster DAL - GetAllItemMasterDAL completed successfully. Record Count = 4387
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:24:58
+Step= ItemMaster BAL - GetAllItemMaster completed successfully. Record Count = 4387
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:42:58
+Step= ItemMaster BAL - GetItemDetailsById started. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:42:58
+Step= ItemMaster DAL - GetItemDetailsByID database operation started. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:42:58
+Step= ItemMaster DAL - Item details retrieved successfully. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:42:58
+Step= ItemMaster BAL - GetItemDetailsById completed successfully. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:43:26
+Step= ItemMaster BAL - GetItemDetailsById started. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:43:26
+Step= ItemMaster DAL - GetItemDetailsByID database operation started. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:43:26
+Step= ItemMaster DAL - Item details retrieved successfully. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 15:43:26
+Step= ItemMaster BAL - GetItemDetailsById completed successfully. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 16:04:25
+Step= CustomerMaster BAL - GetAllCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 16:04:25
+Step= CustomerMaster DAL - GetAllCustomerMaster database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 16:04:29
+Step= CustomerMaster DAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 16:04:29
+Step= CustomerMaster BAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 16:06:10
+Step= CustomerMaster BAL - GetAllCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 16:06:10
+Step= CustomerMaster DAL - GetAllCustomerMaster database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 16:06:11
+Step= CustomerMaster DAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 16:06:11
+Step= CustomerMaster BAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:16:57
+Step= CustomerMaster BAL - SaveCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:16:57
+Step= CustomerMaster DAL - SaveCustomerMaster database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 16-08-2026 18:16:59
+Error = Invalid Branch Name.
+Stack Trace =    at StandardMetals.DAL.CustomerMasterMVCApril2026DAL.SaveCustomerMaster(CustomerMasterMVCApril2026Model obj) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.DAL\CustomerMasterMVCApril2026DAL.cs:line 245
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:20:35
+Step= CustomerMaster BAL - SaveCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:20:35
+Step= CustomerMaster DAL - SaveCustomerMaster database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 16-08-2026 18:20:50
+Error = Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=1238; handshake=14701; 
+Stack Trace =    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at StandardMetals.DAL.CustomerMasterMVCApril2026DAL.SaveCustomerMaster(CustomerMasterMVCApril2026Model obj) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.DAL\CustomerMasterMVCApril2026DAL.cs:line 218
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:26:15
+Step= CustomerMaster BAL - GetAllCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:26:15
+Step= CustomerMaster DAL - GetAllCustomerMaster database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:26:19
+Step= CustomerMaster DAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:26:19
+Step= CustomerMaster BAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:26:41
+Step= CustomerMaster BAL - GetAllCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:26:41
+Step= CustomerMaster DAL - GetAllCustomerMaster database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:26:43
+Step= CustomerMaster DAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:26:43
+Step= CustomerMaster BAL - GetAllCustomerMaster completed successfully. Record Count = 836
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:27:00
+Step= CustomerMaster BAL - SaveCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:27:00
+Step= CustomerMaster DAL - SaveCustomerMaster database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:27:01
+Step= CustomerMaster DAL - Customer saved successfully. Result = 1
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:27:01
+Step= CustomerMaster BAL - SaveCustomerMaster completed. Result = 1
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:28:39
+Step= CustomerMaster BAL - GetAllCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:28:39
+Step= CustomerMaster DAL - GetAllCustomerMaster database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:28:40
+Step= CustomerMaster DAL - GetAllCustomerMaster completed successfully. Record Count = 837
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:28:40
+Step= CustomerMaster BAL - GetAllCustomerMaster completed successfully. Record Count = 837
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:30:02
+Step= CustomerMaster BAL - GetCustomerMasterById started. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:30:02
+Step= CustomerMaster DAL - GetCustomerMasterById database operation started. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:30:02
+Step= CustomerMaster DAL - GetCustomerMasterById completed successfully. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:30:02
+Step= CustomerMaster BAL - GetCustomerMasterById completed successfully. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:33:55
+Step= CustomerMaster BAL - UpdateCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:33:55
+Step= CustomerMaster DAL - UpdateCustomerMaster database operation started. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 16-08-2026 18:33:56
+Error = The UPDATE statement conflicted with the FOREIGN KEY constraint "FK__CustomerM__CityI__0080C572". The conflict occurred in database "aaliml4n_MVC_ERP", table "dbo.CityMaster", column 'CityId'.
+The statement has been terminated.
+Stack Trace =    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at StandardMetals.DAL.CustomerMasterMVCApril2026DAL.UpdateCustomerMaster(CustomerMasterMVCApril2026Model obj) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.DAL\CustomerMasterMVCApril2026DAL.cs:line 503
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:45:49
+Step= CustomerMaster BAL - UpdateCustomerMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:45:49
+Step= CustomerMaster DAL - UpdateCustomerMaster database operation started. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:45:53
+Step= CustomerMaster DAL - Customer updated successfully. CustomerId = 15580, Result = 1
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:45:53
+Step= CustomerMaster BAL - UpdateCustomerMaster completed. Result = 1
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:46:20
+Step= CustomerMaster BAL - GetCustomerMasterById started. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:46:20
+Step= CustomerMaster DAL - GetCustomerMasterById database operation started. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:46:20
+Step= CustomerMaster DAL - GetCustomerMasterById completed successfully. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:46:20
+Step= CustomerMaster BAL - GetCustomerMasterById completed successfully. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:48:18
+Step= CustomerMaster BAL - DeleteCustomerMasterById started. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:48:18
+Step= CustomerMaster DAL - DeleteCustomerMasterById database operation started. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:48:19
+Step= CustomerMaster DAL - Customer deleted successfully. CustomerId = 15580, Result = 1
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:48:19
+Step= CustomerMaster BAL - DeleteCustomerMasterById completed. CustomerId = 15580, Result = 1
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:48:33
+Step= CustomerMaster BAL - GetCustomerMasterById started. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:48:33
+Step= CustomerMaster DAL - GetCustomerMasterById database operation started. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:48:33
+Step= CustomerMaster DAL - GetCustomerMasterById completed successfully. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 18:48:33
+Step= CustomerMaster BAL - GetCustomerMasterById completed successfully. CustomerId = 15580
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:11:38
+Step= ItemMaster BAL - SaveNewItem started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:11:38
+Step= ItemMaster DAL - SaveNewItemDetails database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:11:38
+Step= ItemMaster DAL - New Item saved successfully. ItemCode = RMLQ9918
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:11:38
+Step= ItemMaster BAL - Item Master saved successfully. ItemCode = RMLQ9918
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:11:38
+Step= ItemMaster DAL - getItemCodes database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:11:38
+Step= ItemMaster DAL - getItemCodes completed successfully. Record Count = 4388
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:11:38
+Step= ItemMaster BAL - ItemId retrieved successfully. ItemCode = RMLQ9918, ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:11:38
+Step= ItemMaster BAL - No suppliers selected for this Item. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:11:38
+Step= ItemMaster BAL - SaveNewItem completed successfully. ItemCode = RMLQ9918
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:15:45
+Step= ItemMaster BAL - GetAllItemMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:15:45
+Step= ItemMaster DAL - GetAllItemMasterDAL database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:15:45
+Step= ItemMaster DAL - GetAllItemMasterDAL completed successfully. Record Count = 4388
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:15:45
+Step= ItemMaster BAL - GetAllItemMaster completed successfully. Record Count = 4388
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:18:04
+Step= ItemMaster BAL - GetItemDetailsById started. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:18:04
+Step= ItemMaster DAL - GetItemDetailsByID database operation started. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:18:04
+Step= ItemMaster DAL - Item details retrieved successfully. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:18:04
+Step= ItemMaster BAL - GetItemDetailsById completed successfully. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:19:40
+Step= ItemMaster BAL - UpdateExistingItem started. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:19:40
+Step= ItemMaster DAL - UpdateItemDetails database operation started. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 16-08-2026 19:19:40
+Error = Procedure or function 'EditItemMasterData' expects parameter '@ItemCode', which was not supplied.
+Stack Trace =    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at StandardMetals.DAL.ItemList17Dec_Dal.UpdateItemDetails(Int32 itemId, ItemMaster_Modal_AprBtch model) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.DAL\ItemList17Dec_Dal.cs:line 554
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 16-08-2026 19:19:40
+Error = Procedure or function 'EditItemMasterData' expects parameter '@ItemCode', which was not supplied.
+Stack Trace =    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at StandardMetals.DAL.ItemList17Dec_Dal.UpdateItemDetails(Int32 itemId, ItemMaster_Modal_AprBtch model) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.DAL\ItemList17Dec_Dal.cs:line 572
+   at StandardMetals.BAL.ItemMaster17Dec_BAL.UpdateExistingItem(Int32 id, ItemMaster_Modal_AprBtch model) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\ItemMaster17Dec_BAL.cs:line 195
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:05
+Step= ItemMaster BAL - GetAllItemMaster started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:05
+Step= ItemMaster DAL - GetAllItemMasterDAL database operation started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:06
+Step= ItemMaster DAL - GetAllItemMasterDAL completed successfully. Record Count = 4388
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:06
+Step= ItemMaster BAL - GetAllItemMaster completed successfully. Record Count = 4388
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:20
+Step= ItemMaster BAL - UpdateExistingItem started. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:20
+Step= ItemMaster DAL - UpdateItemDetails database operation started. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:21
+Step= ItemMaster DAL - Item updated successfully. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:21
+Step= ItemMaster BAL - Item Master updated successfully. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:21
+Step= ItemMaster DAL - GetSupplierDetailsByItemId database operation started. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:21
+Step= ItemMaster DAL - GetSupplierDetailsByItemId completed successfully. ItemId = 30646, Record Count = 0
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:21
+Step= ItemMaster BAL - Supplier synchronization started. ItemId = 30646, Existing Supplier Count = 0, Submitted Supplier Count = 0
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:21
+Step= ItemMaster BAL - Supplier synchronization completed successfully. ItemId = 30646, Deleted = 0, Inserted = 0, Kept = 0
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:21:21
+Step= ItemMaster BAL - UpdateExistingItem completed successfully. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:22:09
+Step= ItemMaster BAL - GetItemDetailsById started. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:22:09
+Step= ItemMaster DAL - GetItemDetailsByID database operation started. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:22:09
+Step= ItemMaster DAL - Item details retrieved successfully. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:22:09
+Step= ItemMaster BAL - GetItemDetailsById completed successfully. ItemId = 30645
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:22:45
+Step= ItemMaster BAL - GetItemDetailsById started. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:22:45
+Step= ItemMaster DAL - GetItemDetailsByID database operation started. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:22:45
+Step= ItemMaster DAL - Item details retrieved successfully. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 16-08-2026 19:22:45
+Step= ItemMaster BAL - GetItemDetailsById completed successfully. ItemId = 30646
+---------------------------------------xxxxxxxx------------------------------------

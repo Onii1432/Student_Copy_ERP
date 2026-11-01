@@ -1,0 +1,65 @@
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.pdb
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CoreCompileInputs.cache
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.pdb
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csprojAssemblyReference.cache
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.pdb
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CoreCompileInputs.cache
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csprojAssemblyReference.cache
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CoreCompileInputs.cache
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csprojAssemblyReference.cache
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CoreCompileInputs.cache
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CoreCompileInputs.cache
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csprojAssemblyReference.cache
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.dll
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.pdb
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csprojAssemblyReference.cache
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CoreCompileInputs.cache
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.dll
+C:\Users\RSC\Downloads\StandartMetalsERP1\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.pdb
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.pdb
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csprojAssemblyReference.cache
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CoreCompileInputs.cache
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.pdb
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.pdb
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csprojAssemblyReference.cache
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CoreCompileInputs.cache
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CoreCompileInputs.cache
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csprojAssemblyReference.cache
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.CommonLibrary.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.CommonLibrary.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CopyComplete
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.MODEL.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.CommonLibrary.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\bin\Debug\StandardMetals.CommonLibrary.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csprojAssemblyReference.cache
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CoreCompileInputs.cache
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.csproj.CopyComplete
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.MODEL\obj\Debug\StandardMetals.MODEL.pdb

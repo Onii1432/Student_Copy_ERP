@@ -1,0 +1,18 @@
+Log Date = 31-08-2026 11:01:44
+Step= AccountController - Login page loaded.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 31-08-2026 11:01:52
+Step= AccountController - Login request started.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 31-08-2026 11:01:52
+Step= AccountController - Login validation successful. Calling Login API.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 31-08-2026 11:02:10
+Step= AccountController - Login API response received. StatusCode = OK
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 31-08-2026 11:02:10
+Step= AccountController - Login API response processed successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 31-08-2026 11:02:13
+Step= AccountController - User login successful. Username = SM
+---------------------------------------xxxxxxxx------------------------------------

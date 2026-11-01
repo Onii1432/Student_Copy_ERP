@@ -1,0 +1,1007 @@
+﻿@model StandardMetals.MODEL.ItemMaster_Modal_AprBtch
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add New Item</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <style>
+        .row {
+            padding: 10px;
+        }
+
+        .section-box {
+            padding-top: 5px;
+        }
+
+        .modal-body {
+            padding-top: 5px;
+        }
+
+        .form-title {
+            margin-left: 8px;
+            font-size: 24px;
+        }
+
+        .text-danger {
+            color: red !important;
+        }
+
+        /* Purchase Cost / Selling Price validation */
+        .price-validation-error {
+            border: 1px solid red !important;
+        }
+
+        .select2-container {
+            width: 100% !important;
+        }
+
+            .select2-container .select2-selection--single {
+                height: 34px;
+                border: 1px solid #ccc;
+                border-radius: 0;
+            }
+
+                .select2-container .select2-selection--single .select2-selection__rendered {
+                    line-height: 32px;
+                    padding-left: 12px;
+                }
+
+                .select2-container .select2-selection--single .select2-selection__arrow {
+                    height: 32px;
+                }
+
+        .select2-dropdown {
+            z-index: 999999 !important;
+        }
+
+        .select2-container--open .select2-dropdown--above,
+        .select2-container--open .select2-dropdown--below {
+            top: 100% !important;
+            bottom: auto !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            transform: none !important;
+        }
+
+        .select2-results__options {
+            max-height: 220px !important;
+            overflow-y: auto !important;
+        }
+
+        .select2-search--dropdown {
+            padding: 6px !important;
+        }
+
+            .select2-search--dropdown .select2-search__field {
+                width: 100% !important;
+                height: 32px !important;
+                padding: 5px 8px !important;
+                border: 1px solid #ccc !important;
+                outline: none !important;
+            }
+
+        .select2-container--open {
+            z-index: 999999 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal-dialog modal-lg custom-modal-sm">
+        <div class="modal-content">
+
+            <div class="modal-header custom-header" style="display:flex;">
+                <h2>Add New Item</h2>
+                <button type="button" class="close" data-dismiss="modal" style="margin-left:auto;">&times;</button>
+            </div>
+
+            <div class="modal-body" style="padding-bottom:0px">
+                <div class="box box-info">
+                    <div class="box-body">
+                        <div class="formcolor section-box">
+
+                            @using (Html.BeginForm("AddNewItemApril2026", "Master", FormMethod.Post, new { id = "AddNewItemForm" }))
+                            {
+                                @Html.AntiForgeryToken()
+
+                                <div class="form-horizontal">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.ItemCode, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.ItemCode, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                            @Html.ValidationMessageFor(model => model.ItemCode, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.ItemName, "Name", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.ItemName, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.ItemName, "", new { @class = "text-danger" })
+
+                                            <!-- Duplicate Item Name Error -->
+                                            <span id="itemNameDuplicateError"
+                                                  class="text-danger"
+                                                  style="display:none;">
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.ManufactureId, "Manufacturer", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(model => model.ManufactureId, new SelectList(ViewBag.Manufacturers, "ManufactureId", "ManufactureName", Model.ManufactureId), "Select", new { @class = "form-control", id = "ManufactureId" })
+                                            @Html.ValidationMessageFor(model => model.ManufactureId, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.Material, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Material, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Material, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.CategoryId, "Category", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(model => model.CategoryId, new SelectList(ViewBag.Categories, "CategoryId", "CategoryName", Model.CategoryId), "Select", new { @class = "form-control", id = "CategoryId" })
+                                            @Html.ValidationMessageFor(model => model.CategoryId, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.SubCategoryId, "SubCategory", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(model => model.SubCategoryId, new SelectList(ViewBag.SubCategories, "SubCategoryId", "SubCategoryName", Model.SubCategoryId), "Select Sub-Category", new { @class = "form-control", id = "SubCategoryId" })
+                                            @Html.ValidationMessageFor(model => model.SubCategoryId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.ColourId, "Colour", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(model => model.ColourId, new SelectList(ViewBag.ColourList, "ColourId", "ColourName", Model.ColourId), "Select", new { @class = "form-control", id = "ColourId" })
+                                            @Html.ValidationMessageFor(model => model.ColourId, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.UnitId, "Unit", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(model => model.UnitId, new SelectList(ViewBag.UnitList, "UnitId", "UnitName", Model.UnitId), "Select", new { @class = "form-control", id = "UnitId" })
+                                            @Html.ValidationMessageFor(model => model.UnitId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.HSNCODE, "HSN-Code", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.HSNCODE, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.HSNCODE, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.GSTRate, "GST Rate", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.GSTRate, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.GSTRate, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.PurchaseCost, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.PurchaseCost, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.PurchaseCost, "", new { @class = "text-danger" })
+
+                                            <!-- Purchase / Selling Price Error -->
+                                            <span id="purchaseSellingError"
+                                                  class="text-danger"
+                                                  style="display:none;">
+                                                Purchase Cost should be less than Selling Price.
+                                            </span>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.SellingPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.SellingPrice, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.SellingPrice, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <br />
+                                    <br />
+
+                                    <!-- Supplier Mapping -->
+                                    <section id="SupplierMaster">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="box box-info">
+
+                                                <div class="box-header with-border">
+                                                    <h3 class="box-title">Supplier Details</h3>
+                                                    <div class="box-tools pull-right">
+                                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                                            <i class="fa fa-minus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="box-body">
+
+                                                    <div class="col-md-4">
+                                                        <strong class="align text-center">Supplier Code</strong>
+                                                        <select id="ddlSearchSuppCode" class="form-control">
+                                                            <option value="">Select Supplier Code</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <strong class="align text-center">Supplier Name</strong>
+                                                        <select id="ddlSearchSuppName" class="form-control">
+                                                            <option value="">Select Supplier Name</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>&nbsp;</label><br />
+                                                            <input id="btnAddSupplier" type="button" value="Add" class="btn btn-primary" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-12" style="margin-top:15px;">
+                                                        <table id="tblItemSupplier" class="table table-bordered table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Supplier Code</th>
+                                                                    <th>Supplier Name</th>
+                                                                    <th style="width:100px;">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="supplierListBody"></tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- Customer Mapping -->
+                                    <section id="CustomerMaster">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="box box-info">
+
+                                                <div class="box-header with-border">
+                                                    <h3 class="box-title">Customer Details</h3>
+                                                    <div class="box-tools pull-right">
+                                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                                            <i class="fa fa-minus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="box-body">
+
+                                                    <div class="col-md-4">
+                                                        <strong class="align text-center">Customer Code</strong>
+                                                        <select id="ddlSearchCustCode" class="form-control">
+                                                            <option value="">Select Customer Code</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <strong class="align text-center">Customer Name</strong>
+                                                        <select id="ddlSearchCustName" class="form-control">
+                                                            <option value="">Select Customer Name</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>&nbsp;</label><br />
+                                                            <input id="btnAddCustomer" type="button" value="Add" class="btn btn-primary" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-12" style="margin-top:15px;">
+                                                        <table id="tblItemCustomer" class="table table-bordered table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Customer Code</th>
+                                                                    <th>Customer Name</th>
+                                                                    <th style="width:100px;">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="customerListBody"></tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- Save Item -->
+                                    <div class="form-group">
+                                        <div class="modal-footer justify-content-end">
+
+                                            <!-- AJAX Save -->
+                                            <input id="btnSaveItem"
+                                                   type="button"
+                                                   value="Save"
+                                                   class="btn btn-success" />
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            var supplierList = [];
+            var customerList = [];
+            var isSaving = false;
+            var select2Parent = $("#myModal").length ? $("#myModal") : $(".modal-dialog").last();
+
+            // Parse validation for dynamic partial.
+            if ($.validator && $.validator.unobtrusive) {
+                $.validator.unobtrusive.parse("#AddNewItemForm");
+            }
+
+            // Initialize Select2.
+            $("#ManufactureId").select2({
+                placeholder: "Select Manufacturer",
+                allowClear: true,
+                width: "100%",
+                dropdownParent: select2Parent
+            });
+
+            $("#ddlSearchSuppCode").select2({
+                placeholder: "Select Supplier Code",
+                allowClear: true,
+                width: "100%",
+                dropdownParent: select2Parent
+            });
+
+            $("#ddlSearchSuppName").select2({
+                placeholder: "Select Supplier Name",
+                allowClear: true,
+                width: "100%",
+                dropdownParent: select2Parent
+            });
+
+            $("#ddlSearchCustCode").select2({
+                placeholder: "Select Customer Code",
+                allowClear: true,
+                width: "100%",
+                dropdownParent: select2Parent
+            });
+
+            $("#ddlSearchCustName").select2({
+                placeholder: "Select Customer Name",
+                allowClear: true,
+                width: "100%",
+                dropdownParent: select2Parent
+            });
+
+            // Select2 dropdown position and search focus.
+            $(document).off("select2:open.addNewItem").on("select2:open.addNewItem", function () {
+                setTimeout(function () {
+                    var container = $(".select2-container--open");
+                    var dropdown = container.find(".select2-dropdown");
+
+                    dropdown.removeClass("select2-dropdown--above").addClass("select2-dropdown--below");
+                    dropdown.css({
+                        "top": "100%",
+                        "bottom": "auto",
+                        "margin-top": "0",
+                        "margin-bottom": "0",
+                        "transform": "none"
+                    });
+
+                    var searchBox = $(".select2-container--open .select2-search__field");
+
+                    if (searchBox.length) {
+                        searchBox.trigger("focus");
+                    }
+                }, 50);
+            });
+
+            // Bind SubCategory.
+            $(document).off("change.addNewItem", "#CategoryId").on("change.addNewItem", "#CategoryId", function () {
+
+                var categoryId = $(this).val();
+
+                $("#SubCategoryId")
+                    .empty()
+                    .append($("<option></option>").val("").text("Select Sub-Category"))
+                    .val("")
+                    .trigger("change");
+
+                if (!categoryId || categoryId === "0") {
+                    return;
+                }
+
+                $.ajax({
+                    url: '@Url.Action("GetSubCategoryN", "Master")',
+                    type: "GET",
+                    data: { id: categoryId },
+                    dataType: "json",
+
+                    success: function (result) {
+                        $.each(result, function (index, item) {
+                            $("#SubCategoryId").append(
+                                $("<option></option>")
+                                    .val(item.SubCategoryId)
+                                    .text(item.SubCategoryName)
+                            );
+                        });
+                    },
+
+                    error: function () {
+                        alert("Error while binding SubCategories!");
+                    }
+                });
+            });
+
+            // Load Supplier Codes.
+            $.ajax({
+                url: '@Url.Action("GetSupplierCodes", "Master")',
+                type: "GET",
+                dataType: "json",
+
+                success: function (result) {
+
+                    $("#ddlSearchSuppCode")
+                        .empty()
+                        .append($("<option></option>").val("").text("Select Supplier Code"));
+
+                    $.each(result, function (index, item) {
+                        $("#ddlSearchSuppCode").append(
+                            $("<option></option>")
+                                .val(item.Id)
+                                .text(item.SuppCode)
+                        );
+                    });
+
+                    $("#ddlSearchSuppCode").trigger("change.select2");
+                },
+
+                error: function () {
+                    alert("Error while loading Supplier Code.");
+                }
+            });
+
+            // Load Supplier Names.
+            $.ajax({
+                url: '@Url.Action("GetSupplierNames", "Master")',
+                type: "GET",
+                dataType: "json",
+
+                success: function (result) {
+
+                    $("#ddlSearchSuppName")
+                        .empty()
+                        .append($("<option></option>").val("").text("Select Supplier Name"));
+
+                    $.each(result, function (index, item) {
+                        $("#ddlSearchSuppName").append(
+                            $("<option></option>")
+                                .val(item.Id)
+                                .text(item.SuppName)
+                        );
+                    });
+
+                    $("#ddlSearchSuppName").trigger("change.select2");
+                },
+
+                error: function () {
+                    alert("Error while loading Supplier Name.");
+                }
+            });
+
+            // Load Customer Codes.
+            $.ajax({
+                url: '@Url.Action("GetCustomerCodes", "Master")',
+                type: "GET",
+                dataType: "json",
+
+                success: function (result) {
+
+                    $("#ddlSearchCustCode")
+                        .empty()
+                        .append($("<option></option>").val("").text("Select Customer Code"));
+
+                    $.each(result, function (index, item) {
+                        $("#ddlSearchCustCode").append(
+                            $("<option></option>")
+                                .val(item.Id)
+                                .text(item.CustCode)
+                        );
+                    });
+
+                    $("#ddlSearchCustCode").trigger("change.select2");
+                },
+
+                error: function () {
+                    alert("Error while loading Customer Code.");
+                }
+            });
+
+            // Load Customer Names.
+            $.ajax({
+                url: '@Url.Action("GetCustomerNames", "Master")',
+                type: "GET",
+                dataType: "json",
+
+                success: function (result) {
+
+                    $("#ddlSearchCustName")
+                        .empty()
+                        .append($("<option></option>").val("").text("Select Customer Name"));
+
+                    $.each(result, function (index, item) {
+                        $("#ddlSearchCustName").append(
+                            $("<option></option>")
+                                .val(item.Id)
+                                .text(item.CustName)
+                        );
+                    });
+
+                    $("#ddlSearchCustName").trigger("change.select2");
+                },
+
+                error: function () {
+                    alert("Error while loading Customer Name.");
+                }
+            });
+
+            // Supplier Code Change.
+            $(document).off("change.addNewItem", "#ddlSearchSuppCode").on("change.addNewItem", "#ddlSearchSuppCode", function () {
+
+                var supplierID = $(this).val();
+
+                if (!supplierID || supplierID === "0") {
+                    $("#ddlSearchSuppName").val("").trigger("change.select2");
+                    return;
+                }
+
+                $("#ddlSearchSuppName").val(supplierID).trigger("change.select2");
+            });
+
+            // Supplier Name Change.
+            $(document).off("change.addNewItem", "#ddlSearchSuppName").on("change.addNewItem", "#ddlSearchSuppName", function () {
+
+                var supplierID = $(this).val();
+
+                if (!supplierID || supplierID === "0") {
+                    $("#ddlSearchSuppCode").val("").trigger("change.select2");
+                    return;
+                }
+
+                $("#ddlSearchSuppCode").val(supplierID).trigger("change.select2");
+            });
+
+            // Customer Code Change.
+            $(document).off("change.addNewItem", "#ddlSearchCustCode").on("change.addNewItem", "#ddlSearchCustCode", function () {
+
+                var customerID = $(this).val();
+
+                if (!customerID || customerID === "0") {
+                    $("#ddlSearchCustName").val("").trigger("change.select2");
+                    return;
+                }
+
+                $("#ddlSearchCustName").val(customerID).trigger("change.select2");
+            });
+
+            // Customer Name Change.
+            $(document).off("change.addNewItem", "#ddlSearchCustName").on("change.addNewItem", "#ddlSearchCustName", function () {
+
+                var customerID = $(this).val();
+
+                if (!customerID || customerID === "0") {
+                    $("#ddlSearchCustCode").val("").trigger("change.select2");
+                    return;
+                }
+
+                $("#ddlSearchCustCode").val(customerID).trigger("change.select2");
+            });
+
+            // Add Supplier.
+            $("#btnAddSupplier").off("click").on("click.addNewItem", function (e) {
+
+                e.preventDefault();
+                e.stopImmediatePropagation();
+
+                var supplierID = $("#ddlSearchSuppCode").val();
+                var supplierCode = $("#ddlSearchSuppCode option:selected").text();
+                var supplierName = $("#ddlSearchSuppName option:selected").text();
+
+                if (!supplierID || supplierID === "0" || supplierCode === "Select Supplier Code") {
+                    alert("Please select Supplier Code.");
+                    return false;
+                }
+
+                var supplierNameID = $("#ddlSearchSuppName").val();
+
+                if (!supplierNameID || supplierNameID === "0" || supplierName === "Select Supplier Name") {
+                    alert("Please select Supplier Name.");
+                    return false;
+                }
+
+                var alreadyExists = supplierList.some(function (supplier) {
+                    return supplier.Id == supplierID;
+                });
+
+                if (alreadyExists) {
+                    alert("This Supplier is already added.");
+                    return false;
+                }
+
+                supplierList.push({
+                    Id: parseInt(supplierID),
+                    SuppCode: supplierCode,
+                    SuppName: supplierName
+                });
+
+                var row =
+                    `<tr data-supplier-id="${supplierID}">
+                        <td>${supplierCode}</td>
+                        <td>${supplierName}</td>
+                        <td style="width:100px;">
+                            <button type="button" class="btn btn-danger btn-sm btnRemoveSupplier">Remove</button>
+                        </td>
+                    </tr>`;
+
+                $("#supplierListBody").append(row);
+
+                $("#ddlSearchSuppCode").val("").trigger("change.select2");
+                $("#ddlSearchSuppName").val("").trigger("change.select2");
+
+                return false;
+            });
+
+            // Add Customer.
+            $("#btnAddCustomer").off("click").on("click.addNewItem", function (e) {
+
+                e.preventDefault();
+                e.stopImmediatePropagation();
+
+                var customerID = $("#ddlSearchCustCode").val();
+                var customerCode = $("#ddlSearchCustCode option:selected").text();
+                var customerName = $("#ddlSearchCustName option:selected").text();
+
+                if (!customerID || customerID === "0" || customerCode === "Select Customer Code") {
+                    alert("Please select Customer Code.");
+                    return false;
+                }
+
+                var customerNameID = $("#ddlSearchCustName").val();
+
+                if (!customerNameID || customerNameID === "0" || customerName === "Select Customer Name") {
+                    alert("Please select Customer Name.");
+                    return false;
+                }
+
+                var alreadyExists = customerList.some(function (customer) {
+                    return customer.Id == customerID;
+                });
+
+                if (alreadyExists) {
+                    alert("This Customer is already added.");
+                    return false;
+                }
+
+                customerList.push({
+                    Id: parseInt(customerID),
+                    CustCode: customerCode,
+                    CustName: customerName
+                });
+
+                var row =
+                    `<tr data-customer-id="${customerID}">
+                        <td>${customerCode}</td>
+                        <td>${customerName}</td>
+                        <td style="width:100px;">
+                            <button type="button" class="btn btn-danger btn-sm btnRemoveCustomer">Remove</button>
+                        </td>
+                    </tr>`;
+
+                $("#customerListBody").append(row);
+
+                $("#ddlSearchCustCode").val("").trigger("change.select2");
+                $("#ddlSearchCustName").val("").trigger("change.select2");
+
+                return false;
+            });
+
+            // Remove Supplier.
+            $(document).off("click.addNewItem", ".btnRemoveSupplier").on("click.addNewItem", ".btnRemoveSupplier", function (e) {
+
+                e.preventDefault();
+
+                var row = $(this).closest("tr");
+                var supplierID = row.attr("data-supplier-id");
+
+                supplierList = supplierList.filter(function (supplier) {
+                    return supplier.Id != supplierID;
+                });
+
+                row.remove();
+            });
+
+            // Remove Customer.
+            $(document).off("click.addNewItem", ".btnRemoveCustomer").on("click.addNewItem", ".btnRemoveCustomer", function (e) {
+
+                e.preventDefault();
+
+                var row = $(this).closest("tr");
+                var customerID = row.attr("data-customer-id");
+
+                customerList = customerList.filter(function (customer) {
+                    return customer.Id != customerID;
+                });
+
+                row.remove();
+            });
+
+
+            // ============================================================
+            // Purchase Cost and Selling Price Validation
+            // ============================================================
+
+            function validatePurchaseSellingPrice() {
+
+                var purchaseCost = $("#PurchaseCost").val();
+                var sellingPrice = $("#SellingPrice").val();
+
+                // Remove previous error.
+                $("#PurchaseCost").removeClass("price-validation-error");
+                $("#SellingPrice").removeClass("price-validation-error");
+                $("#purchaseSellingError").hide();
+
+                // Do not validate if either value is empty.
+                if (purchaseCost === "" || sellingPrice === "") {
+                    return true;
+                }
+
+                purchaseCost = parseFloat(purchaseCost);
+                sellingPrice = parseFloat(sellingPrice);
+
+                // Purchase Cost must be less than Selling Price.
+                if (purchaseCost >= sellingPrice) {
+
+                    $("#PurchaseCost").addClass("price-validation-error");
+                    $("#SellingPrice").addClass("price-validation-error");
+
+                    $("#purchaseSellingError").show();
+
+                    return false;
+                }
+
+                return true;
+            }
+
+
+            // Validate Purchase Cost while entering.
+            $(document)
+                .off("input.addNewItem", "#PurchaseCost")
+                .on("input.addNewItem", "#PurchaseCost", function () {
+
+                    validatePurchaseSellingPrice();
+
+                });
+
+
+            // Validate Selling Price while entering.
+            $(document)
+                .off("input.addNewItem", "#SellingPrice")
+                .on("input.addNewItem", "#SellingPrice", function () {
+
+                    validatePurchaseSellingPrice();
+
+                });
+
+
+            // Also validate when user leaves Purchase Cost.
+            $(document)
+                .off("blur.addNewItem", "#PurchaseCost")
+                .on("blur.addNewItem", "#PurchaseCost", function () {
+
+                    validatePurchaseSellingPrice();
+
+                });
+
+
+            // Also validate when user leaves Selling Price.
+            $(document)
+                .off("blur.addNewItem", "#SellingPrice")
+                .on("blur.addNewItem", "#SellingPrice", function () {
+
+                    validatePurchaseSellingPrice();
+
+                });
+
+
+            // ============================================================
+            // Duplicate Item Name Error
+            // ============================================================
+
+            $(document)
+                .off("input.addNewItem", "#ItemName")
+                .on("input.addNewItem", "#ItemName", function () {
+
+                    // Remove duplicate error when user changes Item Name.
+                    $("#ItemName").removeClass("price-validation-error");
+                    $("#itemNameDuplicateError").hide();
+
+                });
+
+
+            // ============================================================
+            // Save Item - AJAX
+            // ============================================================
+
+            $(document)
+                .off("click.addNewItem", "#btnSaveItem")
+                .on("click.addNewItem", "#btnSaveItem", function (e) {
+
+                    e.preventDefault();
+
+                    if (isSaving) {
+                        return false;
+                    }
+
+                    var form = $("#AddNewItemForm");
+
+                    // Run MVC client-side validation.
+                    if ($.validator && $.validator.unobtrusive) {
+                        $.validator.unobtrusive.parse(form);
+                    }
+
+                    if (!form.valid()) {
+                        return false;
+                    }
+
+                    // Validate Purchase Cost < Selling Price.
+                    if (!validatePurchaseSellingPrice()) {
+                        return false;
+                    }
+
+                    isSaving = true;
+
+                    $("#btnSaveItem")
+                        .prop("disabled", true)
+                        .val("Saving...");
+
+                    form.find(".supplier-hidden-input").remove();
+                    form.find(".customer-hidden-input").remove();
+
+                    // Send Supplier IDs.
+                    supplierList.forEach(function (supplier, index) {
+
+                        $("<input>")
+                            .attr("type", "hidden")
+                            .attr("name", "SupplierIds[" + index + "]")
+                            .addClass("supplier-hidden-input")
+                            .val(supplier.Id)
+                            .appendTo(form);
+
+                    });
+
+                    // Send Customer IDs.
+                    customerList.forEach(function (customer, index) {
+
+                        $("<input>")
+                            .attr("type", "hidden")
+                            .attr("name", "CustomerIds[" + index + "]")
+                            .addClass("customer-hidden-input")
+                            .val(customer.Id)
+                            .appendTo(form);
+
+                    });
+
+                    // Save Item using AJAX.
+                    $.ajax({
+                        url: form.attr("action"),
+                        type: "POST",
+                        data: form.serialize(),
+
+                        success: function (result) {
+
+                            isSaving = false;
+
+                            $("#btnSaveItem")
+                                .prop("disabled", false)
+                                .val("Save");
+
+                            if (result && result.success === true) {
+
+                                alert(
+                                    result.message +
+                                    "\n\nGenerated ItemCode : " +
+                                    result.code
+                                );
+
+                                location.reload();
+
+                                return;
+                            }
+
+                            // Duplicate Item Name - show red validation message instead of popup.
+                            if (result && result.message === "Duplicate Item Name is not allowed") {
+
+                                $("#ItemName").addClass("price-validation-error");
+
+                                $("#itemNameDuplicateError")
+                                    .text(result.message)
+                                    .show();
+
+                                return;
+                            }
+
+                            // Other errors remain as popup.
+                            alert(
+                                result && result.message
+                                    ? result.message
+                                    : "Unable to save Item."
+                            );
+                        },
+
+                        error: function (xhr, status, error) {
+
+                            isSaving = false;
+
+                            $("#btnSaveItem")
+                                .prop("disabled", false)
+                                .val("Save");
+
+                            alert(
+                                "Error while saving Item.\n\nStatus: " +
+                                status +
+                                "\nError: " +
+                                error
+                            );
+                        }
+                    });
+
+                    return false;
+                });
+
+        });
+    </script>
+</body>
+</html>

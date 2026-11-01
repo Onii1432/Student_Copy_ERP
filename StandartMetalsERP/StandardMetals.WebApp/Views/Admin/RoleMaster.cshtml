@@ -1,0 +1,182 @@
+﻿@model StandardMetals.MODEL.RoleMasterModel
+@{
+    ViewBag.Title = "RoleMaster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section HeadScripts{
+
+<script src="~/JS/Admin/RoleMaster.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //alert('its working');
+        });
+
+        
+
+    </script>
+}
+
+
+<section id="ItemSearch">
+
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+
+            <div class="box-header with-border">
+                <h3 class="box-title">Search</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+                <!-- /.box-tools -->
+            </div>
+
+            <!-- /.box-header -->
+
+            <div class="box-body">
+                <div class="col-md-4">
+                    <strong>
+                        @*<asp:Label ID="lblSearchRole" runat="server" Text="Search Role"></asp:Label>*@
+                        @Html.LabelFor(m => m.RoleId)
+                    </strong>
+                    @*<asp:DropDownList ID="drpSearchRole" runat="server"
+                                          CssClass="form-control select2">
+                        </asp:DropDownList>*@
+                    @Html.DropDownListFor(m => m.RoleId, Enumerable.Empty<SelectListItem>(), "--Select--", new { @class = "form-control" })
+                </div>
+
+                <div class="col-md-4">
+                    @*<%-- <strong>Item SubType</strong>--%>*@
+                    <input type="submit" value="Search" id="btnSearch" class="btn btn-info" />
+                    @*<asp:Button runat="server" ID="btnSearch" Text="Search"
+                        CssClass="btn btn-sm- btn-primary" onclick="btnSearch_Click" />*@
+                </div>
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+</section>
+
+<section id="ItemInfo">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">
+                    @*<asp:Label ID="lblRoleDetail" runat="server" Text="Role Detail"> </asp:Label>*@
+                    Role Detail
+                </h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+                <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+
+
+                <table class="table-condensed table-hover table-responsive" width="100%">
+                    <tbody>
+
+                        <tr>
+                            <th width="15%">
+                                @*<asp:Label ID="lblRoleName" runat="server" Text="Role Name"></asp:Label>*@
+                                @Html.LabelFor(m => m.RoleName)
+                            </th>
+                            <td width="35%">
+                                @*<asp:TextBox ID="txtRoleName" runat="server" CssClass="form-control input-sm"></asp:TextBox>*@
+                                @Html.EditorFor(m => m.RoleName, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                            </td>
+                            <th width="15%">
+                                @Html.LabelFor(m => m.IsActive)
+                                @*<asp:Label ID="lblIsActive" runat="server" Text="IsActive"></asp:Label>*@
+                            </th>
+                            <td width="35%">
+                                @Html.CheckBoxFor(m => m.IsActive, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                @*<asp:CheckBox ID="chkIsActive" Checked="true" runat="server" Text="" />*@
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+
+
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">
+                    Role Access Detail
+                    @*<asp:Label ID="lblRoleAccessDtl" runat="server" Text="Role Access Detail"></asp:Label>*@
+                </h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div><!--box-tool -->
+            </div><!--box-header -->
+            <div class="box-body">
+
+
+                <div style="width: 100%; height: 400px;  overflow:scroll; clear: both; border: 1px solid #808080;">
+
+                    <table id="tblRoleMaster" style="width: 100%; height: 400px ;"   cellpadding="0" cellspacing="0" border="1">
+                        <thead>
+                            <tr class="bg-info">
+                                <th style="width:10%">Check</th>
+                                <th style="width:35%">Form Names</th>
+                                <th style="width:15%">Module Name</th>
+                                <th style="width:10%">Add</th>
+                                <th style="width:10%">Update</th>
+                                <th style="width:10%">Delete</th>
+                                <th style="width:10%">Search</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+
+
+
+                </div>
+
+
+            </div>
+            <!--box-body----%>
+            </div> <!--box info-->
+
+            <div class="box-body">
+
+                <div class="row">
+                    <center>
+                        <input type="submit" id="btnNew" value="New Item" class="btn btn-info" />
+                        @*<asp:Button ID="btnSave" runat="server" Text="Save" CssClass="btn btn-primary" onclick="btnSave_Click"></asp:Button>*@
+                        <input type="submit" id="btnSave" value="Save" class="btn btn-success" />
+                        <input type="submit" id="btnUpdate" value="Update" class="btn btn-warning" />
+                        <input type="submit" id="btnCancel" value="Cancel" class="btn btn-danger" />
+
+
+                    </center>
+                </div>
+            </div><!--box-body-->
+
+
+
+        </div>
+
+
+    </div>
+</section>

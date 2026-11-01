@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Error1</title>
+    @Scripts.Render("~/bower_componentsJS")
+
+    @Styles.Render("~/bower_componentsDistCSS")
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" type="text/css" />
+</head>
+<body class="hold-transition login-page">
+
+    <br />
+    <br />
+    <div class="login-box">
+        <div class="login-logo">
+
+        </div>
+        <!-- /.login-logo -->
+        <div class="login-box-body">
+
+
+
+            <h4>Opps!!! You are not authorized User to access it...</h4>
+            <br />
+            <br />
+
+            <h5> @Html.ActionLink("Back to DashBoard", "DefaultDashboard", "Master") </h5>
+
+        </div>
+
+        <!-- /.login-box-body -->
+    </div>
+
+</body>
+</html>

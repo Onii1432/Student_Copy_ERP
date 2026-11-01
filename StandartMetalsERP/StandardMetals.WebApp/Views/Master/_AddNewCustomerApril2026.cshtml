@@ -1,0 +1,546 @@
+﻿@model StandardMetals.MODEL.CustomerMasterMVCApril2026Model
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add New Customer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <style>
+        .row {
+            padding: 10px;
+        }
+
+        .section-box {
+            padding-top: 5px;
+        }
+
+        .modal-body {
+            padding-top: 5px;
+        }
+
+        .text-danger {
+            color: red !important;
+            display: block;
+            margin-top: 4px;
+        }
+
+        /* Select2 */
+        .select2-container {
+            width: 100% !important;
+        }
+
+            .select2-container .select2-selection--single {
+                height: 34px !important;
+                border: 1px solid #ccc !important;
+                border-radius: 0 !important;
+            }
+
+                .select2-container .select2-selection--single .select2-selection__rendered {
+                    line-height: 32px !important;
+                    padding-left: 12px !important;
+                }
+
+                .select2-container .select2-selection--single .select2-selection__arrow {
+                    height: 32px !important;
+                }
+
+        .select2-dropdown,
+        .select2-container--open {
+            z-index: 999999 !important;
+        }
+
+        .select2-results__options {
+            max-height: 220px !important;
+            overflow-y: auto !important;
+        }
+
+        /* Select2 Search */
+        .select2-search--dropdown {
+            display: block !important;
+            visibility: visible !important;
+            padding: 6px !important;
+        }
+
+            .select2-search--dropdown .select2-search__field {
+                display: block !important;
+                visibility: visible !important;
+                width: 100% !important;
+                height: 32px !important;
+                padding: 5px 8px !important;
+                border: 1px solid #ccc !important;
+                outline: none !important;
+                box-sizing: border-box !important;
+            }
+
+        /* Select2 Validation */
+        .select2-container--default .select2-selection--single.input-validation-error {
+            border: 1px solid red !important;
+        }
+
+        .input-validation-error {
+            border: 1px solid red !important;
+        }
+
+        .select2-container.select2-validation-error .select2-selection--single {
+            border: 1px solid red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal-dialog modal-lg custom-modal-sm">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header custom-header" style="display:flex;">
+                <h2>Add New Customer</h2>
+                <button type="button" class="close" data-dismiss="modal" style="margin-left:auto;">&times;</button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body" style="padding-bottom:0px">
+                <div class="box box-info">
+                    <div class="box-body">
+                        <div class="formcolor section-box">
+
+                            @using (Html.BeginForm("AddNewCustomerApril2026", "Master", FormMethod.Post, new { id = "AddNewCustomerForm" }))
+                            {
+                                @Html.AntiForgeryToken()
+
+                                <div class="form-horizontal">
+
+                                    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+                                    <!-- Customer Code + Customer Name -->
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.CustCode, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.CustCode, new
+                                            {
+                                                htmlAttributes = new
+                                                {
+                                                    @class = "form-control",
+                                                    @readonly = "readonly"
+                                                }
+                                            })
+                                            @Html.ValidationMessageFor(model => model.CustCode, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.CustName, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.CustName, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.CustName, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <!-- Contact Person + Branch -->
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.ContactPerson, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.ContactPerson, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.ContactPerson, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.BranchId, "Branch", new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(
+                                                model => model.BranchId,
+                                                new SelectList(ViewBag.BranchId, "Value", "Text", Model.BranchId),
+                                                "--Select Branch--",
+                                                new { @class = "form-control", id = "BranchId" }
+                                            )
+                                            @Html.ValidationMessageFor(model => model.BranchId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <!-- Address 1 + Address 2 -->
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.Address1, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Address1, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Address1, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.Address2, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Address2, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Address2, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <!-- Country + State -->
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.CountryId, "Country", new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(
+                                                model => model.CountryId,
+                                                new SelectList(ViewBag.CountryId, "Value", "Text", Model.CountryId),
+                                                "--Select Country--",
+                                                new { @class = "form-control", id = "CountryId" }
+                                            )
+                                            @Html.ValidationMessageFor(model => model.CountryId, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.StateId, "State", new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(
+                                                model => model.StateId,
+                                                new List<SelectListItem>(),
+                                                "--Select State--",
+                                                new { @class = "form-control", id = "StateId" }
+                                            )
+                                            @Html.ValidationMessageFor(model => model.StateId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <!-- City + Pin Code -->
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.CityId, "City", new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.DropDownListFor(
+                                                model => model.CityId,
+                                                new List<SelectListItem>(),
+                                                "--Select City--",
+                                                new { @class = "form-control", id = "CityId" }
+                                            )
+                                            @Html.ValidationMessageFor(model => model.CityId, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.PinCode, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.PinCode, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.PinCode, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <!-- Email + Telephone -->
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.EmailID, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.EmailID, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.EmailID, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.Telephone, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Telephone, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Telephone, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <!-- Mobile + Fax -->
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.Mobile, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Mobile, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Mobile, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.Fax, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Fax, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Fax, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <!-- Website + GSTIN -->
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.Website, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.Website, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Website, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.GSTIN, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.GSTIN, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.GSTIN, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <!-- Remarks -->
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.Remarks, new { @class = "control-label" })
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            @Html.TextAreaFor(model => model.Remarks, new { @class = "form-control", rows = "3" })
+                                            @Html.ValidationMessageFor(model => model.Remarks, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <!-- Save -->
+                                    <div class="form-group">
+                                        <div class="modal-footer justify-content-end">
+                                            <input id="btnSaveCustomer" type="button" value="Save" class="btn btn-success" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var form = $("#AddNewCustomerForm");
+            var isSaving = false;
+
+            // Select2 Modal Parent
+            var modalParent = $(".modal:visible").last();
+
+            if (!modalParent.length) {
+                modalParent = $(".modal-dialog").closest(".modal");
+            }
+
+            if (!modalParent.length) {
+                modalParent = $(document.body);
+            }
+
+            // MVC Client Validation
+            if ($.validator && $.validator.unobtrusive) {
+                $.validator.unobtrusive.parse(form);
+            }
+
+            var validator = form.data("validator");
+
+            if (validator) {
+                validator.settings.ignore = ":hidden:not(.select2-hidden-accessible)";
+            }
+
+            // Select2 Dropdowns
+            $("#BranchId").select2({
+                placeholder: "Select Branch",
+                allowClear: true,
+                width: "100%",
+                minimumResultsForSearch: 0,
+                dropdownParent: modalParent
+            });
+
+            $("#CountryId").select2({
+                placeholder: "Select Country",
+                allowClear: true,
+                width: "100%",
+                minimumResultsForSearch: 0,
+                dropdownParent: modalParent
+            });
+
+            $("#StateId").select2({
+                placeholder: "Select State",
+                allowClear: true,
+                width: "100%",
+                minimumResultsForSearch: 0,
+                dropdownParent: modalParent
+            });
+
+            $("#StateId").prop("disabled", true).trigger("change.select2");
+
+            $("#CityId").select2({
+                placeholder: "Select City",
+                allowClear: true,
+                width: "100%",
+                minimumResultsForSearch: 0,
+                dropdownParent: modalParent
+            });
+
+            $("#CityId").prop("disabled", true).trigger("change.select2");
+
+            // Country Change
+            $(document).off("change.addNewCustomer", "#CountryId").on("change.addNewCustomer", "#CountryId", function () {
+                var countryId = $(this).val();
+
+                $("#StateId").empty().append($("<option></option>").val("").text("--Select State--")).val("").trigger("change.select2");
+
+                $("#CityId").empty().append($("<option></option>").val("").text("--Select City--")).val("").prop("disabled", true).trigger("change.select2");
+
+                if (!countryId || countryId === "0") {
+                    $("#StateId").prop("disabled", true).trigger("change.select2");
+                    return;
+                }
+
+                $.ajax({
+                    url: '@Url.Action("GetStateByCountry", "Master")',
+                    type: "GET",
+                    data: { countryId: countryId },
+                    dataType: "json",
+                    success: function (result) {
+                        $("#StateId").empty().append($("<option></option>").val("").text("--Select State--"));
+
+                        $.each(result, function (index, item) {
+                            $("#StateId").append($("<option></option>").val(item.Value).text(item.Text));
+                        });
+
+                        $("#StateId").val("").prop("disabled", false).trigger("change.select2");
+                    },
+                    error: function () {
+                        alert("Error while loading State.");
+                    }
+                });
+            });
+
+            // State Change
+            $(document).off("change.addNewCustomer", "#StateId").on("change.addNewCustomer", "#StateId", function () {
+                var stateId = $(this).val();
+
+                $("#CityId").empty().append($("<option></option>").val("").text("--Select City--")).val("").prop("disabled", true).trigger("change.select2");
+
+                if (!stateId || stateId === "0") {
+                    return;
+                }
+
+                $.ajax({
+                    url: '@Url.Action("GetCityByState", "Master")',
+                    type: "GET",
+                    data: { stateId: stateId },
+                    dataType: "json",
+                    success: function (result) {
+                        $("#CityId").empty().append($("<option></option>").val("").text("--Select City--"));
+
+                        $.each(result, function (index, item) {
+                            $("#CityId").append($("<option></option>").val(item.Value).text(item.Text));
+                        });
+
+                        $("#CityId").val("").prop("disabled", false).trigger("change.select2");
+                    },
+                    error: function () {
+                        alert("Error while loading City.");
+                    }
+                });
+            });
+
+            // Select2 Validation
+            $("#BranchId, #CountryId, #StateId, #CityId").on("change", function () {
+                $(this).valid();
+
+                var select2Container = $(this).next(".select2-container");
+
+                if ($(this).hasClass("input-validation-error")) {
+                    select2Container.addClass("select2-validation-error");
+                } else {
+                    select2Container.removeClass("select2-validation-error");
+                }
+            });
+
+            // Save Customer
+            $(document).off("click.addNewCustomer", "#btnSaveCustomer").on("click.addNewCustomer", "#btnSaveCustomer", function (e) {
+                e.preventDefault();
+
+                if (isSaving) {
+                    return;
+                }
+
+                form = $("#AddNewCustomerForm");
+
+                if ($.validator && $.validator.unobtrusive) {
+                    $.validator.unobtrusive.parse(form);
+                }
+
+                var currentValidator = form.data("validator");
+
+                if (currentValidator) {
+                    currentValidator.settings.ignore = ":hidden:not(.select2-hidden-accessible)";
+                }
+
+                if (!form.valid()) {
+                    $("#BranchId, #CountryId, #StateId, #CityId").each(function () {
+                        var select2Container = $(this).next(".select2-container");
+
+                        if ($(this).hasClass("input-validation-error")) {
+                            select2Container.addClass("select2-validation-error");
+                        } else {
+                            select2Container.removeClass("select2-validation-error");
+                        }
+                    });
+
+                    return;
+                }
+
+                isSaving = true;
+                $("#btnSaveCustomer").prop("disabled", true).val("Saving...");
+
+                $.ajax({
+                    url: form.attr("action"),
+                    type: "POST",
+                    data: form.serialize(),
+                    success: function (result) {
+                        isSaving = false;
+                        $("#btnSaveCustomer").prop("disabled", false).val("Save");
+
+                        if (result && result.success === true) {
+                            alert(result.message + "\n\nGenerated CustomerCode : " + result.code);
+                            location.reload();
+                            return;
+                        }
+
+                        alert(result && result.message ? result.message : "Unable to save Customer.");
+                    },
+                    error: function (xhr, status, error) {
+                        isSaving = false;
+                        $("#btnSaveCustomer").prop("disabled", false).val("Save");
+                        alert("Error while saving Customer.\n\nStatus: " + status + "\nError: " + error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

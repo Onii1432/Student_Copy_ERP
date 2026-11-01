@@ -1,0 +1,626 @@
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll.config
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.pdb
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe.config
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.rsp
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe.config
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.rsp
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.AppContext.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Console.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Compression.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Claims.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.ValueTuple.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe.config
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.rsp
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.xml
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.xml
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csprojAssemblyReference.cache
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CoreCompileInputs.cache
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CopyComplete
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.pdb
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Cors.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.xml
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.dll
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.pdb
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.pdb
+C:\Other Drive\F\Apps\StandardMetals_MVC Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.pdb
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll.config
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.pdb
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe.config
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.rsp
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe.config
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.rsp
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.AppContext.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Console.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Compression.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.AccessControl.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Claims.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.ValueTuple.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe.config
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.rsp
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Cors.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.pdb
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.pdb
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.pdb
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.xml
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.xml
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.xml
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.xml
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.xml
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csprojAssemblyReference.cache
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CoreCompileInputs.cache
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CopyComplete
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.dll
+F:\Standard Metal Project\MVC Standard Metals Project\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP_MVCLatest_Dec21\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll.config
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe.config
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.rsp
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe.config
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.rsp
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.AppContext.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Console.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Compression.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.AccessControl.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Claims.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.ValueTuple.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe.config
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.rsp
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Cors.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.pdb
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csprojAssemblyReference.cache
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CoreCompileInputs.cache
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CopyComplete
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.dll
+D:\F\Apps\MVC_ERP_Aaksh\Final Copy - 10March-23\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll.config
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe.config
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.rsp
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe.config
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.rsp
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.AppContext.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Console.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Compression.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.AccessControl.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Claims.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.ValueTuple.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe.config
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.rsp
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Cors.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.pdb
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.xml
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.xml
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.xml
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.xml
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.xml
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csprojAssemblyReference.cache
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CoreCompileInputs.cache
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CopyComplete
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.dll
+D:\MVC Project 15Dec\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.pdb
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll.config
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.pdb
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe.config
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.rsp
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe.config
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.rsp
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.AppContext.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Console.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Compression.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Claims.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.ValueTuple.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe.config
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.rsp
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Cors.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.pdb
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.pdb
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.pdb
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.xml
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.xml
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.xml
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.xml
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.xml
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csprojAssemblyReference.cache
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CoreCompileInputs.cache
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CopyComplete
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.dll
+C:\StandartMetalsERP Students Provide\StandartMetalsERP\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.pdb
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll.config
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.pdb
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe.config
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.rsp
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe.config
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.rsp
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.AppContext.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Console.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Compression.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.AccessControl.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Claims.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.ValueTuple.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe.config
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.rsp
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Cors.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.pdb
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.pdb
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.pdb
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.xml
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.xml
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.xml
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.xml
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.xml
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csprojAssemblyReference.cache
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CoreCompileInputs.cache
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CopyComplete
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.dll
+D:\SPIDOSOFT WORK FILE\Student Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll.config
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe.config
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.rsp
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe.config
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.rsp
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.AppContext.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Console.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Compression.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.AccessControl.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Claims.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.ValueTuple.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe.config
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.rsp
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Cors.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.CommonLibrary.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.CommonLibrary.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csprojAssemblyReference.cache
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CoreCompileInputs.cache
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CopyComplete
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Antlr3.Runtime.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Helpers.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Mvc.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Optimization.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Razor.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.Razor.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\WebGrease.dll
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\Antlr3.Runtime.pdb
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Helpers.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Mvc.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Optimization.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Razor.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.Razor.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll.config
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.WebAPI.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.exe.config
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csc.rsp
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.exe.config
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\csi.rsp
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.AppContext.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Console.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Compression.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.IO.Pipes.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.AccessControl.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Claims.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.ValueTuple.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.exe.config
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\vbc.rsp
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\Antlr3.Runtime.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.CommonLibrary.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Cors.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Helpers.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Mvc.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Optimization.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Razor.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.Razor.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\WebGrease.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.BAL.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.CommonLibrary.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.DAL.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\StandardMetals.MODEL.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\Antlr3.Runtime.pdb
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Net.Http.Formatting.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Helpers.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.Cors.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Mvc.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Optimization.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Razor.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.WebPages.Razor.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\Newtonsoft.Json.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\System.Web.Http.WebHost.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csprojAssemblyReference.cache
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CoreCompileInputs.cache
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.csproj.CopyComplete
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.dll
+D:\NextGen\ERP\StandartMetalsERP (4)\StandartMetalsERP\StandardMetals.WebAPI\obj\Debug\StandardMetals.WebAPI.pdb

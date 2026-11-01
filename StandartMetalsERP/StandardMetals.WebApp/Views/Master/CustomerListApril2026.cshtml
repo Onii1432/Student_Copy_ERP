@@ -1,0 +1,841 @@
+﻿@model IEnumerable<StandardMetals.MODEL.CustomerMasterMVCApril2026Model>
+
+@{
+    ViewBag.Title = "CustomerListApril2026";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Customer Master Action Buttons + Search -->
+
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; margin-top:35px;">
+    <div>
+        <button type="button" class="btn btn-primary BTNCreate">
+            <i class="bi bi-plus-lg"></i> Add New Customer
+        </button>
+
+        <button type="button"
+                id="btnExport"
+                class="btn btn-primary"
+                onclick="exportTableToExcel()">
+            <i class="bi bi-download"></i> Export Excel
+        </button>
+
+        <button type="button"
+                id="btnPrint"
+                class="btn btn-info"
+                onclick="printWindow()">
+            <i class="bi bi-printer"></i> Print Table
+        </button>
+    </div>
+
+    <div>
+        <label style="margin-right:5px; font-weight:bold;">Search:</label>
+
+        <input type="text"
+               id="searchBox"
+               class="form-control"
+               style="display:inline-block; width:220px;"
+               placeholder="Search..." />
+    </div>
+</div>
+
+
+<!-- Customer Modal -->
+
+<div class="modal fade"
+     id="CustomerModal"
+     role="dialog">
+</div>
+
+
+<!-- Customer List -->
+
+<section id="Test">
+
+    <div>
+
+        <div class="box box-info">
+
+            <div class="box-header with-border">
+
+                <h3 class="box-title">Customers List</h3>
+
+                <div class="box-tools pull-right">
+
+                    <button type="button"
+                            class="btn btn-box-tool"
+                            data-widget="collapse">
+
+                        <i class="fa fa-minus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="box-body">
+
+                <div style="overflow-x:auto; overflow-y:auto; width:100%; max-height:500px;">
+
+                    <table class="table table-bordered table-striped table-hover text-center"
+                           id="Table">
+
+                        <thead class="thead-dark"
+                               style="background-color:#b3d7e6;">
+
+                            <tr class="info">
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CustCode)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CustName)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ContactPerson)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Branch)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Address1)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.City)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.State)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Country)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PinCode)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Mobile)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.EmailID)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.GSTIN)
+                                </th>
+
+                                <th class="actionColumn">
+                                    Action
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="customerBody">
+
+                            @foreach (var customer in Model)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.CustCode)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.CustName)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.ContactPerson)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.Branch)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.Address1)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.City)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.State)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.Country)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.PinCode)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.Mobile)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.EmailID)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => customer.GSTIN)
+                                    </td>
+
+                                    <td class="actionColumn">
+
+                                        <button type="button"
+                                                class="btn btn-success BtnEdit"
+                                                data-id="@customer.Id">
+
+                                            Edit
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+                            }
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Pagination -->
+
+<div id="pagination"
+     style="text-align:center; margin-top:10px;">
+</div>
+
+
+<style>
+
+    #Table {
+        min-width: 100%;
+        table-layout: auto;
+        white-space: nowrap;
+    }
+
+        #Table .actionColumn {
+            position: sticky;
+            right: 0;
+            z-index: 2;
+            background: #fff;
+            min-width: 80px;
+            width: 80px;
+        }
+
+        #Table thead .actionColumn {
+            z-index: 3;
+            background: #b3d7e6;
+        }
+
+    #pagination button {
+        margin: 2px;
+    }
+
+    #pagination .paginationEllipsis {
+        display: inline-block;
+        padding: 6px 10px;
+        margin: 2px;
+    }
+</style>
+
+
+<script type="text/javascript">
+
+    var PageSize = 8;
+
+    var CurrentPage = 1;
+
+
+    // Build Pagination
+
+    function buildPagination() {
+
+        var searchValue =
+            $("#searchBox").val().toLowerCase().trim();
+
+        var allRows =
+            $("#customerBody tr");
+
+        var filteredRows =
+            allRows.filter(function () {
+
+                return $(this)
+                    .text()
+                    .toLowerCase()
+                    .indexOf(searchValue) > -1;
+
+            });
+
+
+        allRows.hide();
+
+        var totalPages =
+            Math.ceil(filteredRows.length / PageSize);
+
+
+        if (totalPages === 0) {
+
+            $("#pagination").html(
+                '<span style="margin-right:10px;">No records found</span>'
+            );
+
+            return;
+        }
+
+
+        if (CurrentPage > totalPages)
+            CurrentPage = totalPages;
+
+
+        if (CurrentPage < 1)
+            CurrentPage = 1;
+
+
+        filteredRows
+            .slice(
+                (CurrentPage - 1) * PageSize,
+                CurrentPage * PageSize
+            )
+            .show();
+
+
+        $("#pagination").empty();
+
+
+        $("#pagination").append(
+            '<button type="button" class="btn btn-primary firstBtn" ' +
+            (CurrentPage === 1 ? 'disabled' : '') +
+            '>First</button>'
+        );
+
+
+        $("#pagination").append(
+            '<button type="button" class="btn btn-secondary prevBtn" ' +
+            (CurrentPage === 1 ? 'disabled' : '') +
+            '>Prev</button>'
+        );
+
+
+        function addPageButton(pageNumber) {
+
+            $("#pagination").append(
+                '<button type="button" class="btn ' +
+                (pageNumber === CurrentPage
+                    ? 'btn-success'
+                    : 'btn-primary') +
+                ' pageBtn" data-page="' +
+                pageNumber +
+                '">' +
+                pageNumber +
+                '</button>'
+            );
+
+        }
+
+
+        function addEllipsis() {
+
+            $("#pagination").append(
+                '<span class="paginationEllipsis">...</span>'
+            );
+
+        }
+
+
+        if (totalPages <= 7) {
+
+            for (var i = 1; i <= totalPages; i++) {
+
+                addPageButton(i);
+
+            }
+
+        }
+        else if (CurrentPage <= 4) {
+
+            for (var i = 1; i <= 5; i++) {
+
+                addPageButton(i);
+
+            }
+
+            addEllipsis();
+
+            addPageButton(totalPages);
+
+        }
+        else if (CurrentPage >= totalPages - 3) {
+
+            addPageButton(1);
+
+            addEllipsis();
+
+            for (
+                var i = totalPages - 4;
+                i <= totalPages;
+                i++
+            ) {
+
+                addPageButton(i);
+
+            }
+
+        }
+        else {
+
+            addPageButton(1);
+
+            addEllipsis();
+
+            addPageButton(CurrentPage - 1);
+
+            addPageButton(CurrentPage);
+
+            addPageButton(CurrentPage + 1);
+
+            addEllipsis();
+
+            addPageButton(totalPages);
+
+        }
+
+
+        $("#pagination").append(
+            '<button type="button" class="btn btn-secondary nextBtn" ' +
+            (CurrentPage === totalPages ? 'disabled' : '') +
+            '>Next</button>'
+        );
+
+
+        $("#pagination").append(
+            '<button type="button" class="btn btn-primary lastBtn" ' +
+            (CurrentPage === totalPages ? 'disabled' : '') +
+            '>Last</button>'
+        );
+
+    }
+
+
+    // Search
+
+    $(document).ready(function () {
+
+        $("#searchBox").on("keyup", function () {
+
+            CurrentPage = 1;
+
+            buildPagination();
+
+        });
+
+    });
+
+
+    // Print
+
+    function printWindow() {
+
+        window.print();
+
+    }
+
+
+    // Export To Excel
+
+    function exportTableToExcel() {
+
+        var Table =
+            document.getElementById("Table");
+
+        var clone =
+            Table.cloneNode(true);
+
+
+        for (var row of clone.rows) {
+
+            row.deleteCell(row.cells.length - 1);
+
+            row.style.display = "";
+
+        }
+
+
+        var html =
+            "<html><head><meta charset='UTF-8'></head><body>" +
+            clone.outerHTML +
+            "</body></html>";
+
+
+        var blob =
+            new Blob(
+                [html],
+                {
+                    type: "application/vnd.ms-excel"
+                }
+            );
+
+
+        var link =
+            document.createElement("a");
+
+
+        link.href =
+            URL.createObjectURL(blob);
+
+
+        link.download =
+            "CustomerListApril2026.xls";
+
+
+        document.body.appendChild(link);
+
+        link.click();
+
+        document.body.removeChild(link);
+
+    }
+
+
+    // Add New Customer
+
+    $(document).ready(function () {
+
+        $(".BTNCreate").on("click", function (e) {
+
+            e.preventDefault();
+
+
+            $.ajax({
+
+                url:
+                    '@Url.Action("AddNewCustomerApril2026", "Master")',
+
+                type: "GET",
+
+                cache: false,
+
+
+                success: function (response) {
+
+                    $("#CustomerModal")
+                        .html(response);
+
+
+                    $("#CustomerModal").modal({
+
+                        backdrop: "static",
+
+                        keyboard: false
+
+                    });
+
+
+                    $("#CustomerModal")
+                        .modal("show");
+
+                },
+
+
+                error: function (errorText) {
+
+                    console.log(
+                        errorText.responseText
+                    );
+
+                    alert(
+                        "Unable to Load Create Form"
+                    );
+
+                }
+
+            });
+
+        });
+
+
+        ModalCleanUp();
+
+    });
+
+
+    // Edit Customer
+
+    $(document).ready(function () {
+
+        $(".BtnEdit").on("click", function (e) {
+
+            e.preventDefault();
+
+
+            var id =
+                $(this).data("id");
+
+
+            $.ajax({
+
+                url:
+                    '@Url.Action("EditCustomerApril2026", "Master")',
+
+                type: "GET",
+
+                data: {
+                    id: id
+                },
+
+                cache: false,
+
+
+                success: function (response) {
+
+                    $("#CustomerModal")
+                        .html(response);
+
+
+                    $("#CustomerModal").modal({
+
+                        backdrop: "static",
+
+                        keyboard: false
+
+                    });
+
+
+                    $("#CustomerModal")
+                        .modal("show");
+
+                },
+
+
+                error: function (errorText) {
+
+                    console.log(
+                        errorText.responseText
+                    );
+
+                    alert(
+                        "Unable to Load Edit Customer Form"
+                    );
+
+                }
+
+            });
+
+        });
+
+
+        ModalCleanUp();
+
+    });
+
+
+    // Modal Cleanup
+
+    function ModalCleanUp() {
+
+        $("#CustomerModal").on(
+            "hidden.bs.modal",
+            function () {
+
+                $(this).html("");
+
+            }
+        );
+
+    }
+
+
+    // Page Button Click
+
+    $(document).on(
+        "click",
+        ".pageBtn",
+        function (e) {
+
+            e.preventDefault();
+
+            CurrentPage =
+                parseInt(
+                    $(this).data("page")
+                );
+
+            buildPagination();
+
+        }
+    );
+
+
+    // First Button
+
+    $(document).on(
+        "click",
+        ".firstBtn",
+        function (e) {
+
+            e.preventDefault();
+
+            CurrentPage = 1;
+
+            buildPagination();
+
+        }
+    );
+
+
+    // Previous Button
+
+    $(document).on(
+        "click",
+        ".prevBtn",
+        function (e) {
+
+            e.preventDefault();
+
+
+            if (CurrentPage > 1) {
+
+                CurrentPage--;
+
+                buildPagination();
+
+            }
+
+        }
+    );
+
+
+    // Next Button
+
+    $(document).on(
+        "click",
+        ".nextBtn",
+        function (e) {
+
+            e.preventDefault();
+
+
+            var searchValue =
+                $("#searchBox")
+                    .val()
+                    .toLowerCase()
+                    .trim();
+
+
+            var filteredRows =
+                $("#customerBody tr")
+                    .filter(function () {
+
+                        return $(this)
+                            .text()
+                            .toLowerCase()
+                            .indexOf(searchValue) > -1;
+
+                    });
+
+
+            var TotalPage =
+                Math.ceil(
+                    filteredRows.length / PageSize
+                );
+
+
+            if (CurrentPage < TotalPage) {
+
+                CurrentPage++;
+
+                buildPagination();
+
+            }
+
+        }
+    );
+
+
+    // Last Button
+
+    $(document).on(
+        "click",
+        ".lastBtn",
+        function (e) {
+
+            e.preventDefault();
+
+
+            var searchValue =
+                $("#searchBox")
+                    .val()
+                    .toLowerCase()
+                    .trim();
+
+
+            var filteredRows =
+                $("#customerBody tr")
+                    .filter(function () {
+
+                        return $(this)
+                            .text()
+                            .toLowerCase()
+                            .indexOf(searchValue) > -1;
+
+                    });
+
+
+            var TotalPage =
+                Math.ceil(
+                    filteredRows.length / PageSize
+                );
+
+
+            if (TotalPage > 0) {
+
+                CurrentPage = TotalPage;
+
+                buildPagination();
+
+            }
+
+        }
+    );
+
+
+    // Initial Pagination
+
+    $(document).ready(function () {
+
+        buildPagination();
+
+    });
+
+</script>

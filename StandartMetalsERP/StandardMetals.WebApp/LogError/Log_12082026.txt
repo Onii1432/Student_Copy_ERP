@@ -1,0 +1,715 @@
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 11:56:39
+Error = Testing Log Management System
+Stack Trace =    at StandardMetals.WebApp.Controllers.AccountController.<Login>d__2.MoveNext() in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebApp\Controllers\AccountController.cs:line 27
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass8_0.<BeginInvokeAsynchronousActionMethod>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 13:07:06
+Step= CustomerMaster - Loading Customer Master list.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 13:07:08
+Step= CustomerMaster - Customer Master list loaded successfully.
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 13:07:39
+Step= CustomerMaster - Searching customer by Id: 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 13:07:39
+Step= CustomerMaster - Customer details retrieved successfully for Id: 2
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 13:12:17
+Step= CustomerMaster - Save Customer request started.
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 13:12:18
+Error = Invalid Branch Name.
+Stack Trace =    at StandardMetals.DAL.CustomerMasterMVCApril2026DAL.SaveCustomerMaster(CustomerMasterMVCApril2026Model obj) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.DAL\CustomerMasterMVCApril2026DAL.cs:line 218
+   at StandardMetals.BAL.CustomerMasterMVCApril2026BAL.SaveCustomerMaster(CustomerMasterMVCApril2026Model model) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.BAL\CustomerMasterMVCApril2026BAL.cs:line 42
+   at StandardMetals.WebApp.Controllers.MasterController.SaveCustomerApril2026(CustomerMasterMVCApril2026Model obj) in D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebApp\Controllers\MasterController.cs:line 759
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:18:54
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:19:09
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:20:43
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:20:58
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:21:02
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:21:03
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 15:21:03
+Error = The partial view '_AddNew' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Master/_AddNew.aspx
+~/Views/Master/_AddNew.ascx
+~/Views/Shared/_AddNew.aspx
+~/Views/Shared/_AddNew.ascx
+~/Views/Master/_AddNew.cshtml
+~/Views/Master/_AddNew.vbhtml
+~/Views/Shared/_AddNew.cshtml
+~/Views/Shared/_AddNew.vbhtml
+Stack Trace =    at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:30:54
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:30:54
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:31:04
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:31:04
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 15:31:04
+Error = The partial view '_AddNew' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Master/_AddNew.aspx
+~/Views/Master/_AddNew.ascx
+~/Views/Shared/_AddNew.aspx
+~/Views/Shared/_AddNew.ascx
+~/Views/Master/_AddNew.cshtml
+~/Views/Master/_AddNew.vbhtml
+~/Views/Shared/_AddNew.cshtml
+~/Views/Shared/_AddNew.vbhtml
+Stack Trace =    at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:38:15
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:38:15
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:38:23
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:38:23
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 15:38:23
+Error = The partial view '_AddNew' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Master/_AddNew.aspx
+~/Views/Master/_AddNew.ascx
+~/Views/Shared/_AddNew.aspx
+~/Views/Shared/_AddNew.ascx
+~/Views/Master/_AddNew.cshtml
+~/Views/Master/_AddNew.vbhtml
+~/Views/Shared/_AddNew.cshtml
+~/Views/Shared/_AddNew.vbhtml
+Stack Trace =    at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:38:50
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:38:50
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 15:38:50
+Error = The partial view '_AddNew' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Master/_AddNew.aspx
+~/Views/Master/_AddNew.ascx
+~/Views/Shared/_AddNew.aspx
+~/Views/Shared/_AddNew.ascx
+~/Views/Master/_AddNew.cshtml
+~/Views/Master/_AddNew.vbhtml
+~/Views/Shared/_AddNew.cshtml
+~/Views/Shared/_AddNew.vbhtml
+Stack Trace =    at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:39:35
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:39:35
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 15:39:35
+Error = The partial view '_AddNew' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Master/_AddNew.aspx
+~/Views/Master/_AddNew.ascx
+~/Views/Shared/_AddNew.aspx
+~/Views/Shared/_AddNew.ascx
+~/Views/Master/_AddNew.cshtml
+~/Views/Master/_AddNew.vbhtml
+~/Views/Shared/_AddNew.cshtml
+~/Views/Shared/_AddNew.vbhtml
+Stack Trace =    at System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:44:53
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:44:54
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:45:03
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:45:03
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:46:44
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:46:44
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:49:46
+Step= MasterCtrl-AddNew Action(httppost)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:49:46
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:49:46
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:49:49
+Step= MasterCtrl-AddNew Action(httppost)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:49:49
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:49:49
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:50:24
+Step= MasterCtrl-AddNew Action(httppost)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:50:24
+Step= MasterCtrl-AddNew Action(httppost)- Sub Category Drp Load 
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:50:24
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:50:25
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:50:55
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:50:55
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:51:46
+Step= MasterCtrl-AddNew Action(httppost)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:51:46
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:51:46
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:51:49
+Step= MasterCtrl-AddNew Action(httppost)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:51:49
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 15:51:49
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:01:21
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:01:22
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:02:31
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:02:31
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:10:11
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:10:11
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:11:52
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:11:52
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:14:25
+Step= MasterCtrl-AddNew Action(httppost)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:21:59
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:22:16
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:22:26
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:22:26
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:23:05
+Step= MasterCtrl-AddNew Action(httppost)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:24:04
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:24:04
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:29:57
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:29:57
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:31:02
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:31:02
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:31:43
+Step= MasterCtrl-AddNew Action(httppost)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:32:40
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:32:40
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:32:41
+Step= MasterCtrl-AddNew Action(httppost)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:35:40
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:35:40
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 16:36:13
+Error = The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32, StandardMetals.MODEL.ItemMaster_Modal_AprBtch)' in 'StandardMetals.WebApp.Controllers.MasterController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Stack Trace =    at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 16:36:23
+Error = The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32, StandardMetals.MODEL.ItemMaster_Modal_AprBtch)' in 'StandardMetals.WebApp.Controllers.MasterController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Stack Trace =    at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:50:12
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:50:12
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 16:50:36
+Error = The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32, StandardMetals.MODEL.ItemMaster_Modal_AprBtch)' in 'StandardMetals.WebApp.Controllers.MasterController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Stack Trace =    at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:58:32
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 16:58:40
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 16:59:08
+Error = The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32, StandardMetals.MODEL.ItemMaster_Modal_AprBtch)' in 'StandardMetals.WebApp.Controllers.MasterController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Stack Trace =    at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:04:28
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:04:28
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 17:05:02
+Error = The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32, StandardMetals.MODEL.ItemMaster_Modal_AprBtch)' in 'StandardMetals.WebApp.Controllers.MasterController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Stack Trace =    at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:06:28
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:06:29
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 17:06:40
+Error = The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32, StandardMetals.MODEL.ItemMaster_Modal_AprBtch)' in 'StandardMetals.WebApp.Controllers.MasterController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Stack Trace =    at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 17:06:46
+Error = The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32, StandardMetals.MODEL.ItemMaster_Modal_AprBtch)' in 'StandardMetals.WebApp.Controllers.MasterController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Stack Trace =    at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:11:23
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:11:23
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 17:11:37
+Error = The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32, StandardMetals.MODEL.ItemMaster_Modal_AprBtch)' in 'StandardMetals.WebApp.Controllers.MasterController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Stack Trace =    at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:12:38
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:12:38
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:12:43
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:12:43
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:16:09
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:16:09
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 17:16:20
+Error = The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32, StandardMetals.MODEL.ItemMaster_Modal_AprBtch)' in 'StandardMetals.WebApp.Controllers.MasterController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Stack Trace =    at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:22:22
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:22:22
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 17:22:39
+Error = The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32, StandardMetals.MODEL.ItemMaster_Modal_AprBtch)' in 'StandardMetals.WebApp.Controllers.MasterController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Stack Trace =    at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:45:40
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:45:40
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:45:51
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 17:45:51
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:49:42
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:49:42
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:49:51
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:49:51
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 21:49:53
+Error = D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebApp\Views\Master\_AddNew.cshtml(203): error CS1061: 'ItemMaster_Modal_AprBtch' does not contain a definition for 'SupplierID' and no extension method 'SupplierID' accepting a first argument of type 'ItemMaster_Modal_AprBtch' could be found (are you missing a using directive or an assembly reference?)
+Stack Trace =    at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:49:57
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:49:57
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+----------------------------------Exception-----------------------------------------
+Log Date = 12-08-2026 21:49:57
+Error = D:\AalimEx Softcode\SM Project\StandartMetalsERP\StandardMetals.WebApp\Views\Master\_AddNew.cshtml(203): error CS1061: 'ItemMaster_Modal_AprBtch' does not contain a definition for 'SupplierID' and no extension method 'SupplierID' accepting a first argument of type 'ItemMaster_Modal_AprBtch' could be found (are you missing a using directive or an assembly reference?)
+Stack Trace =    at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:51:45
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:51:48
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:51:54
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:51:54
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:54:21
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 21:54:21
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 22:32:17
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 22:32:17
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 22:33:51
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 22:33:51
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 22:51:55
+Step= Master Ctrl- ItemList17Dec Action(httpget)- Enter Inside Item Master 17Dec After Login
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 22:51:55
+Step= ItemMaster List Load
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 22:52:03
+Step= MasterCtrl-AddNew Action(httpget)- Add New Item Click
+---------------------------------------xxxxxxxx------------------------------------
+Log Date = 12-08-2026 22:52:03
+Step= AddNew - SubCategoriess Load
+---------------------------------------xxxxxxxx------------------------------------

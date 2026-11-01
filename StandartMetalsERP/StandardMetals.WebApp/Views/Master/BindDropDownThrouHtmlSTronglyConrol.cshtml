@@ -1,0 +1,29 @@
+﻿@model StandardMetals.MODEL.ItemMasterModel
+
+
+
+@{
+    ViewBag.Title = "BindDropDownThrouHtmlSTronglyConrol";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>BindDropDownThrouHtmlSTronglyConrol</h2>
+@section HeadScripts{
+    @*<script src="~/JS/Master/ItemMaster.js"></script>*@
+
+<script src="~/JS/Master/ItemMaster2.js"></script>
+    <script src="~/JS/Master/Demo.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            //alert('Yes its working');
+        });
+    </script>
+}
+
+
+<div>
+    Manuufacturere Name:
+    @Html.DropDownListFor(m => m.ManufacturerId,Enumerable.Empty<SelectListItem>(),
+    new { htmlAttributes = new { @class = "form-control input-sm"} })
+</div>

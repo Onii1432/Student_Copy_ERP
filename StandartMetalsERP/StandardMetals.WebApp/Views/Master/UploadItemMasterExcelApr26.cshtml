@@ -1,0 +1,155 @@
+﻿
+@{
+    ViewBag.Title = "Upload Item Master Excel";
+}
+
+<section id="Test">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Upload Item Master Excel</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                </div>
+            </div>
+
+            <div class="box-body">
+                @using (Html.BeginForm("UploadItemMasterExcelApr26", "Master", FormMethod.Post, new { id = "uploadForm", enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label>Select Master</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select name="MasterType" id="MasterType" class="form-control" required>
+                                            <option value="ItemMaster" selected>Item Master</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" id="btnDownloadTemplate" class="btn btn-primary" style="white-space:nowrap;">Download Template</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label>Attach Excel File</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="file" name="ExcelFile" class="form-control" accept=".xls,.xlsx" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center" style="margin-top:20px;">
+                            <button type="submit" class="btn btn-success">Upload</button>
+                            @Html.ActionLink("Back", "ItemList17Dec", "Master", null, new { @class = "btn btn-primary" })
+                        </div>
+                    </div>
+                }
+
+                @if (ViewBag.Message != null)
+                {
+                    <div class="alert alert-info" style="margin-top:15px;">@ViewBag.Message</div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="UploadResult">
+    <div class="col-lg-12 col-md-12">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Upload Result</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                </div>
+            </div>
+
+            <div class="box-body">
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-6">
+                        <div style="border:1px solid #c8e6c9;padding:10px;">
+                            <b style="color:green;">Success Count</b>
+                            <h3>@(ViewBag.SuccessCount ?? 0)</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div style="border:1px solid #ffcdd2;padding:10px;">
+                            <b style="color:red;">Fail Count</b>
+                            <h3>@(ViewBag.FailCount ?? 0)</h3>
+                        </div>
+                    </div>
+                </div>
+
+                @if (ViewBag.FailCount != null && Convert.ToInt32(ViewBag.FailCount) > 0)
+                {
+                    @Html.ActionLink("Download Fail Records", "DownloadFailItemMasterExcelApr26", "Master", null, new { @class = "btn btn-info" })
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+@*<script>
+        $(document).ready(function () {
+            $("#btnDownloadTemplate").click(function () {
+                var html = '<html><head><meta charset="utf-8" /></head><body><table border="1"><tr><th>Item Code</th><th>Item Name</th><th>Material</th><th>HSN-Code</th><th>GST Rate</th><th>Purchase Cost</th><th>Selling Price</th><th>Category</th><th>Sub Category</th><th>Manufacture</th><th>Colour</th><th>Unit</th></tr></table></body></html>';
+                var blob = new Blob(['\ufeff', html], { type: 'application/vnd.ms-excel' });
+                var url = URL.createObjectURL(blob);
+                var a = document.createElement("a");
+                a.href = url;
+                a.download = "ItemMaster_Template.xls";
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            });
+        });
+    </script>*@
+
+
+@section scripts {
+    <script>
+        (function () {
+            var button = document.getElementById("btnDownloadTemplate");
+
+            if (!button) return;
+
+            button.addEventListener("click", function () {
+                var masterType = document.getElementById("MasterType").value;
+
+                if (masterType !== "ItemMaster") {
+                    alert("Please select Item Master.");
+                    return;
+                }
+
+                var html = '<html><head><meta charset="utf-8"></head><body><table border="1"><tr><th>Item Code</th><th>Item Name</th><th>Material</th><th>HSN-Code</th><th>GST Rate</th><th>Purchase Cost</th><th>Selling Price</th><th>Category</th><th>Sub Category</th><th>Manufacture</th><th>Colour</th><th>Unit</th></tr></table></body></html>';
+
+                var blob = new Blob(["\ufeff", html], { type: "application/vnd.ms-excel;charset=utf-8;" });
+                var url = window.URL.createObjectURL(blob);
+                var link = document.createElement("a");
+
+                link.href = url;
+                link.download = "ItemMaster_Template.xls";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                setTimeout(function () {
+                    window.URL.revokeObjectURL(url);
+                }, 1000);
+            });
+        })();
+    </script>
+}

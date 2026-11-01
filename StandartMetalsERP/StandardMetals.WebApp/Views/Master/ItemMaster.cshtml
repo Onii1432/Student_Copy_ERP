@@ -1,0 +1,300 @@
+﻿@model StandardMetals.MODEL.ItemMasterModel
+
+@{
+    ViewBag.Title = "ItemMaster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section HeadScripts{
+    @*<script src="~/JS/Master/ItemMaster.js"></script>*@
+    <script src="~/JS/Master/ItemMaster2.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            //alert('Yes its working');
+        });
+    </script>
+}
+
+    <section id="ItemSearch">
+        <div class=" col-lg-12 col-md-12">
+            <div class="box box-info">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Search</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                    @*/.box-Tools*@
+                </div>
+                @*/.box-header*@
+                <div class="box-body">
+                    <div class="col-md-4">
+
+                        <strong class="align text-center">Item Code</strong>
+
+                        <div class="dropdown">
+
+                            @*<select id="drpSearchItem" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                <option value="-1" lang="en">-Select-</option>
+                            </select>*@
+                            @Html.DropDownListFor(model => model.ItemCode,Enumerable.Empty<SelectListItem>(),
+                            "-Select-", new  { @class = "form-control " } )
+                            @Html.ValidationMessageFor(model => model.ItemCode, "", new { @class = "text-danger" })
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <strong class="align text-center">Item Name</strong>
+
+                        <div class="dropdown">
+
+                            @*<select id="drpItemType" class="form-control ddLocationState col-sm-6">
+                                <option value="-1">-select-</option>
+                            </select>*@
+
+                            @Html.DropDownListFor(model => model.ItemName, Enumerable.Empty<SelectListItem>(),
+                            "-Select-",  new { @class = "form-control" } )
+                            @Html.ValidationMessageFor(model => model.ItemName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    @*<div class="col-md-4">
+
+                    </div>*@
+
+                    <div class="col-md-4">
+
+                        <input id="btnSearchItem" type="button" value="Search" class="btn btn-sm- btn-primary" />
+
+                    </div>
+                </div>
+                @*/.box-body*@
+            </div>
+            @*/.box*@
+        </div>
+
+
+    </section>
+
+
+    <section id="ItemInfo">
+        <div class="col-lg-12 col-md-12">
+            <div class="box box-info">
+
+                <div class="box-header with-border">
+                    <h3 class="box-title">Item Information</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                    <!-- /.box-tools -->
+                </div>
+
+                @using (Html.BeginForm(new { @id = "Form" }))
+                {
+                    <div class="box-body">
+
+                        <table class="table-condensed table-hover table-responsive" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 15%"></th>
+                                    <th style="width: 35%">
+                                        @Html.CheckBoxFor(model => model.RawMaterial, new { @class = "form-check-input" })
+                                        Raw material
+                                    </th>
+                                    <th style="width: 15%"></th>
+                                    <th style="width: 35%"></th>
+                                </tr>
+
+                                <tr>
+                                    <th width="15%">Item Code</th>
+                                    <td width="35%">
+
+                                        @Html.EditorFor(model => model.ItemCodeNo, new { htmlAttributes = new { @class = "form-control input-sm", @readonly = "readonly" } })
+                                        @*<input id="txtItemCode" class="form-control input-sm" type="text" readonly />*@
+                                        @Html.ValidationMessageFor(model => model.ItemCodeNo, "", new { @class = "text-danger" })
+                                    </td>
+
+
+                                    <th width="15%">Item Name</th>
+                                    <td width="35%">
+                                        @Html.EditorFor(model => model.ItemFullName, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                        @*<input id="txtItemName" class="form-control input-sm" type="text" />*@
+                                        @Html.ValidationMessageFor(model => model.ItemFullName, "", new { @class = "text-danger" })
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <th width="15%">Manufacturer</th>
+                                    <td width="35%">
+
+                                        <div class="dropdown">
+                                            @*<select id="drpManufacturer" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                                <option value="-1" lang="en">-Select-</option>
+                                            </select>*@
+                                            @Html.DropDownListFor(model => model.ManufacturerId,Enumerable.Empty<SelectListItem>(),
+                                            "-Select-",
+                                            new { @class = "form-control select2"})
+                                            @Html.ValidationMessageFor(model => model.ManufacturerId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </td>
+                                    <th width="15%">Material</th>
+                                    <td width="35%">
+                                        @Html.EditorFor(model => model.Material, new { htmlAttributes = new { @class = "form-control input-sm"} })
+                                        @*<input id="txtItemMaterial" class="form-control input-sm" type="text" />*@
+
+                                        @Html.ValidationMessageFor(model => model.Material, "", new { @class = "text-danger" })
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th width="15%">Item Category</th>
+                                    <td width="35%">
+                                        <div class="dropdown">
+                                            @*<select id="drpCategory" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                             <option value="-1" lang="en">-Select-</option>
+                                             </select>*@
+                                            @Html.DropDownListFor(model => model.ItemCategoryId, Enumerable.Empty<SelectListItem>(),
+                                            "-Select-",  new { @class = "form-control" } )
+                                            @Html.ValidationMessageFor(model => model.ItemCategoryId, "", new { @class = "text-danger" })
+
+
+                                        </div>
+                                    </td>
+
+                                    <th width="15%">Item Subcategory</th>
+                                    <td width="35%">
+                                        <div class="dropdown">
+                                            @*<select id="drpSubCategory" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                            <option value="-1" lang="en">-Select-</option>
+                                            </select>*@
+                                            @Html.DropDownListFor(model => model.ItemSubCategoryId, Enumerable.Empty<SelectListItem>(),
+                                            "-Select-",  new { @class = "form-control" } )
+                                            @Html.ValidationMessageFor(model => model.ItemSubCategoryId, "", new { @class = "text-danger" })
+
+                                                
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="15%">Color</th>
+                                    <td width="35%">
+                                        <div class="dropdown">
+                                            @*<select id="drpColor" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                                <option value="-1" lang="en">-Select-</option>
+                                                </select>*@
+                                        </div>
+                                        @Html.DropDownListFor(model => model.ColourId,Enumerable.Empty<SelectListItem>(),
+                                            "-Select-",  new { @class = "form-control" } )
+                                        @Html.ValidationMessageFor(model => model.ColourId, "", new { @class = "text-danger" })
+
+                                    </td>
+
+                                    <th width="15%">UOM</th>
+                                    <td width="35%">
+                                        <div class="dropdown">
+                                            @*<select id="drpUOM" class="form-control  col-sm-6" style="margin-bottom: 5px;">
+                                            <option value="-1" lang="en">-Select-</option>
+                                            </select>*@
+                                            @Html.DropDownListFor(model => model.UnitId, Enumerable.Empty<SelectListItem>(),
+                                            "-Select-",  new { @class = "form-control" } )
+                                            @Html.ValidationMessageFor(model => model.UnitId, "", new { @class = "text-danger" })
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="15%">HSN Code</th>
+                                    <td width="35%">
+                                        <div>
+                                            @Html.EditorFor(model => model.HSNCODE, new { htmlAttributes = new { @class = "form-control input-sm " } })
+                                            @*<input id="txtItemHSN" class="form-control input-sm" type="text" />*@
+                                            @Html.ValidationMessageFor(model => model.HSNCODE, "", new { @class = "text-danger" })
+                                        </div>
+
+                                    </td>
+                                    <th width="15%">GST Rate</th>
+                                    <td width="35%">
+
+                                        <div>
+                                            @Html.EditorFor(model => model.GSTRate, new { htmlAttributes = new { @class = "form-control input-sm"} })
+                                            @*<input id="txtGSTRate" class="form-control input-sm" type="text" />*@
+
+                                            @Html.ValidationMessageFor(model => model.GSTRate, "", new { @class = "text-danger" })
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <th width="15%">Purchase Cost</th>
+                                    <td width="35%">
+                                        <div class="input-group">
+
+                                            <span class="input-group-addon">
+                                                &#8377;<i class="fa fa-percent"></i>
+                                            </span>
+                                            @Html.EditorFor(model => model.PurchaseCost, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                            @*<input id="txtItemPurchaseCost" class="form-control input-sm" type="text" />*@
+                                            <span class="input-group-addon">.00</span>
+                                            @Html.ValidationMessageFor(model => model.PurchaseCost, "", new { @class = "text-danger" })
+
+
+                                        </div>
+                                    </td>
+                                    <th width="15%">Selling Price</th>
+                                    <td width="35%">
+                                        <div class="input-group">
+
+                                            <span class="input-group-addon">&#8377;</span>
+                                            @Html.EditorFor(model => model.SellingPrice, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                            @*<input id="txtItemSellingCost" class="form-control input-sm" type="text" />*@
+                                            <span class="input-group-addon">.00</span>
+                                            @Html.ValidationMessageFor(model => model.SellingPrice, "", new { @class = "text-danger" })
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+                    </div>
+                }
+                <!-- /.box-header -->
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </section>
+
+
+    <section id="ItemActionMenu">
+        <div class="col-lg-12 col-md-12">
+
+            <div class="box box-info">
+                <div class="box-header with-border">
+                </div>
+                <div class="box-body">
+                    <center>
+
+                        <input type="submit" value="New Item" class="btn btn-info" />
+                        <input id="btnSaveItem"  type="submit" value="Save" class="btn btn-success" />
+                        <input id="btnUpdate" type="submit" value="Update" class="btn btn-warning" />
+                        <input id="btnClick" type="submit" value="Delete" class="btn btn-danger" />
+                        <input id="btnClear" type="submit"  value="Clear" class="btn btn-primary" />
+                        <input id="btnClick" type="submit" value="Report" class="btn btn-dark" />
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>

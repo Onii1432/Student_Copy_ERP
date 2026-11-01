@@ -1,0 +1,1181 @@
+﻿@model StandardMetals.MODEL.PurchaseIndentApril2026Model
+@{
+    ViewBag.Title = "IndentMasterListApril2026";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+
+    .indent-page {
+        padding: 10px 5px 25px;
+    }
+
+        .indent-page .page-title {
+            margin: 0 0 10px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #263746;
+        }
+
+        .indent-page .box.box-info {
+            border-top: 2px solid #00b9e8;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0,0,0,.12);
+            margin-bottom: 15px;
+        }
+
+        .indent-page .box-header {
+            background: #e8f4f9;
+            padding: 10px 13px;
+        }
+
+        .indent-page .box-title {
+            font-size: 17px;
+            font-weight: 600;
+            color: #263746;
+        }
+
+        .indent-page .box-body {
+            padding: 10px;
+        }
+
+        .indent-page .table-scroll {
+            width: 100%;
+            max-height: 220px;
+            overflow: auto;
+            border: 1px solid #d8e0e5;
+        }
+
+        .indent-page table {
+            margin-bottom: 0;
+            white-space: nowrap;
+        }
+
+            .indent-page table thead th {
+                background: #b3d7e6;
+                color: #172b38;
+                font-weight: 600;
+                vertical-align: middle !important;
+                padding: 9px 8px !important;
+            }
+
+            .indent-page table tbody td {
+                vertical-align: middle !important;
+                padding: 7px 8px !important;
+            }
+
+        .indent-page .indent-select {
+            width: 65px;
+            text-align: center;
+        }
+
+        .indent-page .remark-input {
+            min-height: 50px;
+            resize: vertical;
+        }
+
+        .indent-page .main-add {
+            margin-top: -4px;
+        }
+
+        .indent-page .form-group {
+            margin-bottom: 10px;
+        }
+
+        .indent-page .form-control {
+            border-radius: 2px;
+        }
+
+        .indent-page .readonly-field {
+            background: #eee;
+        }
+
+        .indent-page .bottom-save {
+            text-align: center;
+            margin: 10px 0 12px;
+        }
+
+            .indent-page .bottom-save .btn {
+                min-width: 125px;
+                padding: 9px 25px;
+                font-weight: 600;
+            }
+
+        .indent-page .btn-sm {
+            min-width: 55px;
+        }
+
+    #indentFormModal .modal-dialog {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    #indentFormModal .modal-content {
+        border-radius: 5px;
+        box-shadow: 0 8px 22px rgba(0,0,0,.3);
+    }
+
+    #indentFormModal .modal-header {
+        padding: 10px 15px;
+        color: #fff;
+        background: #328bb7;
+        border-radius: 4px 4px 0 0;
+    }
+
+    #indentFormModal .modal-title {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    #indentFormModal .modal-header .close {
+        color: #fff;
+        font-size: 25px;
+        opacity: 1;
+    }
+
+    #indentFormModal .modal-body {
+        padding: 15px 18px;
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+
+    #indentFormModal .form-group {
+        margin-bottom: 10px;
+    }
+
+    #indentFormModal label {
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+
+    #indentFormModal .form-control {
+        border-radius: 2px;
+    }
+
+    .indent-required-error {
+        border: 1px solid red !important;
+    }
+
+    .indent-subsection {
+        border: 1px solid #d8e0e5;
+        margin-bottom: 13px;
+        border-radius: 3px;
+    }
+
+    .indent-subsection-title {
+        background: #e8f4f9;
+        padding: 9px 12px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #263746;
+    }
+
+    .indent-subsection-body {
+        padding: 12px;
+    }
+
+    .indent-form-items {
+        max-height: 260px;
+        overflow: auto;
+    }
+
+    .indent-required-mark {
+        color: red;
+    }
+
+    @@media (max-width: 767px) {
+        #indentFormModal .modal-dialog {
+            width: 95%;
+            margin: 15px auto;
+        }
+    }
+</style>
+<div class="indent-page">
+    @Html.HiddenFor(m => m.IndentId, new { id = "hdnIndentId" })
+    <h2 class="page-title">Indent Master</h2>
+    <!-- MAIN INDENT LIST -->
+    <div class="box box-info">
+        <div class="box-header">
+            <div class="row" style="margin:0;">
+                <div class="col-xs-8" style="padding:5px 0;">
+                    <h3 class="box-title">Indent Master Details</h3>
+                </div>
+                <div class="col-xs-4 text-right" style="padding:0;">
+                    <button type="button" id="btnAddIndent" class="btn btn-success main-add">
+                        <i class="fa fa-plus"></i> Add
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="box-body">
+            <div class="table-scroll">
+                <table class="table table-bordered table-hover" id="tblIndentMaster">
+                    <thead>
+                        <tr>
+                            <th class="indent-select">Select</th>
+                            <th>Indent No.</th>
+                            <th>Indent Type</th>
+                            <th>Indent Date</th>
+                            <th>Time</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="indentMasterBody">
+                        @if (ViewBag.lst != null)
+                        {
+                            foreach (var indent in ViewBag.lst)
+                            {
+                                <tr data-indent-id="@indent.IndentId">
+                                    <td class="indent-select">
+                                        <input type="radio" name="selectedIndent" value="@indent.IndentId" />
+                                    </td>
+                                    <td class="indent-number">@indent.IndentNoAutoGen</td>
+                                    <td class="indent-type" data-value="@indent.IndentTypeId">@indent.IndentType</td>
+                                    <td class="indent-date">
+                                        @(indent.IndentDate == null || Convert.ToDateTime(indent.IndentDate) == DateTime.MinValue ? "" : Convert.ToDateTime(indent.IndentDate).ToString("dd-MM-yyyy"))
+                                    </td>
+                                    <td class="indent-time">@indent.IndentTime</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm btnEditIndent" data-indent-id="@indent.IndentId">
+                                            <i class="fa fa-edit"></i> Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- REMARK AND PREPARER DETAILS -->
+    <div class="box box-info">
+        <div class="box-body">
+            <div class="row" style="margin:0;">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="txtMainRemark">Remark</label>
+                        <textarea id="txtMainRemark" class="form-control remark-input" placeholder="Enter remark"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="txtMainPreparedByCode">Prepared By Code</label>
+                        <input type="text" id="txtMainPreparedByCode" class="form-control readonly-field" value="@(Model == null ? "" : Model.PreparedByCode)" placeholder="Prepared By Code" readonly="readonly" />
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label for="txtMainPreparedByName">Prepared By Name</label>
+                        <input type="text" id="txtMainPreparedByName" class="form-control readonly-field" value="@(Model == null ? "" : Model.PreparedByName)" placeholder="Prepared By Name" readonly="readonly" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ITEMS FOR THE SELECTED INDENT -->
+    <div class="box box-info">
+        <div class="box-header">
+            <h3 class="box-title">Item Details</h3>
+        </div>
+        <div class="box-body">
+            <div class="table-scroll">
+                <table class="table table-bordered table-hover" id="tblMainIndentItems">
+                    <thead>
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Specification</th>
+                            <th>Drawing No</th>
+                            <th>Department</th>
+                            <th>Purpose</th>
+                            <th>Current Stock</th>
+                            <th>Required Date</th>
+                            <th>Required Quantity</th>
+                            <th>Required Quantity Unit</th>
+                            <th>Approved</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mainIndentItemBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ADD / EDIT INDENT FORM -->
+<div class="modal fade" id="indentFormModal" tabindex="-1" role="dialog" aria-labelledby="indentFormModalTitle">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="indentFormModalTitle">Add Indent</h4>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="hdnFormIndentId" value="0" />
+                <input type="hidden" id="hdnIndentMode" value="New" />
+                <!-- INDENT HEADER -->
+                <div class="indent-subsection">
+                    <div class="indent-subsection-title">Indent Details</div>
+                    <div class="indent-subsection-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="txtFormIndentNo">Indent No.</label>
+                                    <input type="text" id="txtFormIndentNo" class="form-control readonly-field" readonly="readonly" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="ddlFormIndentType">Indent Type <span class="indent-required-mark">*</span></label>
+                                    @Html.DropDownListFor(m => m.IndentTypeId, new SelectList(ViewBag.lst1 ?? new List<StandardMetals.MODEL.PurchaseIndentApril2026Model>(), "IndentTypeId", "IndentType"), "Select Indent Type", new { id = "ddlFormIndentType", @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="txtFormIndentDate">Indent Date <span class="indent-required-mark">*</span></label>
+                                    <input type="date" id="txtFormIndentDate" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="txtFormIndentTime">Time</label>
+                                    <input type="time" id="txtFormIndentTime" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM ENTRY FORM AND ITEM GRID IN THE SAME INDENT POPUP -->
+                <div class="indent-subsection">
+                    <div class="indent-subsection-title">Item Details</div>
+                    <div class="indent-subsection-body">
+                        @Html.HiddenFor(m => m.IndentDetailId, new { id = "hdnIndentDetailId" })
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="ddlItemName">Item Name <span class="indent-required-mark">*</span></label>
+                                    @Html.DropDownListFor(m => m.ItemName, new SelectList(ViewBag.lst2 ?? new List<StandardMetals.MODEL.PurchaseIndentApril2026Model>(), "ItemName", "ItemName"), "Select Item", new { id = "ddlItemName", @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="txtItemCode">Item Code</label>
+                                    @Html.TextBoxFor(m => m.ItemCode, new { id = "txtItemCode", @class = "form-control readonly-field", @readonly = "readonly" })
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="txtSpecification">Specification</label>
+                                    @Html.TextBoxFor(m => m.Specification, new { id = "txtSpecification", @class = "form-control readonly-field", @readonly = "readonly" })
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="txtDrawingNo">Drawing No</label>
+                                    @Html.TextBoxFor(m => m.DrawingNo, new { id = "txtDrawingNo", @class = "form-control readonly-field", @readonly = "readonly" })
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="ddlDepartment">Department</label>
+                                    @Html.DropDownListFor(m => m.DepartmentId, new SelectList(ViewBag.lst4 ?? new List<StandardMetals.MODEL.PurchaseIndentApril2026Model>(), "DepartmentId", "DepartmentName"), "Select Department", new { id = "ddlDepartment", @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="txtPurpose">Purpose</label>
+                                    @Html.TextBoxFor(m => m.Purpose, new { id = "txtPurpose", @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="txtCurrentStock">Current Stock</label>
+                                    @Html.TextBoxFor(m => m.CurrentStock, new { id = "txtCurrentStock", @class = "form-control readonly-field", @readonly = "readonly", Value = "0" })
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="txtRequiredDate">Required Date <span class="indent-required-mark">*</span></label>
+                                    <input type="date" id="txtRequiredDate" class="form-control" min="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="txtRequiredQuantity">Required Quantity <span class="indent-required-mark">*</span></label>
+                                    @Html.TextBoxFor(m => m.ToOrderQuantity, new { id = "txtRequiredQuantity", type = "number", min = "1", step = "any", @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="ddlRequiredQuantityUnit">Required Quantity Unit <span class="indent-required-mark">*</span></label>
+                                    @Html.DropDownListFor(m => m.UnitId, new SelectList(ViewBag.lst5 ?? new List<StandardMetals.MODEL.PurchaseIndentApril2026Model>(), "UnitId", "UnitName"), "Select Unit", new { id = "ddlRequiredQuantityUnit", @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right" style="margin-bottom:12px;">
+                            <button type="button" id="btnAddUpdateGrid" class="btn btn-success">
+                                <i class="fa fa-plus"></i> Add Item
+                            </button>
+                        </div>
+                        <div class="indent-form-items">
+                            <table class="table table-bordered table-hover" id="tblFormIndentItems">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No.</th>
+                                        <th>Item Code</th>
+                                        <th>Item Name</th>
+                                        <th>Specification</th>
+                                        <th>Drawing No</th>
+                                        <th>Department</th>
+                                        <th>Purpose</th>
+                                        <th>Current Stock</th>
+                                        <th>Required Date</th>
+                                        <th>Required Quantity</th>
+                                        <th>Unit</th>
+                                        <th>Approved</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="formIndentItemBody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- REMARK AND PREPARER DETAILS -->
+                <div class="indent-subsection">
+                    <div class="indent-subsection-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="txtFormRemark">Remark</label>
+                                    <textarea id="txtFormRemark" class="form-control remark-input" placeholder="Enter remark"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="txtFormPreparedByCode">Prepared By Code</label>
+                                    <input type="text" id="txtFormPreparedByCode" class="form-control readonly-field" value="@(Model == null ? "" : Model.PreparedByCode)" placeholder="Prepared By Code" readonly="readonly" />
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label for="txtFormPreparedByName">Prepared By Name</label>
+                                    <input type="text" id="txtFormPreparedByName" class="form-control readonly-field" value="@(Model == null ? "" : Model.PreparedByName)" placeholder="Prepared By Name" readonly="readonly" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="btnSaveIndent" class="btn btn-success">
+                        <i class="fa fa-save"></i> Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section HeadScripts {
+    <script>
+$(document).ready(function () {
+    var editItemRow = null;
+    var nextTemporaryId = 1;
+    var currentSelectedIndentId = 0;
+
+    // OPEN NEW INDENT
+    $("#btnAddIndent").on("click", function () {
+        resetIndentForm();
+        $("#hdnIndentMode").val("New");
+        $("#hdnFormIndentId").val("0");
+        $("#indentFormModalTitle").text("Add Indent");
+        $("#btnSaveIndent").html("<i class='fa fa-save'></i> Save");
+        $("#btnSaveIndent").prop("disabled", false);
+        $("#indentFormModal").modal("show");
+    });
+
+    // OPEN EXISTING INDENT FOR EDITING
+    $(document).on("click", ".btnEditIndent", function () {
+        var indentId = parseInt($(this).attr("data-indent-id")) || 0;
+
+        if (indentId <= 0) {
+            alert("Invalid Indent ID.");
+            return;
+        }
+
+        loadIndentForEditing(indentId);
+    });
+
+    // SELECT INDENT AND LOAD MAIN SCREEN DETAILS
+    $("#indentMasterBody").on("change", "input[name='selectedIndent']", function () {
+        var indentId = parseInt($(this).val()) || 0;
+        var row = $(this).closest("tr");
+
+        $("#indentMasterBody tr").removeClass("info");
+        row.addClass("info");
+
+        $("#hdnIndentId").val(indentId);
+        currentSelectedIndentId = indentId;
+
+        $("#txtMainRemark").val("");
+        $("#txtMainPreparedByCode").val("");
+        $("#txtMainPreparedByName").val("");
+        $("#mainIndentItemBody").empty();
+
+        if (indentId <= 0) {
+            return;
+        }
+
+        $("#mainIndentItemBody").html("<tr><td colspan='11' class='text-center'>Loading item details...</td></tr>");
+
+        $.ajax({
+            url: '@Url.Action("GetIndentDetailsApril2026", "PurchaseIndentApril2026")',
+            type: "GET",
+            data: { indentId: indentId },
+            success: function (response) {
+                if (currentSelectedIndentId !== indentId) {
+                    return;
+                }
+
+                if (!response || !response.success) {
+                    $("#mainIndentItemBody").empty();
+                    alert(response && response.message ? response.message : "Unable to load indent details.");
+                    return;
+                }
+
+                var header = response.header || {};
+                var items = response.items || [];
+
+                $("#txtMainRemark").val(header.Remark || "");
+                $("#txtMainPreparedByCode").val(header.PreparedByCode || "");
+                $("#txtMainPreparedByName").val(header.PreparedByName || "");
+
+                if (items.length === 0) {
+                    $("#mainIndentItemBody").html("<tr><td colspan='11' class='text-center'>No item details found.</td></tr>");
+                    return;
+                }
+
+                var rowsHtml = "";
+
+                $.each(items, function (index, item) {
+                    rowsHtml += "<tr>" +
+                        "<td>" + esc(item.ItemCode) + "</td>" +
+                        "<td>" + esc(item.ItemName) + "</td>" +
+                        "<td>" + esc(item.Specification) + "</td>" +
+                        "<td>" + esc(item.DrawingNo) + "</td>" +
+                        "<td>" + esc(getDepartmentName(item.DepartmentId)) + "</td>" +
+                        "<td>" + esc(item.Purpose) + "</td>" +
+                        "<td>" + esc(item.CurrentStock) + "</td>" +
+                        "<td>" + esc(formatDateForDisplay(item.RequiredDate)) + "</td>" +
+                        "<td>" + esc(item.ToOrderQuantity) + "</td>" +
+                        "<td>" + esc(item.ToOrderUnit) + "</td>" +
+                        "<td>" + (item.IsApproved ? "Yes" : "No") + "</td>" +
+                        "</tr>";
+                });
+
+                $("#mainIndentItemBody").html(rowsHtml);
+            },
+            error: function () {
+                if (currentSelectedIndentId !== indentId) {
+                    return;
+                }
+
+                $("#mainIndentItemBody").empty();
+                alert("An error occurred while loading indent details.");
+            }
+        });
+    });
+
+    // LOAD EXISTING INDENT INTO THE EDIT FORM
+    function loadIndentForEditing(indentId) {
+        $("#btnSaveIndent").prop("disabled", true);
+
+        $.ajax({
+            url: '@Url.Action("GetIndentDetailsApril2026", "PurchaseIndentApril2026")',
+            type: "GET",
+            data: { indentId: indentId },
+            success: function (response) {
+                if (!response || !response.success) {
+                    alert(response && response.message ? response.message : "Unable to load indent details.");
+                    return;
+                }
+
+                var header = response.header || {};
+                var items = response.items || [];
+
+                resetIndentForm();
+
+                $("#hdnIndentMode").val("Existing");
+                $("#hdnFormIndentId").val(indentId);
+                $("#txtFormIndentNo").val(header.IndentNoAutoGen || "");
+                $("#ddlFormIndentType").val(header.IndentTypeId || "");
+                $("#txtFormIndentDate").val(toInputDate(header.IndentDate || ""));
+                $("#txtFormIndentTime").val(toTimeInput(header.IndentTime || ""));
+                $("#txtFormRemark").val(header.Remark || "");
+                $("#txtFormPreparedByCode").val(header.PreparedByCode || "");
+                $("#txtFormPreparedByName").val(header.PreparedByName || "");
+
+                $("#formIndentItemBody").empty();
+                nextTemporaryId = 1;
+
+                $.each(items, function (index, item) {
+                    var unitId = getUnitIdByName(item.ToOrderUnit);
+                    var departmentId = item.DepartmentId || 0;
+                    var approved = item.IsApproved === true;
+
+                    var itemNameValue = findOptionValueByText("#ddlItemName", item.ItemName);
+                    var departmentName = getDepartmentName(departmentId);
+                    var unitName = item.ToOrderUnit || "";
+
+                    var rowHtml =
+                        "<td>" + (index + 1) + "</td>" +
+                        "<td>" + esc(item.ItemCode) + "</td>" +
+                        "<td data-value='" + esc(itemNameValue) + "'>" + esc(item.ItemName) + "</td>" +
+                        "<td>" + esc(item.Specification) + "</td>" +
+                        "<td>" + esc(item.DrawingNo) + "</td>" +
+                        "<td data-value='" + esc(departmentId) + "'>" + esc(departmentName) + "</td>" +
+                        "<td>" + esc(item.Purpose) + "</td>" +
+                        "<td>" + esc(item.CurrentStock) + "</td>" +
+                        "<td>" + esc(displayDate(toInputDate(item.RequiredDate))) + "</td>" +
+                        "<td>" + esc(item.ToOrderQuantity) + "</td>" +
+                        "<td data-value='" + esc(unitId) + "'>" + esc(unitName) + "</td>" +
+                        "<td class='text-center'><input type='checkbox' class='item-approved' " + (approved ? "checked disabled" : "") + " /></td>";
+
+                    if (approved) {
+                        rowHtml += "<td><span class='text-muted'>Approved</span></td>";
+                    } else {
+                        rowHtml += "<td><button type='button' class='btn btn-primary btn-sm btnEditFormItem'><i class='fa fa-edit'></i></button> " +
+                            "<button type='button' class='btn btn-danger btn-sm btnRemoveFormItem'><i class='fa fa-trash'></i></button></td>";
+                    }
+
+                    var newRow = $("<tr></tr>");
+                    newRow.attr("data-item-id", nextTemporaryId++);
+                    newRow.attr("data-detail-id", parseInt(item.IndentDetailId) || 0);
+                    newRow.attr("data-approved", approved ? "true" : "false");
+                    newRow.html(rowHtml);
+
+                    $("#formIndentItemBody").append(newRow);
+                });
+
+                renumberFormItems();
+
+                $("#indentFormModalTitle").text("Edit Indent");
+                $("#btnSaveIndent").html("<i class='fa fa-save'></i> Update");
+                $("#indentFormModal").modal("show");
+            },
+            error: function () {
+                alert("An error occurred while loading the indent for editing.");
+            },
+            complete: function () {
+                $("#btnSaveIndent").prop("disabled", false);
+            }
+        });
+    }
+
+    // ITEM ENTRY FORM IS ALREADY INSIDE THE INDENT POPUP
+    // The Add Item button directly adds the entered item to the grid.
+
+    // EDIT AN UNAPPROVED ITEM
+    $(document).on("click", ".btnEditFormItem", function () {
+        var row = $(this).closest("tr");
+
+        if (row.attr("data-approved") === "true") {
+            alert("Approved items cannot be edited.");
+            return;
+        }
+
+        editItemRow = row;
+        var cells = editItemRow.children("td");
+
+        clearItemPopup();
+
+        var itemNameValue = cells.eq(2).attr("data-value") || "";
+        if (!itemNameValue) {
+            itemNameValue = findOptionValueByText("#ddlItemName", cells.eq(2).text().trim());
+        }
+
+        $("#ddlItemName").val(itemNameValue);
+        $("#txtItemCode").val(cells.eq(1).text().trim());
+        $("#txtSpecification").val(cells.eq(3).text().trim());
+        $("#txtDrawingNo").val(cells.eq(4).text().trim());
+        $("#ddlDepartment").val(cells.eq(5).attr("data-value") || "");
+        $("#txtPurpose").val(cells.eq(6).text().trim());
+        $("#txtCurrentStock").val(cells.eq(7).text().trim());
+        $("#txtRequiredDate").val(toInputDate(cells.eq(8).text().trim()));
+        $("#txtRequiredQuantity").val(cells.eq(9).text().trim());
+
+        var unitId = cells.eq(10).attr("data-value") || "";
+        if (!unitId) {
+            unitId = getUnitIdByName(cells.eq(10).text().trim());
+        }
+        $("#ddlRequiredQuantityUnit").val(unitId);
+
+        $("#btnAddUpdateGrid").html("<i class='fa fa-save'></i> Update Item");
+        $("#hdnIndentDetailId").val(parseInt(editItemRow.attr("data-detail-id")) || 0);
+        $("#ddlItemName").focus();
+    });
+
+    // LOAD ITEM MASTER DETAILS
+    $("#ddlItemName").on("change", function () {
+        var itemName = $(this).val();
+
+        if (!itemName) {
+            $("#txtItemCode, #txtSpecification, #txtDrawingNo").val("");
+            return;
+        }
+
+        $.getJSON('@Url.Action("GetItemDetailsApril2026", "PurchaseIndentApril2026")', { itemName: itemName })
+            .done(function (data) {
+                if (data && data.success) {
+                    $("#txtItemCode").val(data.ItemCode || "");
+                    $("#txtSpecification").val(data.Specification || "");
+                    $("#txtDrawingNo").val(data.DrawingNo || "");
+
+                    if (data.UnitId) {
+                        $("#ddlRequiredQuantityUnit").val(data.UnitId);
+                    }
+                } else {
+                    $("#txtItemCode, #txtSpecification, #txtDrawingNo").val("");
+                    alert(data && data.message ? data.message : "Item details not found.");
+                }
+            })
+            .fail(function () {
+                alert("Unable to load item details.");
+            });
+    });
+
+    // ADD OR UPDATE AN ITEM ROW
+    $("#btnAddUpdateGrid").on("click", function () {
+        var itemValue = $("#ddlItemName").val();
+        var itemName = $("#ddlItemName option:selected").text();
+        var itemCode = $("#txtItemCode").val().trim();
+        var specification = $("#txtSpecification").val().trim();
+        var drawingNo = $("#txtDrawingNo").val().trim();
+        var departmentId = $("#ddlDepartment").val();
+        var department = departmentId ? $("#ddlDepartment option:selected").text() : "";
+        var purpose = $("#txtPurpose").val().trim();
+        var currentStock = $("#txtCurrentStock").val() || "0";
+        var requiredDate = $("#txtRequiredDate").val();
+        var quantity = $("#txtRequiredQuantity").val();
+        var unitId = $("#ddlRequiredQuantityUnit").val();
+        var unit = unitId ? $("#ddlRequiredQuantityUnit option:selected").text() : "";
+
+        $(".indent-required-error").removeClass("indent-required-error");
+
+        if (!itemValue) {
+            $("#ddlItemName").addClass("indent-required-error");
+            alert("Please select Item Name.");
+            return;
+        }
+
+        if (!itemCode) {
+            alert("Item Code has not loaded. Please select the item again.");
+            return;
+        }
+
+        if (!requiredDate) {
+            $("#txtRequiredDate").addClass("indent-required-error");
+            alert("Please select Required Date.");
+            return;
+        }
+
+        // CHECK REQUIRED DATE (TODAY ONWARDS)
+        var today = getTodayDate();
+
+        if (requiredDate < today) {
+            $("#txtRequiredDate").addClass("indent-required-error");
+            alert("Required Date cannot be earlier than today.");
+            return;
+        }
+
+        if (!quantity || isNaN(parseFloat(quantity)) || parseFloat(quantity) <= 0) {
+            $("#txtRequiredQuantity").addClass("indent-required-error");
+            alert("Enter a Required Quantity greater than zero.");
+            return;
+        }
+
+        if (!unitId) {
+            $("#ddlRequiredQuantityUnit").addClass("indent-required-error");
+            alert("Please select Required Quantity Unit.");
+            return;
+        }
+
+        // CHECK DUPLICATE ITEM
+        var isDuplicate = false;
+
+        $("#formIndentItemBody tr").each(function () {
+            var row = $(this);
+
+            // Skip the current row when editing
+            if (editItemRow && editItemRow.length && row.is(editItemRow)) {
+                return true;
+            }
+
+            var existingItemValue = row.children("td").eq(2).attr("data-value");
+
+            if (existingItemValue == itemValue) {
+                isDuplicate = true;
+                return false;
+            }
+        });
+
+        if (isDuplicate) {
+            alert("This item is already added in the grid.");
+            return;
+        }
+
+        var itemId = editItemRow && editItemRow.length ? editItemRow.attr("data-item-id") : nextTemporaryId++;
+        var detailId = editItemRow && editItemRow.length ? (parseInt(editItemRow.attr("data-detail-id")) || 0) : 0;
+
+        var rowHtml =
+            "<td></td>" +
+            "<td>" + esc(itemCode) + "</td>" +
+            "<td data-value='" + esc(itemValue) + "'>" + esc(itemName) + "</td>" +
+            "<td>" + esc(specification) + "</td>" +
+            "<td>" + esc(drawingNo) + "</td>" +
+            "<td data-value='" + esc(departmentId || "") + "'>" + esc(department) + "</td>" +
+            "<td>" + esc(purpose) + "</td>" +
+            "<td>" + esc(currentStock) + "</td>" +
+            "<td>" + esc(displayDate(requiredDate)) + "</td>" +
+            "<td>" + esc(quantity) + "</td>" +
+            "<td data-value='" + esc(unitId) + "'>" + esc(unit) + "</td>" +
+            "<td class='text-center'><input type='checkbox' class='item-approved' disabled /></td>" +
+            "<td><button type='button' class='btn btn-primary btn-sm btnEditFormItem'><i class='fa fa-edit'></i></button> " +
+            "<button type='button' class='btn btn-danger btn-sm btnRemoveFormItem'><i class='fa fa-trash'></i></button></td>";
+
+        if (editItemRow && editItemRow.length) {
+            editItemRow.html(rowHtml);
+            editItemRow.attr("data-item-id", itemId);
+            editItemRow.attr("data-detail-id", detailId);
+            editItemRow.attr("data-approved", "false");
+        } else {
+            var newRow = $("<tr></tr>");
+            newRow.attr("data-item-id", itemId);
+            newRow.attr("data-detail-id", "0");
+            newRow.attr("data-approved", "false");
+            newRow.html(rowHtml);
+            $("#formIndentItemBody").append(newRow);
+        }
+
+        renumberFormItems();
+        clearItemPopup();
+        editItemRow = null;
+        $("#hdnIndentDetailId").val("0");
+        $("#btnAddUpdateGrid").html("<i class='fa fa-plus'></i> Add Item");
+    });
+
+    // REMOVE UNAPPROVED ITEM
+    $(document).on("click", ".btnRemoveFormItem", function () {
+        var row = $(this).closest("tr");
+
+        if (row.attr("data-approved") === "true") {
+            alert("Approved items cannot be removed.");
+            return;
+        }
+
+        if (confirm("Are you sure you want to remove this item?")) {
+            row.remove();
+            renumberFormItems();
+        }
+    });
+
+    // No second-level item modal is used. Item fields reset after each successful add/update.
+
+    // KEEP REMARK SYNCHRONIZED
+    $("#txtMainRemark").on("input", function () {
+        $("#txtFormRemark").val($(this).val());
+    });
+
+    // SAVE NEW OR UPDATE EXISTING INDENT
+    $("#btnSaveIndent").on("click", function () {
+        var mode = $("#hdnIndentMode").val();
+        var indentId = parseInt($("#hdnFormIndentId").val()) || 0;
+        var indentTypeId = $("#ddlFormIndentType").val();
+        var indentDate = $("#txtFormIndentDate").val();
+        var indentTime = $("#txtFormIndentTime").val();
+        var remark = $("#txtFormRemark").val();
+        var items = [];
+
+        if (mode !== "New" && mode !== "Existing") {
+            alert("Please open an indent first.");
+            return;
+        }
+
+        if (mode === "Existing" && indentId <= 0) {
+            alert("Invalid Indent ID.");
+            return;
+        }
+
+        if (!indentTypeId) {
+            alert("Please select Indent Type.");
+            return;
+        }
+
+        if (!indentDate) {
+            alert("Please select Indent Date.");
+            return;
+        }
+
+        $("#formIndentItemBody tr").each(function () {
+            var row = $(this);
+            var cells = row.children("td");
+
+            items.push({
+                IndentDetailId: parseInt(row.attr("data-detail-id")) || 0,
+                ItemCode: cells.eq(1).text().trim(),
+                ItemName: cells.eq(2).text().trim(),
+                Specification: cells.eq(3).text().trim(),
+                DrawingNo: cells.eq(4).text().trim(),
+                DepartmentId: parseInt(cells.eq(5).attr("data-value")) || 0,
+                Purpose: cells.eq(6).text().trim(),
+                CurrentStock: parseFloat(cells.eq(7).text()) || 0,
+                RequiredDate: toInputDate(cells.eq(8).text().trim()),
+                ToOrderQuantity: parseFloat(cells.eq(9).text()) || 0,
+                ToOrderUnit: cells.eq(10).text().trim()
+            });
+        });
+
+        if (items.length === 0) {
+            alert("Please add at least one item.");
+            return;
+        }
+
+        for (var i = 0; i < items.length; i++) {
+            if (!items[i].ItemCode) {
+                alert("Item Code is missing in row " + (i + 1) + ".");
+                return;
+            }
+
+            if (!items[i].RequiredDate) {
+                alert("Required Date is missing in row " + (i + 1) + ".");
+                return;
+            }
+
+            if (items[i].ToOrderQuantity <= 0) {
+                alert("Enter a valid quantity in row " + (i + 1) + ".");
+                return;
+            }
+
+            if (!items[i].ToOrderUnit) {
+                alert("Unit is missing in row " + (i + 1) + ".");
+                return;
+            }
+        }
+
+        var actionUrl = mode === "New"
+            ? '@Url.Action("SaveIndentApril2026", "PurchaseIndentApril2026")'
+            : '@Url.Action("UpdateIndentApril2026", "PurchaseIndentApril2026")';
+
+        var postData = {
+            indentTypeId: indentTypeId,
+            indentDate: indentDate,
+            indentTime: indentTime,
+            remark: remark,
+            itemsJson: JSON.stringify(items)
+        };
+
+        if (mode === "Existing") {
+            postData.indentId = indentId;
+        }
+
+        $("#btnSaveIndent").prop("disabled", true);
+
+        $.ajax({
+            url: actionUrl,
+            type: "POST",
+            data: postData,
+            success: function (response) {
+                if (response && response.success) {
+                    var message = response.message || (mode === "New" ? "Indent saved successfully." : "Indent updated successfully.");
+                    alert(message + (response.indentNo ? "\nIndent No: " + response.indentNo : ""));
+                    $("#indentFormModal").modal("hide");
+                    location.reload();
+                } else {
+                    alert(response && response.message ? response.message : "Unable to save or update indent.");
+                }
+            },
+            error: function () {
+                alert("An error occurred while saving or updating the indent.");
+            },
+            complete: function () {
+                $("#btnSaveIndent").prop("disabled", false);
+            }
+        });
+    });
+
+    // RESET NEW INDENT FORM
+    function resetIndentForm() {
+        resetIndentFormFieldsOnly();
+        clearItemPopup();
+        editItemRow = null;
+        $("#hdnIndentDetailId").val("0");
+        $("#btnAddUpdateGrid").html("<i class='fa fa-plus'></i> Add Item");
+        $("#formIndentItemBody").empty();
+        $("#txtFormIndentNo").val("");
+        $("#hdnFormIndentId").val("0");
+        $("#hdnIndentMode").val("New");
+        $("#ddlFormIndentType").val("");
+        $("#txtFormIndentDate").val(getTodayDate());
+        $("#txtFormIndentTime").val(getCurrentTime());
+        $("#txtFormRemark").val("");
+        $("#txtFormPreparedByCode").val($("#txtMainPreparedByCode").val());
+        $("#txtFormPreparedByName").val($("#txtMainPreparedByName").val());
+        $("#btnSaveIndent").html("<i class='fa fa-save'></i> Save");
+        nextTemporaryId = 1;
+    }
+
+    function resetIndentFormFieldsOnly() {
+        clearItemPopup();
+        editItemRow = null;
+        $("#hdnIndentDetailId").val("0");
+        $("#btnAddUpdateGrid").html("<i class='fa fa-plus'></i> Add Item");
+        $("#formIndentItemBody").empty();
+        $("#txtFormIndentNo").val("");
+        $("#txtFormRemark").val("");
+        $("#txtFormPreparedByCode").val($("#txtMainPreparedByCode").val());
+        $("#txtFormPreparedByName").val($("#txtMainPreparedByName").val());
+    }
+
+    // CLEAR ITEM POPUP
+    function clearItemPopup() {
+        $("#ddlItemName, #ddlDepartment, #ddlRequiredQuantityUnit").val("");
+        $("#txtItemCode, #txtSpecification, #txtDrawingNo, #txtPurpose, #txtRequiredDate, #txtRequiredQuantity").val("");
+        $("#txtCurrentStock").val("0");
+        $(".indent-required-error").removeClass("indent-required-error");
+    }
+
+    // RENUMBER ITEM ROWS
+    function renumberFormItems() {
+        $("#formIndentItemBody tr").each(function (index) {
+            $(this).children("td").eq(0).text(index + 1);
+        });
+    }
+
+    function getTodayDate() {
+        var today = new Date();
+        var month = String(today.getMonth() + 1).padStart(2, "0");
+        var day = String(today.getDate()).padStart(2, "0");
+        return today.getFullYear() + "-" + month + "-" + day;
+    }
+
+    function getCurrentTime() {
+        var now = new Date();
+        return String(now.getHours()).padStart(2, "0") + ":" + String(now.getMinutes()).padStart(2, "0");
+    }
+
+    function displayDate(value) {
+        if (!value) {
+            return "";
+        }
+
+        var parts = value.split("-");
+        return parts.length === 3 ? parts[2] + "-" + parts[1] + "-" + parts[0] : value;
+    }
+
+    function toInputDate(value) {
+        if (!value) {
+            return "";
+        }
+
+        var parts = value.toString().substring(0, 10).split("-");
+
+        if (parts.length !== 3) {
+            return "";
+        }
+
+        if (parts[0].length === 4) {
+            return parts[0] + "-" + parts[1] + "-" + parts[2];
+        }
+
+        return parts[2] + "-" + parts[1] + "-" + parts[0];
+    }
+
+    function formatDateForDisplay(value) {
+        if (!value) {
+            return "";
+        }
+
+        var datePart = value.toString().substring(0, 10);
+        var parts = datePart.split("-");
+
+        if (parts.length === 3 && parts[0].length === 4) {
+            return parts[2] + "-" + parts[1] + "-" + parts[0];
+        }
+
+        return datePart;
+    }
+
+    function getDepartmentName(departmentId) {
+        if (!departmentId) {
+            return "";
+        }
+
+        var departmentName = $("#ddlDepartment option[value='" + departmentId + "']").text();
+
+        if (!departmentName || departmentName === "Select Department") {
+            return departmentId;
+        }
+
+        return departmentName;
+    }
+
+    function getUnitIdByName(unitName) {
+        var unitId = "";
+
+        $("#ddlRequiredQuantityUnit option").each(function () {
+            if ($(this).text().trim().toLowerCase() === (unitName || "").trim().toLowerCase()) {
+                unitId = $(this).val();
+                return false;
+            }
+        });
+
+        return unitId;
+    }
+
+    function findOptionValueByText(selector, optionText) {
+        var optionValue = "";
+
+        $(selector + " option").each(function () {
+            if ($(this).text().trim().toLowerCase() === (optionText || "").trim().toLowerCase()) {
+                optionValue = $(this).val();
+                return false;
+            }
+        });
+
+        return optionValue;
+    }
+
+    function toTimeInput(value) {
+        if (!value) {
+            return "";
+        }
+
+        var match = value.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)?$/i);
+
+        if (!match) {
+            return value.length >= 5 ? value.substring(0, 5) : "";
+        }
+
+        var hours = parseInt(match[1], 10);
+        var minutes = match[2];
+        var period = (match[3] || "").toUpperCase();
+
+        if (period === "PM" && hours < 12) {
+            hours += 12;
+        }
+
+        if (period === "AM" && hours === 12) {
+            hours = 0;
+        }
+
+        return String(hours).padStart(2, "0") + ":" + minutes;
+    }
+
+    function esc(value) {
+        return $("<div>").text(value == null ? "" : value).html();
+    }
+});
+    </script>
+}

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{856D5265-8F8E-4D57-B68E-89688AE74630}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StandardMetals.MODEL</RootNamespace>
+    <AssemblyName>StandardMetals.MODEL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="CompanyMasterModel.cs" />
+    <Compile Include="CustomerMasterMVCApril2026Model.cs" />
+    <Compile Include="CustomerMasterModel.cs" />
+    <Compile Include="CustomerPOModel.cs" />
+    <Compile Include="DefaultDashboardModel.cs" />
+    <Compile Include="DefaultModal.cs" />
+    <Compile Include="DemoItemMasterModel.cs" />
+    <Compile Include="EmployeeMasterModel.cs" />
+    <Compile Include="EnquiryMasterModel.cs" />
+    <Compile Include="IndentApprovalModal.cs" />
+    <Compile Include="IndentMasterModel.cs" />
+    <Compile Include="ItemMaster_Modal_AprBtch.cs" />
+    <Compile Include="ItemMasterModel.cs" />
+    <Compile Include="ItemMasterMVCModal.cs" />
+    <Compile Include="ItemMaster_MODEL_27March.cs" />
+    <Compile Include="LoggedInUserModelApril26.cs" />
+    <Compile Include="LoginDetailsModel.cs" />
+    <Compile Include="LoginUserMasterModel.cs" />
+    <Compile Include="MachineMasterModal.cs" />
+    <Compile Include="MachineVsCheckPointModel.cs" />
+    <Compile Include="MasterDataFieldsModel.cs" />
+    <Compile Include="MasterFormsReportModal.cs" />
+    <Compile Include="MenuMasterModel.cs" />
+    <Compile Include="NameCode.cs" />
+    <Compile Include="OrderAcceptanceMODEL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseIndentApril2026Model.cs" />
+    <Compile Include="RoleMasterModel.cs" />
+    <Compile Include="SubMenuModel.cs" />
+    <Compile Include="SupplierMasterMVCApril2026Model.cs" />
+    <Compile Include="SupplierPOModel.cs" />
+    <Compile Include="TestMasterModel.cs" />
+    <Compile Include="UploadMasterModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StandardMetals.CommonLibrary\StandardMetals.CommonLibrary.csproj">
+      <Project>{48984063-8747-43e0-8070-d62ee70b5d6b}</Project>
+      <Name>StandardMetals.CommonLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
